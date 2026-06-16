@@ -166,6 +166,7 @@ export default function VideoGallery({ videoSources, mainImage, title, credits }
           </button>
 
           <div 
+            className="pi-lightbox-video-wrapper"
             onClick={(e) => e.stopPropagation()} 
             style={{ 
               position: 'relative', 
