@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './PaginaIndividual.css';
 import type { OportunidadeDetalhe } from '../data/oportunidadesData';
 import { getOportunidadesData } from '../data/oportunidadesDataI18n';
+import VideoGallery from './VideoGallery';
 
 type PaginaIndividualProps = {
   slug?: string;
@@ -29,12 +30,12 @@ export default function PaginaIndividual({ slug, item: propItem }: PaginaIndivid
   const [isAlbumOpen, setIsAlbumOpen] = useState(false);
 
   // Coleta todas as fotos disponíveis para o álbum
-  const allPhotos = [
+  const allPhotos = Array.from(new Set([
     item.gallery.main,
     item.gallery.sideTop,
     item.gallery.sideBottom,
     ...(item.gallery.extra || [])
-  ];
+  ].filter(Boolean)));
 
   // SEO Update
   useEffect(() => {
@@ -274,47 +275,13 @@ export default function PaginaIndividual({ slug, item: propItem }: PaginaIndivid
               })}
             </div>
 
-            {item.videoSources && item.videoSources.length > 0 && (
-              <div className="pi-video-gallery-v3">
-                <div className="pi-section-header">
-                  <h3 className="pi-section-title">{t('pagina.videoGallery') || 'Galeria de Vídeos'}</h3>
-                </div>
-                
-                <div className="pi-video-grid-v3">
-                  {item.videoSources.map((src, idx) => {
-                    const vimeoId = src.split('/video/')[1]?.split('?')[0];
-                    const thumbUrl = vimeoId 
-                      ? `https://vumbnail.com/${vimeoId}.jpg` 
-                      : item.gallery.main;
-
-                    return (
-                      <div 
-                        key={idx} 
-                        className="pi-video-card-v3"
-                        onClick={() => openVideo(src)}
-                      >
-                        <div className="pi-video-card-thumb">
-                          <img src={thumbUrl} alt={`V\u00CDDEO ${idx + 1}`} />
-                          <div className="pi-video-card-overlay">
-                            <div className="pi-video-play-btn">
-                              <svg viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M8 5v14l11-7z" />
-                              </svg>
-                            </div>
-
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-                {item.videoGalleryCredits && (
-                  <p className="pi-video-credits" style={{ marginTop: '16px', fontSize: '0.9rem', opacity: 0.7 }}>
-                    {item.videoGalleryCredits}
-                  </p>
-                )}
-              </div>
-            )}
+            <VideoGallery
+              videoSources={item.videoSources || []}
+              mainImage={item.gallery.main}
+              title={item.propertyTitle}
+              credits={item.videoGalleryCredits}
+              onOpenVideo={openVideo}
+            />
 
             {item.documents && item.documents.length > 0 && (
               <div className="pi-documents-section">

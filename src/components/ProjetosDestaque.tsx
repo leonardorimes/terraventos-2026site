@@ -11,6 +11,30 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "vila-aysu-jericoacoara",
+    image: "/jericoacara/jericoacoara-07.jpeg",
+    tag: "VENDA",
+    location: "Jericoacoara, Ceará",
+    title: "Vila Aysú",
+    area: "280 m²",
+    beds: 4,
+    baths: 4,
+    price: "R$ 2.700.000",
+    detailIndex: 0,
+  },
+  {
+    id: "13",
+    image: "/mansoes/20240701_064733.jpg",
+    tag: "VENDA",
+    location: "Praia do Preá, Ceará, Brasil",
+    title: "CASA ALTO PADRÃO NA PRAIA DO PREÁ",
+    area: "450 m²",
+    beds: 4,
+    baths: 5,
+    price: "R$ 4.000.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "10",
     image: "/CasadeAltoPadraonaPraiadaBarrinha/fotosTerraVentos/1.jpg",
     tag: "VENDA",
@@ -120,8 +144,8 @@ const projetos = [
   },
   {
     id: "01",
-    image: "/VillaCondutuPaginaInicial/FINAL 14.png",
-    tag: "TEMPORADA",
+    image: "/terra_ventos_house/compressed/Terra Ventos House - Conduru 3 - Formato Paisagem - Foto Thiago Faquineli -1.webp",
+    tag: "ALUGUEL DE TEMPORADA",
     location: "FRENTE À PRAIA DO PREÁ",
     title: "CASA ALTO PADRÃO 3 SUÍTES",
     area: "153 m²",
@@ -234,6 +258,67 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
           onScroll={checkScroll}
         >
           <div className="pd-slider-track">
+            {/* PRIMEIRA PROPRIEDADE (VILA AYSU) */}
+            {projetos.slice(0, 1).map((projeto) => {
+              const itemFromData = localizedData.find((d) => d.id === projeto.id);
+              if (!itemFromData) return null;
+              return (
+                <a
+                  key={projeto.id}
+                  href={`/propriedade/${itemFromData.slug}`}
+                  className="pd-card"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onSelect(itemFromData as OportunidadeDetalhe);
+                    window.dispatchEvent(new CustomEvent("navigate", { detail: `/propriedade/${itemFromData.slug}` }));
+                    window.scrollTo(0, 0);
+                  }}
+                >
+                  <div className="pd-image-wrapper">
+                    <LazyImage src={projeto.image} alt={itemFromData.propertyTitle || projeto.title} className="pd-image" />
+                    <div className="pd-tag">{itemFromData.badge || projeto.tag}</div>
+                  </div>
+                  <div className="pd-content">
+                    <div className="pd-location">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                      <span>{itemFromData.location || projeto.location}</span>
+                    </div>
+                    <h3 className="pd-card-title">{itemFromData.propertyTitle || projeto.title}</h3>
+                    <div className="pd-amenities">
+                      {projeto.beds && (
+                        <div className="pd-amenity">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z" />
+                            <path d="M3 13h18" />
+                          </svg>
+                          {projeto.beds}
+                        </div>
+                      )}
+                      {projeto.baths && (
+                        <div className="pd-amenity">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-.5C4.683 3 4 3.683 4 4.5V17a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5" />
+                          </svg>
+                          {projeto.baths}
+                        </div>
+                      )}
+                      {projeto.area && (
+                        <div className="pd-amenity">
+                          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M8 3v18M16 3v18M3 8h18M3 16h18" />
+                          </svg>
+                          {projeto.area}
+                        </div>
+                      )}
+                    </div>
+                    <div className="pd-price">{itemFromData.price || projeto.price}</div>
+                  </div>
+                </a>
+              );
+            })}
+
             {/* OPÇÃO DE TAÍBA (CARD FIXO) */}
             <a
               href="/taiba"
@@ -272,11 +357,12 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
               </div>
             </a>
 
-            {projetos.map((projeto) => {
+            {/* RESTANTE DOS PROJETOS */}
+            {projetos.slice(1).map((projeto) => {
               const itemFromData = localizedData.find(
                 (d) => d.id === projeto.id,
               );
-              if (!itemFromData) return null; // Skip if not found in master data
+              if (!itemFromData) return null;
 
               return (
                 <a
