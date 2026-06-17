@@ -13,6 +13,8 @@ const locales = {
     homeTitle: 'Terra Ventos | Imóveis de Luxo e Investimentos no Ceará',
     homeDesc: 'Curadoria exclusiva de imóveis de alto padrão e oportunidades de investimento no litoral cearense (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida em 5 lotes de 540m². Quadra da praia, próximo ao Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
+      { slug: 'terreno-serrote-jericoacoara', title: 'Terreno Serrote Jericoacoara', description: 'Lote de 200m² com 7 metros de frente pela Rua do Forró, com acesso Serrote.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'Casa de Alto Padrão na Praia da Barrinha | Acaraú - CE', description: 'Encante-se com essa casa incrível a 400 metros da praia da Barrinha. 4 suítes, 5 banheiros, piscina, espaço gourmet e jardim com coqueiros. R$ 6.600.000.', image: '/og-barrinha.jpg' },
       { slug: 'area-exclusiva-tatajuba-guriu-100000m', title: 'Área Exclusiva em Tatajuba/Guriú - 100.000m²', description: 'Oportunidade única de investimento em frente ao mar entre Guriú e Tatajuba. Área de 10 hectares com documentação regularizada.', image: '/GURIU/VS--TATAJUBAfromTerraVentosonVimeo-0%E2%80%9920%E2%80%9D.jpg' },
       { slug: 'terreno-exclusivo-tatajuba-1000m', title: 'Terreno Exclusivo em Tatajuba — 1.000 m²', description: 'Descubra a joia de Tatajuba: Um terreno de 1.000 m² no coração da vila que é o novo desejo do kitesurf mundial.', image: '/TATAJUBA/WhatsApp%20Image%202026-04-23%20at%2018.35.22.jpeg' },
@@ -30,6 +32,8 @@ const locales = {
     homeTitle: 'Terra Ventos | Luxury Real Estate and Investments in Ceará',
     homeDesc: 'Exclusive curation of high-end properties and investment opportunities on the Ceará coast (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'lotes-exclusivos-taiba', title: 'Exclusive Lots Taíba', description: '2,800m² area subdivided into 5 lots of 540m². One block from the beach, near Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
+      { slug: 'terreno-serrote-jericoacoara', title: 'Serrote Land Jericoacoara', description: '200m² lot with 7 meters frontage on Rua do Forró, with Serrote access.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'High-End Beach House — Praia da Barrinha | Acaraú - CE', description: 'Be enchanted by this incredible house 400 meters from Barrinha beach. 4 suites, 5 bathrooms, pool, gourmet space and garden with coconut palms. R$ 6,600,000.', image: '/og-barrinha.jpg' },
       { slug: 'area-exclusiva-tatajuba-guriu-100000m', title: 'Exclusive Beachfront Area — 100,000 sqm', description: 'Monumental 10-hectare area strategically located between Tatajuba and Guriú. Direct beachfront access.', image: '/GURIU/VS--TATAJUBAfromTerraVentosonVimeo-0%E2%80%9920%E2%80%9D.jpg' },
       { slug: 'terreno-exclusivo-tatajuba-1000m', title: 'Exclusive Land in Tatajuba — 1,000 sqm', description: 'Discover the jewel of Tatajuba: A 1,000 sqm lot in the heart of the village, the world\'s newest kitesurf destination.', image: '/TATAJUBA/WhatsApp%20Image%202026-04-23%20at%2018.35.22.jpeg' },
@@ -47,6 +51,8 @@ const locales = {
     homeTitle: 'Terra Ventos | Inmuebles de Lujo e Inversiones en Ceará',
     homeDesc: 'Curaduría exclusiva de propiedades de alto nivel y oportunidades de inversión en la costa de Ceará (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida en 5 lotes de 540m². A una cuadra de la playa, cerca de Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
+      { slug: 'terreno-serrote-jericoacoara', title: 'Terreno Serrote Jericoacoara', description: 'Lote de 200m² con 7 metros de frente por la Rua do Forró, con acceso a Serrote.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'Casa de Alta Gama en Praia da Barrinha | Acaraú - CE', description: 'Quédate maravillado con esta casa increíble a 400 metros de la playa de Barrinha. 4 suites, 5 baños, piscina, espacio gourmet y jardín con palmeras. R$ 6.600.000.', image: '/og-barrinha.jpg' },
       { slug: 'area-exclusiva-tatajuba-guriu-100000m', title: 'Área Exclusiva Frente al Mar — 100.000 m²', description: 'Área monumental de 10 hectáreas ubicada estratégicamente entre Tatajuba y Guriú. Acceso directo a la playa.', image: '/GURIU/VS--TATAJUBAfromTerraVentosonVimeo-0%E2%80%9920%E2%80%9D.jpg' },
       { slug: 'terreno-exclusivo-tatajuba-1000m', title: 'Terreno Exclusivo en Tatajuba — 1.000 m²', description: 'Descubra la joya de Tatajuba: Un terreno de 1.000 m² en el corazón del pueblo, el nuevo deseo del kitesurf mundial.', image: '/TATAJUBA/WhatsApp%20Image%202026-04-23%20at%2018.35.22.jpeg' },

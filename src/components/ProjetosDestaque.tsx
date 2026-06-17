@@ -11,6 +11,30 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "15",
+    image: "/taiba/taiba-lotes-1.jpg",
+    tag: "VENDA",
+    location: "Taíba, Ceará",
+    title: "Lotes Exclusivos Taíba",
+    area: "2.800 m²",
+    beds: null,
+    baths: null,
+    price: "Sob Consulta",
+    detailIndex: 0,
+  },
+  {
+    id: "14",
+    image: "/jericoacara/terreno-serrote.jpeg",
+    tag: "VENDA",
+    location: "Jericoacoara, Ceará",
+    title: "Terreno Serrote Jericoacoara",
+    area: "200 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 1.200.000",
+    detailIndex: 0,
+  },
+  {
     id: "vila-aysu-jericoacoara",
     image: "/jericoacara/jericoacoara-07.jpeg",
     tag: "VENDA",

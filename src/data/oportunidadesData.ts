@@ -37,6 +37,79 @@ export type OportunidadeDetalhe = {
 
 export const oportunidadesData: OportunidadeDetalhe[] = [
   {
+    id: "15",
+    slug: "lotes-exclusivos-taiba",
+    title: "VENDA",
+    searchTitle: "Lotes Exclusivos Taíba",
+    image: "/taiba/taiba-lotes-1.jpg",
+    badge: "Lançamento",
+    propertyTitle: "LOTES EXCLUSIVOS TAÍBA",
+    location: "Taíba, Ceará",
+    rating: 5,
+    exclusiveText: "Área de 2.800m² subdividida em 5 lotes de 540m². Quadra da praia, próximo ao Villa Marola.",
+    summaryDescription: "Oportunidade rara de investimento na Taíba. 5 lotes de 540m² a uma quadra da praia, com luz elétrica instalada.",
+    about: [
+      "Oportunidade rara de investimento na desejada praia da Taíba. Esta área total de 2.800m² é composta por 5 lotes de 540m² cada, localizados a apenas uma quadra da praia.",
+      "Situada perto do renomado Villa Marola, a propriedade já conta com energia elétrica instalada e pronta para o desenvolvimento de projetos de alto padrão, como resorts boutique ou vilas de luxo."
+    ],
+    infra: [
+      "Área Total: 2.800 m²",
+      "Subdivisão: 5 lotes de 540m²",
+      "Infraestrutura: Luz elétrica instalada",
+      "Localização: Quadra da Praia, perto do Villa Marola"
+    ],
+    facilities: ["2.800 m²", "5 Lotes", "Quadra da Praia", "Luz Elétrica"],
+    gallery: {
+        main: '/taiba/taiba-lotes-2.jpg',
+        sideTop: '/taiba/taiba-lotes-1.jpg',
+        sideBottom: '/taiba/taiba-lotes-2.jpg',
+        extra: []
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: '',
+    videoSources: [],
+    priceTag: "Valor",
+    price: "Sob Consulta",
+    installments: "Consulte condições",
+    category: "venda"
+  },
+  {
+    id: "14",
+    slug: "terreno-serrote-jericoacoara",
+    title: "VENDA",
+    searchTitle: "Terreno Serrote Jericoacoara",
+    image: "/jericoacara/terreno-serrote.jpeg",
+    badge: "Lançamento",
+    propertyTitle: "TERRENO SERROTE JERICOACOARA",
+    location: "Jericoacoara, Ceará",
+    rating: 5,
+    exclusiveText: "Lote de 200m² com 7 metros de frente pela Rua do Forró, com acesso Serrote.",
+    summaryDescription: "Oportunidade exclusiva no coração de Jericoacoara. Terreno de 200m² com 7 metros de frente, localizado estrategicamente na Rua do Forró.",
+    about: [
+      "Oportunidade exclusiva no coração de Jericoacoara. Terreno de 200m² com 7 metros de frente, localizado estrategicamente na Rua do Forró e com acesso para o Serrote.",
+      "Ideal para a construção da sua casa dos sonhos ou um empreendimento de alto padrão, em um dos destinos mais desejados do Brasil."
+    ],
+    infra: [
+      "Área Total: 200 m²",
+      "Frente: 7 metros",
+      "Acesso: Rua do Forró e Serrote"
+    ],
+    facilities: ["200 m²", "7m de frente", "Localização Premium"],
+    gallery: {
+        main: '/jericoacara/terreno-serrote.jpeg',
+        sideTop: '/jericoacara/terreno-serrote.jpeg',
+        sideBottom: '/jericoacara/terreno-serrote.jpeg',
+        extra: []
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=-2.7963,-40.5134&hl=pt-BR&z=17&output=embed',
+    videoSources: ["https://player.vimeo.com/video/1202147252"],
+    priceTag: "Valor",
+    price: "R$ 1.200.000,00",
+    installments: "Consulte condições",
+    category: "venda"
+  },
+  {
     id: "vila-aysu-jericoacoara",
     slug: "vila-aysu-jericoacoara",
     title: "VENDA",
