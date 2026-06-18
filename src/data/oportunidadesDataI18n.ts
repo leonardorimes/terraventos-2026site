@@ -32,7 +32,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
           extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: '',
+      mapUrl: 'https://maps.google.com/maps?q=-2.8089825,-40.3543899&hl=pt-BR&z=14&output=embed',
       videoSources: ["https://player.vimeo.com/video/1202481207"],
       priceTag: "Valor",
       price: "Sob Consulta",
@@ -777,7 +777,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
           extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: '',
+      mapUrl: 'https://maps.google.com/maps?q=-2.8089825,-40.3543899&hl=pt-BR&z=14&output=embed',
       videoSources: ["https://player.vimeo.com/video/1202481207"],
       priceTag: "Price",
       price: "Upon Request",
@@ -1503,7 +1503,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
           extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: '',
+      mapUrl: 'https://maps.google.com/maps?q=-2.8089825,-40.3543899&hl=pt-BR&z=14&output=embed',
       videoSources: ["https://player.vimeo.com/video/1202481207"],
       priceTag: "Valor",
       price: "Consultar Precio",
