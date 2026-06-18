@@ -3,6 +3,43 @@ import { oportunidadesData, type OportunidadeDetalhe } from './oportunidadesData
 export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe>[]> = {
   pt: [
     {
+      id: "terreno-barrinha",
+      slug: "terreno-barrinha-1753m",
+      title: "VENDA",
+      searchTitle: "Terreno Barrinha Pé na Areia",
+      image: "/barrinhaNova/barrinha-1.jpeg",
+      badge: "Oportunidade Rara",
+      propertyTitle: "TERRENO BARRINHA PÉ NA AREIA",
+      location: "Sítio Barrinha, Acaraú - CE",
+      rating: 5,
+      exclusiveText: "Área de 1.753 m² (0,1753 ha) de frente para o mar, bem próximo ao Preá.",
+      summaryDescription: "Oportunidade rara de investimento na desejada região da Barrinha, bem próximo ao Preá. Área de 1.753 m² pé na areia com documentação 100% regularizada.",
+      about: [
+        "Oportunidade rara de investimento na desejada região da Barrinha, localizada bem próximo ao Preá. Esta área total de 1.753 m² (0,1753 ha) está posicionada de frente para o mar, oferecendo uma localização altamente estratégica e exclusiva para o desenvolvimento de projetos de alto padrão, como pousadas boutique, vilas de luxo ou residências privativas.",
+        "O imóvel destaca-se pela segurança jurídica, contando com documentação totalmente regularizada, incluindo Título de Domínio definitivo emitido pelo IDACE e matrícula registrada no Cartório de Registro de Imóveis. Toda a delimitação geográfica e a área pé na areia podem ser visualizadas detalhadamente através do memorial descritivo e das perspectivas reais da propriedade."
+      ],
+      infra: [
+        "Área Total: 1.753 m² (0,1753 hectares)",
+        "Perímetro: 167,89 metros",
+        "Situação Jurídica: Imóvel com Título de Domínio IDACE Nº 131884/2022 e Matrícula Nº 5.656 registrada no Cartório do 2º Ofício de Acaraú - CE",
+        "Localização: Sítio Barrinha, Acaraú - CE (região do Preá), com frente direta para a praia"
+      ],
+      facilities: ["1.753 m²", "Pé na areia", "Frente para o mar", "Matrícula Registrada"],
+      gallery: {
+          main: '/barrinhaNova/barrinha-1.jpeg',
+          sideTop: '/barrinhaNova/barrinha-2.jpeg',
+          sideBottom: '/barrinhaNova/barrinha-3.jpeg',
+          extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: '',
+      videoSources: ["https://player.vimeo.com/video/1202481207"],
+      priceTag: "Valor",
+      price: "Sob Consulta",
+      installments: "Consulte condições",
+      category: "venda"
+    },
+    {
       id: "15",
       slug: "lotes-exclusivos-taiba",
       title: "VENDA",
@@ -711,6 +748,43 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     }],
   en: [
     {
+      id: "terreno-barrinha",
+      slug: "terreno-barrinha-1753m",
+      title: "FOR SALE",
+      searchTitle: "Beachfront Barrinha Land",
+      image: "/barrinhaNova/barrinha-1.jpeg",
+      badge: "Rare Opportunity",
+      propertyTitle: "BEACHFRONT BARRINHA LAND",
+      location: "Sítio Barrinha, Acaraú - CE",
+      rating: 5,
+      exclusiveText: "1,753 sqm (0.1753 ha) beachfront area, very close to Preá.",
+      summaryDescription: "Rare investment opportunity in the desired Barrinha region, very close to Preá. 1,753 sqm beachfront area with 100% legalized documentation.",
+      about: [
+        "Rare investment opportunity in the desired Barrinha region, located very close to Preá. This total area of 1,753 sqm (0.1753 ha) is positioned right in front of the sea, offering a highly strategic and exclusive location for the development of high-end projects, such as boutique inns, luxury villas, or private residences.",
+        "The property stands out for its legal security, with fully legalized documentation, including a definitive Title issued by IDACE and registration at the Real Estate Registry Office. All geographical delimitation and the beachfront area can be seen in detail through the descriptive memorial and real perspectives of the property."
+      ],
+      infra: [
+        "Total Area: 1,753 sqm (0.1753 hectares)",
+        "Perimeter: 167.89 meters",
+        "Legal Status: IDACE Title No. 131884/2022 and Registry No. 5,656",
+        "Location: Sítio Barrinha, Acaraú - CE (Preá region), direct beachfront"
+      ],
+      facilities: ["1,753 sqm", "Beachfront", "Sea View", "Registered Title"],
+      gallery: {
+          main: '/barrinhaNova/barrinha-1.jpeg',
+          sideTop: '/barrinhaNova/barrinha-2.jpeg',
+          sideBottom: '/barrinhaNova/barrinha-3.jpeg',
+          extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: '',
+      videoSources: ["https://player.vimeo.com/video/1202481207"],
+      priceTag: "Price",
+      price: "Upon Request",
+      installments: "Consult conditions",
+      category: "venda"
+    },
+    {
       id: "15",
       slug: "lotes-exclusivos-taiba",
       title: "FOR SALE",
@@ -1399,6 +1473,43 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms'
     }],
   es: [
+    {
+      id: "terreno-barrinha",
+      slug: "terreno-barrinha-1753m",
+      title: "VENTA",
+      searchTitle: "Terreno Barrinha Frente al Mar",
+      image: "/barrinhaNova/barrinha-1.jpeg",
+      badge: "Oportunidad Rara",
+      propertyTitle: "TERRENO BARRINHA FRENTE AL MAR",
+      location: "Sítio Barrinha, Acaraú - CE",
+      rating: 5,
+      exclusiveText: "Área de 1.753 m² (0,1753 ha) frente al mar, muy cerca de Preá.",
+      summaryDescription: "Rara oportunidad de inversión en la deseada región de Barrinha, muy cerca de Preá. Área de 1.753 m² frente al mar con documentación 100% legalizada.",
+      about: [
+        "Rara oportunidad de inversión en la deseada región de Barrinha, ubicada muy cerca de Preá. Esta área total de 1.753 m² (0,1753 ha) está posicionada frente al mar, ofreciendo una ubicación altamente estratégica y exclusiva para el desarrollo de proyectos de alto nivel, como posadas boutique, villas de lujo o residencias privadas.",
+        "El inmueble destaca por su seguridad jurídica, contando con documentación totalmente regularizada, incluyendo Título de Dominio definitivo emitido por el IDACE y matrícula registrada en el Registro de Inmuebles. Toda la delimitación geográfica y el área frente al mar pueden ser visualizadas detalladamente a través de la memoria descriptiva y las perspectivas reales de la propiedad."
+      ],
+      infra: [
+        "Área Total: 1.753 m² (0,1753 hectáreas)",
+        "Perímetro: 167,89 metros",
+        "Situación Jurídica: Título de Dominio IDACE Nº 131884/2022 y Matrícula Nº 5.656",
+        "Ubicación: Sítio Barrinha, Acaraú - CE (región de Preá), frente directo al mar"
+      ],
+      facilities: ["1.753 m²", "Frente a la playa", "Vista al Mar", "Matrícula Registrada"],
+      gallery: {
+          main: '/barrinhaNova/barrinha-1.jpeg',
+          sideTop: '/barrinhaNova/barrinha-2.jpeg',
+          sideBottom: '/barrinhaNova/barrinha-3.jpeg',
+          extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: '',
+      videoSources: ["https://player.vimeo.com/video/1202481207"],
+      priceTag: "Valor",
+      price: "Consultar Precio",
+      installments: "Consulte condiciones",
+      category: "venda"
+    },
     {
       id: "15",
       slug: "lotes-exclusivos-taiba",

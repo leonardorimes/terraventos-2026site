@@ -11,6 +11,18 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "terreno-barrinha",
+    image: "/barrinhaNova/barrinha-1.jpeg",
+    tag: "VENDA",
+    location: "Sítio Barrinha, Acaraú - CE",
+    title: "Terreno Barrinha Pé na Areia",
+    area: "1.753 m²",
+    beds: null,
+    baths: null,
+    price: "Sob Consulta",
+    detailIndex: 0,
+  },
+  {
     id: "15",
     image: "/taiba/taiba-lotes-1.jpg",
     tag: "VENDA",

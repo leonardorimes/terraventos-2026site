@@ -37,6 +37,43 @@ export type OportunidadeDetalhe = {
 
 export const oportunidadesData: OportunidadeDetalhe[] = [
   {
+    id: "terreno-barrinha",
+    slug: "terreno-barrinha-1753m",
+    title: "VENDA",
+    searchTitle: "Terreno Barrinha Pé na Areia",
+    image: "/barrinhaNova/barrinha-1.jpeg",
+    badge: "Oportunidade Rara",
+    propertyTitle: "TERRENO BARRINHA PÉ NA AREIA",
+    location: "Sítio Barrinha, Acaraú - CE",
+    rating: 5,
+    exclusiveText: "Área de 1.753 m² (0,1753 ha) de frente para o mar, bem próximo ao Preá.",
+    summaryDescription: "Oportunidade rara de investimento na desejada região da Barrinha, bem próximo ao Preá. Área de 1.753 m² pé na areia com documentação 100% regularizada.",
+    about: [
+      "Oportunidade rara de investimento na desejada região da Barrinha, localizada bem próximo ao Preá. Esta área total de 1.753 m² (0,1753 ha) está posicionada de frente para o mar, oferecendo uma localização altamente estratégica e exclusiva para o desenvolvimento de projetos de alto padrão, como pousadas boutique, vilas de luxo ou residências privativas.",
+      "O imóvel destaca-se pela segurança jurídica, contando com documentação totalmente regularizada, incluindo Título de Domínio definitivo emitido pelo IDACE e matrícula registrada no Cartório de Registro de Imóveis. Toda a delimitação geográfica e a área pé na areia podem ser visualizadas detalhadamente através do memorial descritivo e das perspectivas reais da propriedade."
+    ],
+    infra: [
+      "Área Total: 1.753 m² (0,1753 hectares)",
+      "Perímetro: 167,89 metros",
+      "Situação Jurídica: Imóvel com Título de Domínio IDACE Nº 131884/2022 e Matrícula Nº 5.656 registrada no Cartório do 2º Ofício de Acaraú - CE",
+      "Localização: Sítio Barrinha, Acaraú - CE (região do Preá), com frente direta para a praia"
+    ],
+    facilities: ["1.753 m²", "Pé na areia", "Frente para o mar", "Matrícula Registrada"],
+    gallery: {
+        main: '/barrinhaNova/barrinha-1.jpeg',
+        sideTop: '/barrinhaNova/barrinha-2.jpeg',
+        sideBottom: '/barrinhaNova/barrinha-3.jpeg',
+        extra: []
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: '',
+    videoSources: ["https://player.vimeo.com/video/1202481207"],
+    priceTag: "Valor",
+    price: "Sob Consulta",
+    installments: "Consulte condições",
+    category: "venda"
+  },
+  {
     id: "15",
     slug: "lotes-exclusivos-taiba",
     title: "VENDA",

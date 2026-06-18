@@ -13,6 +13,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Imóveis de Luxo e Investimentos no Ceará',
     homeDesc: 'Curadoria exclusiva de imóveis de alto padrão e oportunidades de investimento no litoral cearense (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-barrinha-1753m', title: 'Terreno Barrinha Pé na Areia', description: 'Oportunidade rara de investimento na desejada região da Barrinha, bem próximo ao Preá. Área de 1.753 m² pé na areia com documentação 100% regularizada.', image: '/barrinhaNova/barrinha-1.jpeg' },
       { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida em 5 lotes de 540m². Quadra da praia, próximo ao Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
       { slug: 'terreno-serrote-jericoacoara', title: 'Terreno Serrote Jericoacoara', description: 'Lote de 200m² com 7 metros de frente pela Rua do Forró, com acesso Serrote.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'Casa de Alto Padrão na Praia da Barrinha | Acaraú - CE', description: 'Encante-se com essa casa incrível a 400 metros da praia da Barrinha. 4 suítes, 5 banheiros, piscina, espaço gourmet e jardim com coqueiros. R$ 6.600.000.', image: '/og-barrinha.jpg' },
@@ -32,6 +33,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Luxury Real Estate and Investments in Ceará',
     homeDesc: 'Exclusive curation of high-end properties and investment opportunities on the Ceará coast (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-barrinha-1753m', title: 'Beachfront Barrinha Land', description: 'Rare investment opportunity in the desired Barrinha region, very close to Preá. 1,753 sqm beachfront area with 100% legalized documentation.', image: '/barrinhaNova/barrinha-1.jpeg' },
       { slug: 'lotes-exclusivos-taiba', title: 'Exclusive Lots Taíba', description: '2,800m² area subdivided into 5 lots of 540m². One block from the beach, near Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
       { slug: 'terreno-serrote-jericoacoara', title: 'Serrote Land Jericoacoara', description: '200m² lot with 7 meters frontage on Rua do Forró, with Serrote access.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'High-End Beach House — Praia da Barrinha | Acaraú - CE', description: 'Be enchanted by this incredible house 400 meters from Barrinha beach. 4 suites, 5 bathrooms, pool, gourmet space and garden with coconut palms. R$ 6,600,000.', image: '/og-barrinha.jpg' },
@@ -51,6 +53,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Inmuebles de Lujo e Inversiones en Ceará',
     homeDesc: 'Curaduría exclusiva de propiedades de alto nivel y oportunidades de inversión en la costa de Ceará (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-barrinha-1753m', title: 'Terreno Barrinha Frente al Mar', description: 'Rara oportunidad de inversión en la deseada región de Barrinha, muy cerca de Preá. Área de 1.753 m² frente al mar con documentación 100% legalizada.', image: '/barrinhaNova/barrinha-1.jpeg' },
       { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida en 5 lotes de 540m². A una cuadra de la playa, cerca de Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
       { slug: 'terreno-serrote-jericoacoara', title: 'Terreno Serrote Jericoacoara', description: 'Lote de 200m² con 7 metros de frente por la Rua do Forró, con acceso a Serrote.', image: '/jericoacara/terreno-serrote.jpeg' },
       { slug: 'casa-alto-padrao-praia-barrinha', title: 'Casa de Alta Gama en Praia da Barrinha | Acaraú - CE', description: 'Quédate maravillado con esta casa increíble a 400 metros de la playa de Barrinha. 4 suites, 5 baños, piscina, espacio gourmet y jardín con palmeras. R$ 6.600.000.', image: '/og-barrinha.jpg' },
