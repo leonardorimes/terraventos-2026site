@@ -73,7 +73,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     installments: "Consulte condições",
     category: "venda"
   },
-  {
+  /* {
     id: "15",
     slug: "lotes-exclusivos-taiba",
     title: "VENDA",
@@ -110,6 +110,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     installments: "Lotes individuais: R$ 250.000,00",
     category: "venda"
   },
+ */
   {
     id: "14",
     slug: "terreno-serrote-jericoacoara",

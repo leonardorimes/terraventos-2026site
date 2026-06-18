@@ -22,7 +22,7 @@ const projetos = [
     price: "R$ 1.800.000,00",
     detailIndex: 0,
   },
-  {
+  /* {
     id: "15",
     image: "/taiba/taiba-lotes-1.jpg",
     tag: "VENDA",
@@ -34,6 +34,7 @@ const projetos = [
     price: "R$ 1.300.000,00",
     detailIndex: 0,
   },
+ */
   {
     id: "14",
     image: "/jericoacara/terreno-serrote.jpeg",
