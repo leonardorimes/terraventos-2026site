@@ -71,9 +71,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       mapImage: '/mapa.avif',
       mapUrl: '',
       videoSources: [],
-      priceTag: "Valor",
-      price: "Sob Consulta",
-      installments: "Consulte condições",
+      priceTag: "A partir de",
+      price: "R$ 250.000,00",
+      installments: "Lotes individuais: R$ 250.000,00",
       category: "venda"
     },
     {
@@ -816,9 +816,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       mapImage: '/mapa.avif',
       mapUrl: '',
       videoSources: [],
-      priceTag: "Price",
-      price: "Upon Request",
-      installments: "Consult conditions",
+      priceTag: "Starting at",
+      price: "R$ 250,000.00",
+      installments: "Individual lots: R$ 250,000.00",
       category: "venda"
     },
     {
@@ -1542,9 +1542,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       mapImage: '/mapa.avif',
       mapUrl: '',
       videoSources: [],
-      priceTag: "Valor",
-      price: "Consultar Precio",
-      installments: "Consulte condiciones",
+      priceTag: "A partir de",
+      price: "R$ 250.000,00",
+      installments: "Lotes individuales: R$ 250.000,00",
       category: "venda"
     },
     {

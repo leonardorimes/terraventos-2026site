@@ -105,9 +105,9 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     mapImage: '/mapa.avif',
     mapUrl: '',
     videoSources: [],
-    priceTag: "Valor",
-    price: "Sob Consulta",
-    installments: "Consulte condições",
+    priceTag: "A partir de",
+    price: "R$ 250.000,00",
+    installments: "Lotes individuais: R$ 250.000,00",
     category: "venda"
   },
   {

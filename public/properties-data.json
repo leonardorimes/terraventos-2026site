@@ -145,9 +145,9 @@
           "Quadra da Praia",
           "Luz Elétrica"
         ],
-        "priceTag": "Valor",
-        "price": "Sob Consulta",
-        "installments": "Consulte condições"
+        "priceTag": "A partir de",
+        "price": "R$ 250.000,00",
+        "installments": "Lotes individuais: R$ 250.000,00"
       },
       "en": {
         "title": "FOR SALE",
@@ -172,9 +172,9 @@
           "Near Beach",
           "Electricity"
         ],
-        "priceTag": "Price",
-        "price": "Upon Request",
-        "installments": "Consult conditions"
+        "priceTag": "Starting at",
+        "price": "R$ 250,000.00",
+        "installments": "Individual lots: R$ 250,000.00"
       },
       "es": {
         "title": "VENTA",
@@ -199,11 +199,12 @@
           "Cerca de Playa",
           "Luz Eléctrica"
         ],
-        "priceTag": "Valor",
-        "price": "Consultar Precio",
-        "installments": "Consulte condiciones"
+        "priceTag": "A partir de",
+        "price": "R$ 250.000,00",
+        "installments": "Lotes individuales: R$ 250.000,00"
       }
-    }
+    },
+    "priceTag": "A partir de"
   },
   {
     "id": "14",

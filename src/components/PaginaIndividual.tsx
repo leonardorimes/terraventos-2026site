@@ -28,6 +28,7 @@ export default function PaginaIndividual({ slug, item: propItem }: PaginaIndivid
   const [lightboxImage, setLightboxImage] = useState<string | null>(null);
   const [lightboxVideo, setLightboxVideo] = useState<string | null>(null);
   const [isAlbumOpen, setIsAlbumOpen] = useState(false);
+  const [isSingleLot, setIsSingleLot] = useState(false);
 
   // Coleta todas as fotos disponíveis para o álbum
   const allPhotos = Array.from(new Set([
@@ -322,8 +323,32 @@ export default function PaginaIndividual({ slug, item: propItem }: PaginaIndivid
 
           <aside className="pi-content-side">
             <div className="pi-card">
-              <span className="pi-card-tag">{item.priceTag}</span>
-              <p className="pi-price">{item.price}</p>
+              <span className="pi-card-tag">
+                {item.id === "15" ? (isSingleLot ? "Por lote (540m²)" : "Total (5 lotes)") : item.priceTag}
+              </span>
+              
+              {item.id === "15" && (
+                <div className="pi-price-selector" style={{display: 'flex', gap: '8px', marginBottom: '16px', marginTop: '12px', background: '#f5f5f5', padding: '4px', borderRadius: '8px'}}>
+                  <button 
+                    onClick={() => setIsSingleLot(false)}
+                    style={{flex: 1, padding: '8px', border: 'none', borderRadius: '6px', background: !isSingleLot ? '#fff' : 'transparent', color: !isSingleLot ? '#000' : '#666', fontWeight: !isSingleLot ? 600 : 400, cursor: 'pointer', boxShadow: !isSingleLot ? '0 2px 4px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s'}}
+                  >
+                    Todos
+                  </button>
+                  <button 
+                    onClick={() => setIsSingleLot(true)}
+                    style={{flex: 1, padding: '8px', border: 'none', borderRadius: '6px', background: isSingleLot ? '#fff' : 'transparent', color: isSingleLot ? '#000' : '#666', fontWeight: isSingleLot ? 600 : 400, cursor: 'pointer', boxShadow: isSingleLot ? '0 2px 4px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s'}}
+                  >
+                    1 Lote
+                  </button>
+                </div>
+              )}
+
+              <p className="pi-price">
+                {item.id === "15" 
+                  ? (isSingleLot ? "R$ 250.000,00" : "R$ 1.300.000,00") 
+                  : item.price}
+              </p>
               
               <div className="pi-card-divider"></div>
 
