@@ -43,7 +43,7 @@
           "Matrícula Registrada"
         ],
         "priceTag": "Valor",
-        "price": "Sob Consulta",
+        "price": "R$ 1.800.000,00",
         "installments": "Consulte condições"
       },
       "en": {
@@ -72,7 +72,7 @@
           "Registered Title"
         ],
         "priceTag": "Price",
-        "price": "Upon Request",
+        "price": "R$ 1.800.000,00",
         "installments": "Consult conditions"
       },
       "es": {
@@ -101,7 +101,7 @@
           "Matrícula Registrada"
         ],
         "priceTag": "Valor",
-        "price": "Consultar Precio",
+        "price": "R$ 1.800.000,00",
         "installments": "Consulte condiciones"
       }
     }
