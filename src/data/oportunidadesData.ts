@@ -103,7 +103,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
         extra: []
     },
     mapImage: '/mapa.avif',
-    mapUrl: '',
+    mapUrl: 'https://maps.google.com/maps?q=-3.5073804,-38.8940624&hl=pt-BR&z=15&output=embed',
     videoSources: [],
     priceTag: "A partir de",
     price: "R$ 250.000,00",

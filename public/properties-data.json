@@ -119,7 +119,7 @@
       "extra": []
     },
     "mapImage": "/mapa.avif",
-    "mapUrl": "",
+    "mapUrl": "https://maps.google.com/maps?q=-3.5073804,-38.8940624&hl=pt-BR&z=15&output=embed",
     "videoSources": [],
     "i18n": {
       "pt": {
