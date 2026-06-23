@@ -11,6 +11,18 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "prado-farol",
+    image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+    tag: "VENDA",
+    location: "Praia do Farol do Trapiá - Camocim, CE",
+    title: "Terreno Praia do Farol",
+    area: "8.600 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 6.450.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "terreno-barrinha",
     image: "/barrinhaNova/barrinha-1.jpeg",
     tag: "VENDA",

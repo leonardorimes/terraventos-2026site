@@ -3,6 +3,54 @@ import { oportunidadesData, type OportunidadeDetalhe } from './oportunidadesData
 export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe>[]> = {
   pt: [
     {
+      id: "prado-farol",
+      slug: "terreno-praia-do-farol",
+      title: "VENDA",
+      searchTitle: "Terreno Praia do Farol",
+      image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+      badge: "Oportunidade Exclusiva",
+      propertyTitle: "TERRENO PRAIA DO FAROL",
+      location: "Praia do Farol do Trapiá - Camocim, CE",
+      rating: 5,
+      exclusiveText: "Área exclusiva à venda. R$ 750,00 o m² | Total: R$ 6.450.000,00",
+      summaryDescription: "Exclusivo terreno na Praia do Farol. Excelente oportunidade de investimento, R$ 750,00 o metro quadrado.",
+      about: [
+        "Excelente oportunidade de investimento na Praia do Farol.",
+        "Garantindo segurança jurídica para seu investimento.",
+        "Valor atrativo de R$ 750,00 por metro quadrado, totalizando um investimento de R$ 6.450.000,00."
+      ],
+      infra: [
+        "Área Total estimada: 8.600 m²",
+        "Situação Jurídica: Matrícula assegurada",
+        "Valor: R$ 750,00 o m²",
+        "Localização Exclusiva"
+      ],
+      facilities: ["8.600 m²", "Oportunidade", "Terreno"],
+      gallery: {
+        main: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg',
+        sideTop: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09.jpeg',
+        sideBottom: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09 (1).jpeg',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=pt-BR&z=14&output=embed',
+      videoSources: [
+        "https://player.vimeo.com/video/1203999302",
+        "https://player.vimeo.com/video/1203999301"
+      ],
+      documents: [
+        {
+          label: 'TÍTULO FAROL',
+          url: '/PradoFarol/TÍTULO FAROL.pdf',
+          legend: 'Documentação do imóvel'
+        }
+      ],
+      priceTag: "Valor",
+      price: "R$ 6.450.000,00",
+      installments: "Consulte condições",
+      category: "venda"
+    },
+    {
       id: "terreno-barrinha",
       slug: "terreno-barrinha-1753m",
       title: "VENDA",
@@ -749,6 +797,54 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     } */],
   en: [
     {
+      id: "prado-farol",
+      slug: "terreno-praia-do-farol",
+      title: "FOR SALE",
+      searchTitle: "Praia do Farol Land",
+      image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+      badge: "Exclusive Opportunity",
+      propertyTitle: "PRAIA DO FAROL LAND",
+      location: "Praia do Farol do Trapiá - Camocim, CE",
+      rating: 5,
+      exclusiveText: "Exclusive area for sale. R$ 750.00 per sqm | Total: R$ 6,450,000.00",
+      summaryDescription: "Exclusive land at Praia do Farol. Excellent investment opportunity, R$ 750.00 per square meter.",
+      about: [
+        "Excellent investment opportunity at Praia do Farol.",
+        "Ensuring legal security for your investment.",
+        "Attractive price of R$ 750.00 per square meter, totaling an investment of R$ 6,450,000.00."
+      ],
+      infra: [
+        "Estimated Total Area: 8,600 sqm",
+        "Legal Status: Guaranteed Registry",
+        "Value: R$ 750.00 per sqm",
+        "Exclusive Location"
+      ],
+      facilities: ["8,600 sqm", "Opportunity", "Land"],
+      gallery: {
+        main: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg',
+        sideTop: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09.jpeg',
+        sideBottom: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09 (1).jpeg',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=en&z=14&output=embed',
+      videoSources: [
+        "https://player.vimeo.com/video/1203999302",
+        "https://player.vimeo.com/video/1203999301"
+      ],
+      documents: [
+        {
+          label: 'FAROL TITLE',
+          url: '/PradoFarol/TÍTULO FAROL.pdf',
+          legend: 'Property documentation'
+        }
+      ],
+      priceTag: "Price",
+      price: "R$ 6,450,000.00",
+      installments: "Consult conditions",
+      category: "venda"
+    },
+    {
       id: "terreno-barrinha",
       slug: "terreno-barrinha-1753m",
       title: "FOR SALE",
@@ -1475,6 +1571,54 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms'
     } */],
   es: [
+    {
+      id: "prado-farol",
+      slug: "terreno-praia-do-farol",
+      title: "VENTA",
+      searchTitle: "Terreno Praia do Farol",
+      image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+      badge: "Oportunidad Exclusiva",
+      propertyTitle: "TERRENO PRAIA DO FAROL",
+      location: "Praia do Farol do Trapiá - Camocim, CE",
+      rating: 5,
+      exclusiveText: "Área exclusiva en venta. R$ 750,00 el m² | Total: R$ 6.450.000,00",
+      summaryDescription: "Terreno exclusivo en Praia do Farol. Excelente oportunidad de inversión, R$ 750,00 el metro cuadrado.",
+      about: [
+        "Excelente oportunidad de inversión en Praia do Farol.",
+        "Garantizando seguridad jurídica para su inversión.",
+        "Valor atractivo de R$ 750,00 por metro cuadrado, totalizando una inversión de R$ 6.450.000,00."
+      ],
+      infra: [
+        "Área Total estimada: 8.600 m²",
+        "Situación Jurídica: Matrícula asegurada",
+        "Valor: R$ 750,00 el m²",
+        "Ubicación Exclusiva"
+      ],
+      facilities: ["8.600 m²", "Oportunidad", "Terreno"],
+      gallery: {
+        main: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg',
+        sideTop: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09.jpeg',
+        sideBottom: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09 (1).jpeg',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=es&z=14&output=embed',
+      videoSources: [
+        "https://player.vimeo.com/video/1203999302",
+        "https://player.vimeo.com/video/1203999301"
+      ],
+      documents: [
+        {
+          label: 'TÍTULO FAROL',
+          url: '/PradoFarol/TÍTULO FAROL.pdf',
+          legend: 'Documentación del inmueble'
+        }
+      ],
+      priceTag: "Valor",
+      price: "R$ 6.450.000,00",
+      installments: "Consulte condiciones",
+      category: "venda"
+    },
     {
       id: "terreno-barrinha",
       slug: "terreno-barrinha-1753m",

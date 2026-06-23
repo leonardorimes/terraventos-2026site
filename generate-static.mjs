@@ -13,6 +13,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Imóveis de Luxo e Investimentos no Ceará',
     homeDesc: 'Curadoria exclusiva de imóveis de alto padrão e oportunidades de investimento no litoral cearense (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-praia-do-farol', title: 'Terreno Praia do Farol', description: 'Exclusivo terreno na Praia do Farol. Excelente oportunidade de investimento, R$ 750,00 o metro quadrado.', image: '/PradoFarol/WhatsApp%20Image%202026-06-23%20at%2007.58.08.jpeg' },
       { slug: 'terreno-barrinha-1753m', title: 'Terreno Barrinha Pé na Areia', description: 'Oportunidade rara de investimento na desejada região da Barrinha, bem próximo ao Preá. Área de 1.753 m² pé na areia com documentação 100% regularizada.', image: '/barrinhaNova/barrinha-1.jpeg' },
       /* { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida em 5 lotes de 540m². Quadra da praia, próximo ao Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
  */
@@ -34,6 +35,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Luxury Real Estate and Investments in Ceará',
     homeDesc: 'Exclusive curation of high-end properties and investment opportunities on the Ceará coast (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-praia-do-farol', title: 'Praia do Farol Land', description: 'Exclusive land at Praia do Farol. Excellent investment opportunity, R$ 750.00 per square meter.', image: '/PradoFarol/WhatsApp%20Image%202026-06-23%20at%2007.58.08.jpeg' },
       { slug: 'terreno-barrinha-1753m', title: 'Beachfront Barrinha Land', description: 'Rare investment opportunity in the desired Barrinha region, very close to Preá. 1,753 sqm beachfront area with 100% legalized documentation.', image: '/barrinhaNova/barrinha-1.jpeg' },
       /* { slug: 'lotes-exclusivos-taiba', title: 'Exclusive Lots Taíba', description: '2,800m² area subdivided into 5 lots of 540m². One block from the beach, near Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
  */
@@ -55,6 +57,7 @@ const locales = {
     homeTitle: 'Terra Ventos | Inmuebles de Lujo e Inversiones en Ceará',
     homeDesc: 'Curaduría exclusiva de propiedades de alto nivel y oportunidades de inversión en la costa de Ceará (Preá, Tatajuba, Bitupitá).',
     properties: [
+      { slug: 'terreno-praia-do-farol', title: 'Terreno Praia do Farol', description: 'Terreno exclusivo en Praia do Farol. Excelente oportunidad de inversión, R$ 750,00 el metro cuadrado.', image: '/PradoFarol/WhatsApp%20Image%202026-06-23%20at%2007.58.08.jpeg' },
       { slug: 'terreno-barrinha-1753m', title: 'Terreno Barrinha Frente al Mar', description: 'Rara oportunidad de inversión en la deseada región de Barrinha, muy cerca de Preá. Área de 1.753 m² frente al mar con documentación 100% legalizada.', image: '/barrinhaNova/barrinha-1.jpeg' },
       /* { slug: 'lotes-exclusivos-taiba', title: 'Lotes Exclusivos Taíba', description: 'Área de 2.800m² subdividida en 5 lotes de 540m². A una cuadra de la playa, cerca de Villa Marola.', image: '/taiba/taiba-lotes-1.jpg' },
  */

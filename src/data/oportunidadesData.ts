@@ -37,6 +37,54 @@ export type OportunidadeDetalhe = {
 
 export const oportunidadesData: OportunidadeDetalhe[] = [
   {
+    id: "prado-farol",
+    slug: "terreno-praia-do-farol",
+    title: "VENDA",
+    searchTitle: "Terreno Praia do Farol",
+    image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+    badge: "Oportunidade Exclusiva",
+    propertyTitle: "TERRENO PRAIA DO FAROL",
+    location: "Praia do Farol do Trapiá - Camocim, CE",
+    rating: 5,
+    exclusiveText: "Área exclusiva à venda. R$ 750,00 o m² | Total: R$ 6.450.000,00",
+    summaryDescription: "Exclusivo terreno na Praia do Farol. Excelente oportunidade de investimento, R$ 750,00 o metro quadrado.",
+    about: [
+      "Excelente oportunidade de investimento na Praia do Farol.",
+      "Garantindo segurança jurídica para seu investimento.",
+      "Valor atrativo de R$ 750,00 por metro quadrado, totalizando um investimento de R$ 6.450.000,00."
+    ],
+    infra: [
+      "Área Total estimada: 8.600 m²",
+      "Situação Jurídica: Matrícula assegurada",
+      "Valor: R$ 750,00 o m²",
+      "Localização Exclusiva"
+    ],
+    facilities: ["8.600 m²", "Oportunidade", "Terreno"],
+    gallery: {
+      main: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg',
+      sideTop: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09.jpeg',
+      sideBottom: '/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.09 (1).jpeg',
+      extra: []
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=pt-BR&z=14&output=embed',
+    videoSources: [
+      "https://player.vimeo.com/video/1203999302",
+      "https://player.vimeo.com/video/1203999301"
+    ],
+    documents: [
+      {
+        label: 'TÍTULO FAROL',
+        url: '/PradoFarol/TÍTULO FAROL.pdf',
+        legend: 'Documentação do imóvel'
+      }
+    ],
+    priceTag: "Valor",
+    price: "R$ 6.450.000,00",
+    installments: "Consulte condições",
+    category: "venda"
+  },
+  {
     id: "terreno-barrinha",
     slug: "terreno-barrinha-1753m",
     title: "VENDA",
