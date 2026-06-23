@@ -411,7 +411,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     installments: 'Consulte condiÃ§Ãµes exclusivas',
     category: 'venda'
   },
-  {
+  /* {
     id: '07',
     slug: 'terreno-exclusivo-prea-200m-mar',
     title: 'VENDA',
@@ -451,7 +451,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     price: 'R$ 400.000,00',
     installments: 'Consulte condiÃ§Ãµes de mercado',
     category: 'venda'
-  },
+  }, */
   {
     id: '06',
     slug: 'prea-house',
@@ -704,7 +704,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     category: 'temporada',
   },
-  {
+  /* {
     id: '02',
     slug: 'terrenos-bitupita',
     title: 'VENDA',
@@ -748,7 +748,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     price: 'R$ 120 MIL',
     installments: 'Consulte disponibilidade',
     category: 'venda'
-  },
+  }, */
   {
     id: '03',
     slug: 'vila-do-ingles',
@@ -882,7 +882,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     category: 'temporada'
   }
 ,
-  {
+  /* {
     id: '11',
     slug: 'lote-109-taiba',
     title: 'VENDA',
@@ -929,8 +929,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     price: 'R$ 115.000,00',
     installments: 'À vista',
     category: 'venda'
-  },
-  {
+  }, */
+  /* {
     id: '12',
     slug: 'lote-barramar-lagoa-taiba',
     title: 'INVESTIMENTO',
@@ -974,5 +974,5 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     price: 'R$ 215.000,00',
     installments: 'Consulte condições',
     category: 'investimento'
-  }
+  } */
 ];

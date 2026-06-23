@@ -301,7 +301,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    {
+    /* {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'VENDA',
@@ -331,7 +331,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'A partir de',
       price: 'R$ 400.000,00',
       installments: 'Consulte condições de mercado',
-    },
+    }, */
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -582,7 +582,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'consultar disponibilidade',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    {
+    /* {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'VENDA',
@@ -624,7 +624,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'A partir de',
       price: 'R$ 120 MIL',
       installments: 'Consulte disponibilidade',
-    },
+    }, */
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -723,7 +723,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consulte pacotes',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    {
+    /* {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'VENDA', badge: 'Oportunidade',
       propertyTitle: 'LOTE 109 — TAIBA',
@@ -734,8 +734,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Área Total: 560 m²','Dimensões: 14 x 40 metros','Escritura Pública','Totalmente Murado','Pronto para Construir (sem aterro)'],
       facilities: ['560 m²','Escritura','Murado','Pronto para Construir','Localização Estratégica'],
       priceTag: '', price: 'R$ 115.000,00', installments: 'À vista'
-    },
-    {
+    }, */
+    /* {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVESTIMENTO', badge: 'Investimento',
       propertyTitle: 'LOTE BARRAMAR LAGOA — TAIBA',
@@ -746,7 +746,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Área Total: 800 m²','Dimensões: 20 x 40 metros','Distância da Lagoa: ~300 metros','Loteamento Barramar'],
       facilities: ['800 m²','Próximo à Lagoa','Kitesurf Paradise','Zona Turística'],
       priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condições'
-    }],
+    } */],
   en: [
     {
       id: "terreno-barrinha",
@@ -1047,7 +1047,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    {
+    /* {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'FOR SALE',
@@ -1077,7 +1077,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Starting at',
       price: 'R$ 400,000.00',
       installments: 'Consult market conditions',
-    },
+    }, */
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -1311,7 +1311,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'check availability',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    {
+    /* {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'FOR SALE',
@@ -1354,7 +1354,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Starting at',
       price: 'R$ 120,000',
       installments: 'Check availability',
-    },
+    }, */
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -1450,7 +1450,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consult packages',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    {
+    /* {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'FOR SALE', badge: 'Opportunity',
       propertyTitle: 'LOT 109 — TAIBA',
@@ -1461,8 +1461,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Total Area: 560 m²','Dimensions: 14 x 40 meters','Public Deed','Fully Walled','Ready to Build (no landfill)'],
       facilities: ['560 m²','Deed','Walled','Ready to Build','Strategic Location'],
       priceTag: '', price: 'R$ 115,000.00', installments: 'Cash'
-    },
-    {
+    }, */
+    /* {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVESTMENT', badge: 'Investment',
       propertyTitle: 'BARRAMAR LAGOON LOT — TAIBA',
@@ -1473,7 +1473,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Total Area: 800 m²','Dimensions: 20 x 40 meters','Distance to Lagoon: ~300 meters','Loteamento Barramar'],
       facilities: ['800 m²','Near Lagoon','Kitesurf Paradise','Tourist Zone'],
       priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms'
-    }],
+    } */],
   es: [
     {
       id: "terreno-barrinha",
@@ -1774,7 +1774,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    {
+    /* {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'VENTA',
@@ -1804,7 +1804,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Desde',
       price: 'R$ 400.000,00',
       installments: 'Consulte condiciones de mercado',
-    },
+    }, */
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -2038,7 +2038,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'consultar disponibilidade',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    {
+    /* {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'VENTA',
@@ -2081,7 +2081,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Desde',
       price: 'R$ 120 MIL',
       installments: 'Consulte disponibilidad',
-    },
+    }, */
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -2177,7 +2177,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consultar paquetes',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    {
+    /* {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'VENTA', badge: 'Oportunidad',
       propertyTitle: 'LOTE 109 — TAIBA',
@@ -2188,8 +2188,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Área Total: 560 m²','Dimensiones: 14 x 40 metros','Escritura Pública','Totalmente Amurallado','Listo para Construir (sin relleno)'],
       facilities: ['560 m²','Escritura','Amurallado','Listo para Construir','Ubicación Estratégica'],
       priceTag: '', price: 'R$ 115.000,00', installments: 'Al contado'
-    },
-    {
+    }, */
+    /* {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVERSIÓN', badge: 'Inversión',
       propertyTitle: 'LOTE BARRAMAR LAGUNA — TAIBA',
@@ -2200,7 +2200,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Área Total: 800 m²','Dimensiones: 20 x 40 metros','Distancia a la Laguna: ~300 metros','Loteamiento Barramar'],
       facilities: ['800 m²','Cerca de Laguna','Kitesurf Paraíso','Zona Turística'],
       priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condiciones'
-    }],
+    } */],
 };
 
 
