@@ -14,7 +14,7 @@ const projetos = [
     id: "prado-farol",
     image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
     tag: "VENDA",
-    location: "Praia do Farol do Trapiá - Camocim, CE",
+    location: "Farol do Itapajé - Itarema, CE",
     title: "Terreno Praia do Farol",
     area: "8.600 m²",
     beds: null,

@@ -44,20 +44,20 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
     badge: "Oportunidade Exclusiva",
     propertyTitle: "TERRENO PRAIA DO FAROL",
-    location: "Praia do Farol do Trapiá - Camocim, CE",
+    location: "Farol do Itapajé - Itarema, CE",
     rating: 5,
     exclusiveText: "Área exclusiva à venda. R$ 750,00 o m² | Total: R$ 6.450.000,00",
-    summaryDescription: "Exclusivo terreno na Praia do Farol. Excelente oportunidade de investimento, R$ 750,00 o metro quadrado.",
+    summaryDescription: "Terreno com frente para lagoa em área de alta valorização do litoral cearense. A apenas 2 minutos da praia, ideal para casas de alto padrão, pousada ou hotel boutique.",
     about: [
-      "Excelente oportunidade de investimento na Praia do Farol.",
-      "Garantindo segurança jurídica para seu investimento.",
-      "Valor atrativo de R$ 750,00 por metro quadrado, totalizando um investimento de R$ 6.450.000,00."
+      "Terreno com frente para lagoa, localizado em uma das áreas de maior valorização do litoral cearense.",
+      "A apenas 2 minutos de carro da praia, com acesso direto para pedestres, oferece excelente potencial para casas de alto padrão, pousada, hotel boutique ou vila residencial.",
+      "Uma oportunidade única em uma região impulsionada pelo turismo, esportes de vento e novos empreendimentos de alto padrão."
     ],
     infra: [
-      "Área Total estimada: 8.600 m²",
-      "Situação Jurídica: Matrícula assegurada",
-      "Valor: R$ 750,00 o m²",
-      "Localização Exclusiva"
+      "Localização estratégica frente para lagoa.",
+      "2 minutos da praia e 5 minutos da Ilha do Guajirú.",
+      "Próximo aos empreendimentos Hura Beach, Kalit e Pura Vida.",
+      "Aprox. 45 minutos do Aeroporto Regional de Jericoacoara."
     ],
     facilities: ["8.600 m²", "Oportunidade", "Terreno"],
     gallery: {
@@ -67,17 +67,10 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
       extra: []
     },
     mapImage: '/mapa.avif',
-    mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=pt-BR&z=14&output=embed',
+    mapUrl: 'https://maps.google.com/maps?q=Farol+do+Itapajé,+Itarema,+CE&hl=pt-BR&z=14&output=embed',
     videoSources: [
       "https://player.vimeo.com/video/1203999302",
       "https://player.vimeo.com/video/1203999301"
-    ],
-    documents: [
-      {
-        label: 'TÍTULO FAROL',
-        url: '/PradoFarol/TÍTULO FAROL.pdf',
-        legend: 'Documentação do imóvel'
-      }
     ],
     priceTag: "Valor",
     price: "R$ 6.450.000,00",

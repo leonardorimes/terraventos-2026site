@@ -10,20 +10,20 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
       badge: "Oportunidade Exclusiva",
       propertyTitle: "TERRENO PRAIA DO FAROL",
-      location: "Praia do Farol do Trapiá - Camocim, CE",
+      location: "Farol do Itapajé - Itarema, CE",
       rating: 5,
       exclusiveText: "Área exclusiva à venda. R$ 750,00 o m² | Total: R$ 6.450.000,00",
-      summaryDescription: "Exclusivo terreno na Praia do Farol. Excelente oportunidade de investimento, R$ 750,00 o metro quadrado.",
+      summaryDescription: "Terreno com frente para lagoa em área de alta valorização do litoral cearense. A apenas 2 minutos da praia, ideal para casas de alto padrão, pousada ou hotel boutique.",
       about: [
-        "Excelente oportunidade de investimento na Praia do Farol.",
-        "Garantindo segurança jurídica para seu investimento.",
-        "Valor atrativo de R$ 750,00 por metro quadrado, totalizando um investimento de R$ 6.450.000,00."
+        "Terreno com frente para lagoa, localizado em uma das áreas de maior valorização do litoral cearense.",
+        "A apenas 2 minutos de carro da praia, com acesso direto para pedestres, oferece excelente potencial para casas de alto padrão, pousada, hotel boutique ou vila residencial.",
+        "Uma oportunidade única em uma região impulsionada pelo turismo, esportes de vento e novos empreendimentos de alto padrão."
       ],
       infra: [
-        "Área Total estimada: 8.600 m²",
-        "Situação Jurídica: Matrícula assegurada",
-        "Valor: R$ 750,00 o m²",
-        "Localização Exclusiva"
+        "Localização estratégica frente para lagoa.",
+        "2 minutos da praia e 5 minutos da Ilha do Guajirú.",
+        "Próximo aos empreendimentos Hura Beach, Kalit e Pura Vida.",
+        "Aprox. 45 minutos do Aeroporto Regional de Jericoacoara."
       ],
       facilities: ["8.600 m²", "Oportunidade", "Terreno"],
       gallery: {
@@ -33,17 +33,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=pt-BR&z=14&output=embed',
+      mapUrl: 'https://maps.google.com/maps?q=Farol+do+Itapajé,+Itarema,+CE&hl=pt-BR&z=14&output=embed',
       videoSources: [
         "https://player.vimeo.com/video/1203999302",
         "https://player.vimeo.com/video/1203999301"
-      ],
-      documents: [
-        {
-          label: 'TÍTULO FAROL',
-          url: '/PradoFarol/TÍTULO FAROL.pdf',
-          legend: 'Documentação do imóvel'
-        }
       ],
       priceTag: "Valor",
       price: "R$ 6.450.000,00",
@@ -804,20 +797,21 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
       badge: "Exclusive Opportunity",
       propertyTitle: "PRAIA DO FAROL LAND",
-      location: "Praia do Farol do Trapiá - Camocim, CE",
+      location: "Farol do Itapajé - Itarema, CE",
       rating: 5,
       exclusiveText: "Exclusive area for sale. R$ 750.00 per sqm | Total: R$ 6,450,000.00",
-      summaryDescription: "Exclusive land at Praia do Farol. Excellent investment opportunity, R$ 750.00 per square meter.",
+      summaryDescription: "Land facing the lagoon, located in one of the highest appreciation areas on the Ceará coast. Just 2 minutes from the beach, offering excellent potential.",
       about: [
-        "Excellent investment opportunity at Praia do Farol.",
-        "Ensuring legal security for your investment.",
-        "Attractive price of R$ 750.00 per square meter, totaling an investment of R$ 6,450,000.00."
+        "Land facing the lagoon, located in one of the highest appreciation areas on the Ceará coast.",
+        "Just 2 minutes drive from the beach, with direct pedestrian access, it offers excellent potential for high-end homes, a guesthouse, a boutique hotel, or a residential village.",
+        "A unique opportunity in a region driven by tourism, wind sports, and new high-end developments."
       ],
       infra: [
-        "Estimated Total Area: 8,600 sqm",
-        "Legal Status: Guaranteed Registry",
-        "Value: R$ 750.00 per sqm",
-        "Exclusive Location"
+        "Strategic Location: Facing the lagoon.",
+        "2 minutes from the beach.",
+        "5 minutes from Ilha do Guajirú.",
+        "Close to Hura Beach, Kalit, and Pura Vida developments.",
+        "Approximately 45 minutes from Jericoacoara Regional Airport."
       ],
       facilities: ["8,600 sqm", "Opportunity", "Land"],
       gallery: {
@@ -827,17 +821,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=en&z=14&output=embed',
+      mapUrl: 'https://maps.google.com/maps?q=Farol+do+Itapajé,+Itarema,+CE&hl=en&z=14&output=embed',
       videoSources: [
         "https://player.vimeo.com/video/1203999302",
         "https://player.vimeo.com/video/1203999301"
-      ],
-      documents: [
-        {
-          label: 'FAROL TITLE',
-          url: '/PradoFarol/TÍTULO FAROL.pdf',
-          legend: 'Property documentation'
-        }
       ],
       priceTag: "Price",
       price: "R$ 6,450,000.00",
@@ -1579,20 +1566,20 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
       badge: "Oportunidad Exclusiva",
       propertyTitle: "TERRENO PRAIA DO FAROL",
-      location: "Praia do Farol do Trapiá - Camocim, CE",
+      location: "Farol do Itapajé - Itarema, CE",
       rating: 5,
       exclusiveText: "Área exclusiva en venta. R$ 750,00 el m² | Total: R$ 6.450.000,00",
-      summaryDescription: "Terreno exclusivo en Praia do Farol. Excelente oportunidad de inversión, R$ 750,00 el metro cuadrado.",
+      summaryDescription: "Terreno frente a la laguna, ubicado en una de las áreas de mayor valorización de la costa de Ceará. A solo 2 minutos de la playa.",
       about: [
-        "Excelente oportunidad de inversión en Praia do Farol.",
-        "Garantizando seguridad jurídica para su inversión.",
-        "Valor atractivo de R$ 750,00 por metro cuadrado, totalizando una inversión de R$ 6.450.000,00."
+        "Terreno frente a la laguna, ubicado en una de las áreas de mayor valorización de la costa de Ceará.",
+        "A solo 2 minutos en coche de la playa, con acceso directo para peatones, ofrece un excelente potencial para casas de alto nivel, una posada, un hotel boutique o una villa residencial.",
+        "Una oportunidad única en una región impulsada por el turismo, los deportes de viento y nuevos emprendimientos de alto nivel."
       ],
       infra: [
-        "Área Total estimada: 8.600 m²",
-        "Situación Jurídica: Matrícula asegurada",
-        "Valor: R$ 750,00 el m²",
-        "Ubicación Exclusiva"
+        "Ubicación Estratégica: Frente a la laguna.",
+        "A 2 minutos de la playa y 5 minutos de Ilha do Guajirú.",
+        "Cerca de los emprendimientos Hura Beach, Kalit y Pura Vida.",
+        "Aproximadamente a 45 minutos del Aeropuerto Regional de Jericoacoara."
       ],
       facilities: ["8.600 m²", "Oportunidad", "Terreno"],
       gallery: {
@@ -1602,17 +1589,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         extra: []
       },
       mapImage: '/mapa.avif',
-      mapUrl: 'https://maps.google.com/maps?q=Praia+do+Farol+do+Trapiá,+Camocim,+CE&hl=es&z=14&output=embed',
+      mapUrl: 'https://maps.google.com/maps?q=Farol+do+Itapajé,+Itarema,+CE&hl=es&z=14&output=embed',
       videoSources: [
         "https://player.vimeo.com/video/1203999302",
         "https://player.vimeo.com/video/1203999301"
-      ],
-      documents: [
-        {
-          label: 'TÍTULO FAROL',
-          url: '/PradoFarol/TÍTULO FAROL.pdf',
-          legend: 'Documentación del inmueble'
-        }
       ],
       priceTag: "Valor",
       price: "R$ 6.450.000,00",
