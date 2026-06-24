@@ -438,6 +438,8 @@ button.header-back-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 0.92rem;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition:
     transform 0.25s ease,
     background-color 0.25s ease,
