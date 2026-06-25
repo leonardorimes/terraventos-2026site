@@ -8,19 +8,69 @@ interface ListagemPropriedadesProps {
   onSelect: (item: OportunidadeDetalhe) => void;
 }
 
+const parsePrice = (priceStr: string | undefined): number | null => {
+  if (!priceStr) return null;
+  const str = priceStr.toLowerCase().replace('r$', '').trim();
+  if (str.includes('mil')) {
+    const num = parseFloat(str.replace(/[^\d.,]/g, '').replace(/\./g, '').replace(',', '.'));
+    if (!isNaN(num)) return num * 1000;
+  }
+  const cleanStr = str.replace(/[^\d,]/g, '');
+  if (cleanStr) {
+     const num = parseFloat(cleanStr.replace(',', '.'));
+     if (!isNaN(num) && num > 0) return num;
+  }
+  return null;
+};
+
 const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSelect }) => {
   const { t } = useTranslation();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
+  const [userMaxPrice, setUserMaxPrice] = useState<number | null>(null);
+
+  const priceRangeData = useMemo(() => {
+    const prices = items.map(i => parsePrice(i.price)).filter(p => p !== null) as number[];
+    return { 
+      min: prices.length ? Math.min(...prices) : 0, 
+      max: prices.length ? Math.max(...prices) : 20000000 
+    };
+  }, [items]);
+
+  const currentMaxPrice = userMaxPrice !== null ? userMaxPrice : priceRangeData.max;
+
+  const normalizeString = (str: string) => {
+    return str ? str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase() : '';
+  };
 
   const filteredItems = useMemo(() => {
+    const searchNormalized = normalizeString(searchTerm);
+
     return items.filter((item) => {
-      const matchesSearch = item.propertyTitle.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                           item.location.toLowerCase().includes(searchTerm.toLowerCase());
+      const searchableText = [
+        item.propertyTitle,
+        item.location,
+        item.price,
+        item.searchTitle,
+        item.category,
+        item.summaryDescription,
+        item.exclusiveText,
+        item.badge
+      ].filter(Boolean).map(s => normalizeString(s!)).join(' ');
+
+      const matchesSearch = searchableText.includes(searchNormalized);
       const matchesFilter = selectedFilter === 'all' || item.category === selectedFilter;
-      return matchesSearch && matchesFilter;
+      
+      let itemPrice = priceRangeData.max;
+      const parsed = parsePrice(item.price);
+      if (parsed !== null) itemPrice = parsed;
+      const matchesPrice = itemPrice <= currentMaxPrice;
+
+      return matchesSearch && matchesFilter && matchesPrice;
     });
-  }, [items, searchTerm, selectedFilter]);
+  }, [items, searchTerm, selectedFilter, currentMaxPrice, priceRangeData]);
+
+  const showTaiba = false; /* Terreno de Taíba (< 750k) comentado a pedido do usuário */
 
   const filterOptions = ['all', 'venda', 'lancamento', 'temporada', 'investimento'];
 
@@ -66,11 +116,29 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
             </button>
           ))}
         </div>
+
+        <div className="price-slider-container">
+          <div className="price-slider-header">
+            <span>Preço Máximo:</span>
+            <span className="price-slider-value">
+              {currentMaxPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+            </span>
+          </div>
+          <input 
+            type="range" 
+            className="price-slider"
+            min={priceRangeData.min} 
+            max={priceRangeData.max} 
+            step="10000"
+            value={currentMaxPrice} 
+            onChange={(e) => setUserMaxPrice(Number(e.target.value))} 
+          />
+        </div>
       </div>
 
       <div className="listing-grid">
         {/* OPÇÃO DE TAÍBA FIXA NO TOPO */}
-        {(selectedFilter === 'all' || selectedFilter === 'investimento' || selectedFilter === 'venda') && (
+        {showTaiba && (
           <a 
             href="/taiba"
             className="property-card"
@@ -108,7 +176,7 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
           </a>
         )}
 
-        {filteredItems.length > 0 ? (
+        {filteredItems.length > 0 || showTaiba ? (
           filteredItems.map((item) => (
             <a 
               key={item.id} 

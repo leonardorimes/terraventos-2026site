@@ -23,8 +23,6 @@ import ListagemPropriedades from "./components/ListagemPropriedades";
 import BlogSection from "./components/BlogSection";
 import LazyImage from "./components/LazyImage";
 import PaginaTaiba from "./components/PaginaTaiba";
-import PropriedadesV2 from "./components/PropriedadesV2";
-import PaginaIndividualV2 from "./components/PaginaIndividualV2";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -51,7 +49,7 @@ function App() {
       return oportunidadesData[0];
     });
   const cleanPath = currentPath.replace(/^\/(en|es)/, "").replace(/\/$/, "") || "/";
-  const isPaginaIndividual = cleanPath.startsWith("/propriedade/") || cleanPath.startsWith("/propriedade-v2/");
+  const isPaginaIndividual = cleanPath.startsWith("/propriedade/");
   const isVentoAfavor = cleanPath === "/ventoafavor";
   const [transitionClass, setTransitionClass] = useState<
     "page-enter" | "page-exit"
@@ -566,9 +564,7 @@ function App() {
           <h1 className="sr-only">
             Terra Ventos | Imóveis de Luxo e Investimentos no Ceará
           </h1>
-          {cleanPath.startsWith("/propriedade-v2/") ? (
-            <PaginaIndividualV2 slug={cleanPath.replace("/propriedade-v2/", "").split("?")[0].split("#")[0].replace(/\/$/, "")} />
-          ) : isPaginaIndividual ? (
+          {isPaginaIndividual ? (
             <PaginaIndividual item={selectedOpportunity} />
           ) : cleanPath === "/propriedades" ? (
             <div id="propriedades">
@@ -576,9 +572,6 @@ function App() {
                 items={getOportunidadesData(i18n.language)}
                 onSelect={handleSelectOpportunity}
               />
-            </div>) : cleanPath === "/propriedades-v2" ? (
-            <div id="propriedades-v2">
-              <PropriedadesV2 />
             </div>
           ) : cleanPath === "/taiba" ? (
             <div id="taiba">
