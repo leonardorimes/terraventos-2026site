@@ -569,7 +569,7 @@ function App() {
           ) : cleanPath === "/propriedades" ? (
             <div id="propriedades">
               <ListagemPropriedades
-                items={getOportunidadesData(i18n.language)}
+                items={getOportunidadesData(i18n.language).filter(item => !item.unlisted)}
                 onSelect={handleSelectOpportunity}
               />
             </div>

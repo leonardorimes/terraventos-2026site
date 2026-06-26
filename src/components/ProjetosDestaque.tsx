@@ -207,7 +207,7 @@ const projetos = [
 
 export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
   const { t, i18n } = useTranslation();
-  const localizedData = getOportunidadesData(i18n.language);
+  const localizedData = getOportunidadesData(i18n.language).filter(item => !item.unlisted);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);

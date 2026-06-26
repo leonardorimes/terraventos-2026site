@@ -80,7 +80,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: "Consulte condições",
       category: "venda"
     },
-    /* {
+    {
       id: "15",
       slug: "lotes-exclusivos-taiba",
       title: "VENDA",
@@ -115,9 +115,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: "A partir de",
       price: "R$ 250.000,00",
       installments: "Lotes individuais: R$ 250.000,00",
-      category: "venda"
-    },
- */
+      category: "venda",
+    unlisted: true
+  },
     {
       id: "14",
       slug: "terreno-serrote-jericoacoara",
@@ -342,7 +342,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    /* {
+    {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'VENDA',
@@ -372,7 +372,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'A partir de',
       price: 'R$ 400.000,00',
       installments: 'Consulte condições de mercado',
-    }, */
+      unlisted: true
+    },
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -623,7 +624,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'consultar disponibilidade',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    /* {
+    {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'VENDA',
@@ -665,7 +666,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'A partir de',
       price: 'R$ 120 MIL',
       installments: 'Consulte disponibilidade',
-    }, */
+      unlisted: true
+    },
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -764,7 +766,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consulte pacotes',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    /* {
+    {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'VENDA', badge: 'Oportunidade',
       propertyTitle: 'LOTE 109 — TAIBA',
@@ -774,9 +776,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Oportunidade única em Taiba: Lote de 560 m² (14 x 40 m) em localização privilegiada, situado estrategicamente entre duas casas já construídas.','Segurança Jurídica: Imóvel com Escritura, garantindo transação sólida e proteção patrimonial integral.','Totalmente murado e sem necessidade de aterro — um grande diferencial na região. Terreno 100% pronto para construir.','Taiba é um dos destinos mais valorizados do litoral cearense, com ventos constantes ideais para kitesurf e alta valorização imobiliária.','Valor muito abaixo do mercado — oportunidade imperdível.'],
       infra: ['Área Total: 560 m²','Dimensões: 14 x 40 metros','Escritura Pública','Totalmente Murado','Pronto para Construir (sem aterro)'],
       facilities: ['560 m²','Escritura','Murado','Pronto para Construir','Localização Estratégica'],
-      priceTag: '', price: 'R$ 115.000,00', installments: 'À vista'
-    }, */
-    /* {
+      priceTag: '', price: 'R$ 115.000,00', installments: 'À vista',
+      unlisted: true
+    },
+    {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVESTIMENTO', badge: 'Investimento',
       propertyTitle: 'LOTE BARRAMAR LAGOA — TAIBA',
@@ -786,8 +789,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Oportunidade de investimento no Loteamento Barramar, em Taiba, Ceará: terreno de 800 m² (20 x 40 m) em zona turística de alta valorização.','Localização Privilegiada: A apenas ~300 metros da famosa Lagoa do Kitesurf de Taiba.','Taiba é reconhecida internacionalmente como um dos melhores destinos de kitesurf do mundo.','O Loteamento Barramar oferece terrenos amplos em uma região que combina tranquilidade, natureza e serviços.','Ideal para construir casa de veraneio, pousada ou investir com alto potencial de valorização.'],
       infra: ['Área Total: 800 m²','Dimensões: 20 x 40 metros','Distância da Lagoa: ~300 metros','Loteamento Barramar'],
       facilities: ['800 m²','Próximo à Lagoa','Kitesurf Paradise','Zona Turística'],
-      priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condições'
-    } */],
+      priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condições',
+      unlisted: true
+    }],
   en: [
     {
       id: "prado-farol",
@@ -868,7 +872,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: "Consult conditions",
       category: "venda"
     },
-    /* {
+    {
       id: "15",
       slug: "lotes-exclusivos-taiba",
       title: "FOR SALE",
@@ -903,9 +907,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: "Starting at",
       price: "R$ 250,000.00",
       installments: "Individual lots: R$ 250,000.00",
-      category: "venda"
-    },
- */
+      category: "venda",
+    unlisted: true
+  },
     {
       id: "14",
       slug: "terreno-serrote-jericoacoara",
@@ -1130,7 +1134,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    /* {
+    {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'FOR SALE',
@@ -1160,7 +1164,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Starting at',
       price: 'R$ 400,000.00',
       installments: 'Consult market conditions',
-    }, */
+    unlisted: true
+  },
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -1394,7 +1399,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'check availability',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    /* {
+    {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'FOR SALE',
@@ -1437,7 +1442,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Starting at',
       price: 'R$ 120,000',
       installments: 'Check availability',
-    }, */
+    unlisted: true
+  },
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -1533,7 +1539,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consult packages',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    /* {
+    {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'FOR SALE', badge: 'Opportunity',
       propertyTitle: 'LOT 109 — TAIBA',
@@ -1543,9 +1549,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Unique opportunity in Taiba: 560 m² lot (14 x 40 m) in a privileged location, strategically situated between two already-built houses.','Legal Security: Property with Public Deed, ensuring a solid transaction and full asset protection.','Fully walled with no need for landfill — a major differentiator in the region. 100% ready to build.','Taiba is one of the most valued destinations on the Ceará coast, known for its lagoons, constant winds ideal for kitesurfing, and expanding tourism infrastructure.','Priced well below market value — an unmissable opportunity.'],
       infra: ['Total Area: 560 m²','Dimensions: 14 x 40 meters','Public Deed','Fully Walled','Ready to Build (no landfill)'],
       facilities: ['560 m²','Deed','Walled','Ready to Build','Strategic Location'],
-      priceTag: '', price: 'R$ 115,000.00', installments: 'Cash'
-    }, */
-    /* {
+      priceTag: '', price: 'R$ 115,000.00', installments: 'Cash',
+    unlisted: true
+  },
+    {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVESTMENT', badge: 'Investment',
       propertyTitle: 'BARRAMAR LAGOON LOT — TAIBA',
@@ -1555,8 +1562,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Investment opportunity at Loteamento Barramar in Taiba, Ceará: 800 m² lot (20 x 40 m) in a high-appreciation tourist zone.','Privileged Location: Just ~300 meters from the famous Taiba Kitesurf Lagoon.','Taiba is internationally recognized as one of the best kitesurfing destinations in the world.','Loteamento Barramar offers spacious lots in a region that combines tranquility, nature, and essential services.','Ideal for building a vacation home, guesthouse, or investing with high appreciation potential.'],
       infra: ['Total Area: 800 m²','Dimensions: 20 x 40 meters','Distance to Lagoon: ~300 meters','Loteamento Barramar'],
       facilities: ['800 m²','Near Lagoon','Kitesurf Paradise','Tourist Zone'],
-      priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms'
-    } */],
+      priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms',
+    unlisted: true
+  },],
   es: [
     {
       id: "prado-farol",
@@ -1636,7 +1644,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: "Consulte condiciones",
       category: "venda"
     },
-    /* {
+    {
       id: "15",
       slug: "lotes-exclusivos-taiba",
       title: "VENTA",
@@ -1671,9 +1679,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: "A partir de",
       price: "R$ 250.000,00",
       installments: "Lotes individuales: R$ 250.000,00",
-      category: "venda"
-    },
- */
+      category: "venda",
+    unlisted: true
+  },
     {
       id: "14",
       slug: "terreno-serrote-jericoacoara",
@@ -1898,7 +1906,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
         }
       ],
     },
-    /* {
+    {
       id: '07',
       slug: 'terreno-exclusivo-prea-200m-mar', category: 'venda',
       title: 'VENTA',
@@ -1928,7 +1936,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Desde',
       price: 'R$ 400.000,00',
       installments: 'Consulte condiciones de mercado',
-    }, */
+    unlisted: true
+  },
     {
       id: '06',
       slug: 'prea-house', category: 'venda',
@@ -2162,7 +2171,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'consultar disponibilidade',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1613864657831968386?guests=1&adults=1&s=67&unique_share_id=17ad520f-3f88-4bca-a33f-731c6d077710',
     },
-    /* {
+    {
       id: '02',
       slug: 'terrenos-bitupita', category: 'venda',
       title: 'VENTA',
@@ -2205,7 +2214,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       priceTag: 'Desde',
       price: 'R$ 120 MIL',
       installments: 'Consulte disponibilidad',
-    }, */
+    unlisted: true
+  },
     {
       id: '03',
       slug: 'vila-do-ingles', category: 'investimento',
@@ -2301,7 +2311,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       installments: 'Consultar paquetes',
       reservationUrl: 'https://www.airbnb.com.br/rooms/1495622230762379698?unique_share_id=e222b343-72c6-400c-bec4-afd4286d8719&viralityEntryPoint=1&s=76&source_impression_id=p3_1775581234_P3rzyIdyGvGibmTw'
     },
-    /* {
+    {
       id: '11', slug: 'lote-109-taiba', category: 'venda',
       title: 'VENTA', badge: 'Oportunidad',
       propertyTitle: 'LOTE 109 — TAIBA',
@@ -2311,9 +2321,10 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Oportunidad única en Taiba: Lote de 560 m² (14 x 40 m) en ubicación privilegiada, estratégicamente situado entre dos casas ya construidas.','Seguridad Jurídica: Inmueble con Escritura, garantizando una transacción sólida y protección patrimonial integral.','Totalmente amurallado y sin necesidad de relleno — un gran diferencial en la región. Terreno 100% listo para construir.','Taiba es uno de los destinos más valorizados del litoral cearense, con vientos constantes ideales para kitesurf y alta valorización inmobiliaria.','Precio muy por debajo del mercado — oportunidad imperdible.'],
       infra: ['Área Total: 560 m²','Dimensiones: 14 x 40 metros','Escritura Pública','Totalmente Amurallado','Listo para Construir (sin relleno)'],
       facilities: ['560 m²','Escritura','Amurallado','Listo para Construir','Ubicación Estratégica'],
-      priceTag: '', price: 'R$ 115.000,00', installments: 'Al contado'
-    }, */
-    /* {
+      priceTag: '', price: 'R$ 115.000,00', installments: 'Al contado',
+    unlisted: true
+  },
+    {
       id: '12', slug: 'lote-barramar-lagoa-taiba', category: 'investimento',
       title: 'INVERSIÓN', badge: 'Inversión',
       propertyTitle: 'LOTE BARRAMAR LAGUNA — TAIBA',
@@ -2323,8 +2334,9 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       about: ['Oportunidad de inversión en el Loteamiento Barramar, en Taiba, Ceará: terreno de 800 m² (20 x 40 m) en zona turística de alta valorización.','Ubicación Privilegiada: A solo ~300 metros de la famosa Laguna del Kitesurf de Taiba.','Taiba es reconocida internacionalmente como uno de los mejores destinos de kitesurf del mundo.','El Loteamiento Barramar ofrece terrenos amplios en una región que combina tranquilidad, naturaleza y servicios esenciales.','Ideal para construir casa vacacional, posada o invertir con alto potencial de valorización.'],
       infra: ['Área Total: 800 m²','Dimensiones: 20 x 40 metros','Distancia a la Laguna: ~300 metros','Loteamiento Barramar'],
       facilities: ['800 m²','Cerca de Laguna','Kitesurf Paraíso','Zona Turística'],
-      priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condiciones'
-    } */],
+      priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condiciones',
+    unlisted: true
+  },],
 };
 
 
