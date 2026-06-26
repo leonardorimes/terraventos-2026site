@@ -29,7 +29,16 @@ const locales = {
       { slug: 'vila-do-ingles', title: 'Vila do Inglês | Luxo Sustentável no Preá', description: 'Residência moderna de 200 m² alimentada por energia solar em localização premium.', image: '/viladoinglesPaginaInicial/Final%2004%20(1).png' },
       { slug: 'casa-matanzas', title: 'Casa Matanzas | Vista Mar e Bosque (Chile)', description: 'Descubra Matanzas Paradise: Casa moderna com vistas panorâmicas espetaculares e tinaja privada.', image: '/Matanzas/3b77d98c-5cd0-4f51-816a-6e42748720d2.avif' },
       { slug: 'lote-109-taiba', title: 'LOTE 109 — TAIBA', description: 'Terreno de 560 m² em localização estratégica, totalmente murado e pronto para construir.', image: '/og-propriedades.png' },
-      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' }
+      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' },
+      { slug: 'terreno-acarau-castelhano-simi', title: 'TERRENO ACARAÚ — CASTELHANO', description: 'Terreno de 1.680 m² limpo, pé no chão e pronto para construir.', image: '/Terreno para Venda, Acaraú _ CE/202605191306364488.jpeg' },
+      { slug: 'terreno-vila-prea-215m-simi', title: 'TERRENO VILA PREÁ — 215,80 m²', description: 'Terreno de 215,80 m² localizado na Vila Preá com dimensões perfeitas para construção.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m/202606261217521256.jpeg' },
+      { slug: 'terreno-barrinha-2760m-simi', title: 'TERRENO BARRINHA — 2.760,00 m²', description: 'Terreno Exclusivo de 2.760,00 m² à venda na Praia da Barrinha, região de alta valorização.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m²/1.jpg' },
+      { slug: 'terreno-praia-do-prea-1273m-simi', title: 'TERRENO PRAIA DO PREÁ — 1.273,00 m²', description: 'Terreno de 1.273,00 m² na Praia do Preá com 12,35 metros de frente.', image: '/Terreno para Venda, bairro Praia Do Preá/202606051159349483.jpg' },
+      { slug: 'terreno-praia-do-prea-523m-simi', title: 'TERRENO PRAIA DO PREÁ — 523,00 m²', description: 'Terreno com 523,00 m² de área total, localizado na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 523,00 m²/1.jpeg' },
+      { slug: 'terreno-praia-do-prea-600m-simi', title: 'TERRENO PRAIA DO PREÁ — 600,00 m²', description: 'Oportunidade de terreno de 600,00 m² na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 600,00 m²/202606241105101964.jpeg' },
+      { slug: 'terreno-cruz-cavalo-bravo-simi', title: 'TERRENO CRUZ — CAVALO BRAVO PREÁ', description: 'Terreno de 231,00 m² (11x21m) no bairro Cavalo Bravo em Cruz.', image: '/Terreno para Venda, Cruz _ CE, bairro Cavalo Bravo Preá/1.jpeg' },
+      { slug: 'terreno-prea-esquina-praca-nova-simi', title: 'TERRENO DE ESQUINA PRAIA DO PREÁ', description: 'Terreno de esquina com 1.350 m² (27x50m), a apenas 350m da praia e próximo à Praça Nova no Preá.', image: '/terreno-prea-esquina/1.png' },
+
 
     ]
   },
@@ -54,7 +63,16 @@ const locales = {
       { slug: 'vila-do-ingles', title: 'Vila do Inglês | Sustainable Luxury in Preá', description: 'Modern 200 sqm residence powered by solar energy in a premium location.', image: '/viladoinglesPaginaInicial/Final%2004%20(1).png' },
       { slug: 'casa-matanzas', title: 'Casa Matanzas | Sea and Forest View (Chile)', description: 'Discover Matanzas Paradise: Modern house with spectacular panoramic views and private hot tub.', image: '/Matanzas/3b77d98c-5cd0-4f51-816a-6e42748720d2.avif' },
       { slug: 'lote-109-taiba', title: 'LOTE 109 — TAIBA', description: 'Terreno de 560 m² em localização estratégica, totalmente murado e pronto para construir.', image: '/og-propriedades.png' },
-      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' }
+      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' },
+      { slug: 'terreno-acarau-castelhano-simi', title: 'TERRENO ACARAÚ — CASTELHANO', description: 'Terreno de 1.680 m² limpo, pé no chão e pronto para construir.', image: '/Terreno para Venda, Acaraú _ CE/202605191306364488.jpeg' },
+      { slug: 'terreno-vila-prea-215m-simi', title: 'TERRENO VILA PREÁ — 215,80 m²', description: 'Terreno de 215,80 m² localizado na Vila Preá com dimensões perfeitas para construção.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m/202606261217521256.jpeg' },
+      { slug: 'terreno-barrinha-2760m-simi', title: 'TERRENO BARRINHA — 2.760,00 m²', description: 'Terreno Exclusivo de 2.760,00 m² à venda na Praia da Barrinha, região de alta valorização.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m²/1.jpg' },
+      { slug: 'terreno-praia-do-prea-1273m-simi', title: 'TERRENO PRAIA DO PREÁ — 1.273,00 m²', description: 'Terreno de 1.273,00 m² na Praia do Preá com 12,35 metros de frente.', image: '/Terreno para Venda, bairro Praia Do Preá/202606051159349483.jpg' },
+      { slug: 'terreno-praia-do-prea-523m-simi', title: 'TERRENO PRAIA DO PREÁ — 523,00 m²', description: 'Terreno com 523,00 m² de área total, localizado na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 523,00 m²/1.jpeg' },
+      { slug: 'terreno-praia-do-prea-600m-simi', title: 'TERRENO PRAIA DO PREÁ — 600,00 m²', description: 'Oportunidade de terreno de 600,00 m² na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 600,00 m²/202606241105101964.jpeg' },
+      { slug: 'terreno-cruz-cavalo-bravo-simi', title: 'TERRENO CRUZ — CAVALO BRAVO PREÁ', description: 'Terreno de 231,00 m² (11x21m) no bairro Cavalo Bravo em Cruz.', image: '/Terreno para Venda, Cruz _ CE, bairro Cavalo Bravo Preá/1.jpeg' },
+      { slug: 'terreno-prea-esquina-praca-nova-simi', title: 'TERRENO DE ESQUINA PRAIA DO PREÁ', description: 'Terreno de esquina com 1.350 m² (27x50m), a apenas 350m da praia e próximo à Praça Nova no Preá.', image: '/terreno-prea-esquina/1.png' },
+
 
     ]
   },
@@ -79,7 +97,16 @@ const locales = {
       { slug: 'vila-do-ingles', title: 'Vila do Inglês | Lujo Sostenible en Preá', description: 'Residencia moderna de 200 m² alimentada por energía solar en ubicación premium.', image: '/viladoinglesPaginaInicial/Final%2004%20(1).png' },
       { slug: 'casa-matanzas', title: 'Casa Matanzas | Vista Mar y Bosque (Chile)', description: 'Descubra Matanzas Paradise: Casa moderna con espectaculares vistas panorámicas y tinaja privada.', image: '/Matanzas/3b77d98c-5cd0-4f51-816a-6e42748720d2.avif' },
       { slug: 'lote-109-taiba', title: 'LOTE 109 — TAIBA', description: 'Terreno de 560 m² em localização estratégica, totalmente murado e pronto para construir.', image: '/og-propriedades.png' },
-      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' }
+      { slug: 'lote-barramar-lagoa-taiba', title: 'LOTE BARRAMAR LAGOA — TAIBA', description: 'Terreno de 800 m² no Loteamento Barramar em Taiba, a apenas 300 metros da Lagoa.', image: '/og-propriedades.png' },
+      { slug: 'terreno-acarau-castelhano-simi', title: 'TERRENO ACARAÚ — CASTELHANO', description: 'Terreno de 1.680 m² limpo, pé no chão e pronto para construir.', image: '/Terreno para Venda, Acaraú _ CE/202605191306364488.jpeg' },
+      { slug: 'terreno-vila-prea-215m-simi', title: 'TERRENO VILA PREÁ — 215,80 m²', description: 'Terreno de 215,80 m² localizado na Vila Preá com dimensões perfeitas para construção.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m/202606261217521256.jpeg' },
+      { slug: 'terreno-barrinha-2760m-simi', title: 'TERRENO BARRINHA — 2.760,00 m²', description: 'Terreno Exclusivo de 2.760,00 m² à venda na Praia da Barrinha, região de alta valorização.', image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m²/1.jpg' },
+      { slug: 'terreno-praia-do-prea-1273m-simi', title: 'TERRENO PRAIA DO PREÁ — 1.273,00 m²', description: 'Terreno de 1.273,00 m² na Praia do Preá com 12,35 metros de frente.', image: '/Terreno para Venda, bairro Praia Do Preá/202606051159349483.jpg' },
+      { slug: 'terreno-praia-do-prea-523m-simi', title: 'TERRENO PRAIA DO PREÁ — 523,00 m²', description: 'Terreno com 523,00 m² de área total, localizado na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 523,00 m²/1.jpeg' },
+      { slug: 'terreno-praia-do-prea-600m-simi', title: 'TERRENO PRAIA DO PREÁ — 600,00 m²', description: 'Oportunidade de terreno de 600,00 m² na Praia do Preá.', image: '/Terreno para Venda, bairro Praia Do Preá, área total 600,00 m²/202606241105101964.jpeg' },
+      { slug: 'terreno-cruz-cavalo-bravo-simi', title: 'TERRENO CRUZ — CAVALO BRAVO PREÁ', description: 'Terreno de 231,00 m² (11x21m) no bairro Cavalo Bravo em Cruz.', image: '/Terreno para Venda, Cruz _ CE, bairro Cavalo Bravo Preá/1.jpeg' },
+      { slug: 'terreno-prea-esquina-praca-nova-simi', title: 'TERRENO DE ESQUINA PRAIA DO PREÁ', description: 'Terreno de esquina com 1.350 m² (27x50m), a apenas 350m da praia e próximo à Praça Nova no Preá.', image: '/terreno-prea-esquina/1.png' },
+
 
     ]
   }

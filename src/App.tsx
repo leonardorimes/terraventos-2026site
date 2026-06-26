@@ -568,13 +568,17 @@ function App() {
           {(() => {
             const validStaticPaths = ["/", "/propriedades", "/taiba", "/quem-somos", "/termos-e-condicoes", "/politica-de-privacidade", "/contato", "/ventoafavor"];
             let is404 = false;
+            let currentItem = selectedOpportunity;
+            
             if (!validStaticPaths.includes(cleanPath) && !isPaginaIndividual) {
               is404 = true;
             } else if (isPaginaIndividual) {
               let slug = cleanPath.replace("/propriedade/", "").split("?")[0].split("#")[0];
               if (slug.endsWith("/")) slug = slug.slice(0, -1);
-              const found = oportunidadesData.find((o) => o.slug === slug);
+              const allItems = getOportunidadesData(i18n.language);
+              const found = allItems.find((o) => o.slug === slug);
               if (!found) is404 = true;
+              else currentItem = found;
             }
 
             if (is404) {
@@ -582,7 +586,7 @@ function App() {
             }
 
             return isPaginaIndividual ? (
-              <PaginaIndividual item={selectedOpportunity} />
+              <PaginaIndividual item={currentItem} />
             ) : cleanPath === "/propriedades" ? (
             <div id="propriedades">
               <ListagemPropriedades
