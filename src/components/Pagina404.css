@@ -1,0 +1,85 @@
+.pagina-404 {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  font-family: 'Avenir', 'Manrope', sans-serif;
+  text-align: center;
+}
+
+.pagina-404-content {
+  max-width: 640px;
+  padding: 72px 48px;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  background: #ffffff;
+  box-shadow: 
+    0 10px 40px -10px rgba(0, 0, 0, 0.05),
+    0 4px 12px -5px rgba(0, 0, 0, 0.03);
+}
+
+.pagina-404-title {
+  font-family: 'Diodrum', sans-serif;
+  font-size: 140px;
+  font-weight: 300;
+  color: #C4B096;
+  margin: 0 0 16px;
+  line-height: 0.9;
+}
+
+.pagina-404-subtitle {
+  font-size: 26px;
+  font-weight: 500;
+  color: #111827;
+  margin: 0 0 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pagina-404-text {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin: 0 0 40px;
+}
+
+.pagina-404-back-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  background: #111827;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Diodrum', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagina-404-back-button:hover {
+  background: #C4B096;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(196, 176, 150, 0.25);
+}
+
+@media (max-width: 768px) {
+  .pagina-404-content {
+    padding: 48px 24px;
+  }
+  .pagina-404-title {
+    font-size: 96px;
+  }
+  .pagina-404-subtitle {
+    font-size: 20px;
+  }
+  .pagina-404-text {
+    font-size: 1rem;
+    margin: 0 0 32px;
+  }
+}

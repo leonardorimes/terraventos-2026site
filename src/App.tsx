@@ -23,6 +23,7 @@ import ListagemPropriedades from "./components/ListagemPropriedades";
 import BlogSection from "./components/BlogSection";
 import LazyImage from "./components/LazyImage";
 import PaginaTaiba from "./components/PaginaTaiba";
+import Pagina404 from "./components/Pagina404";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -564,9 +565,25 @@ function App() {
           <h1 className="sr-only">
             Terra Ventos | Imóveis de Luxo e Investimentos no Ceará
           </h1>
-          {isPaginaIndividual ? (
-            <PaginaIndividual item={selectedOpportunity} />
-          ) : cleanPath === "/propriedades" ? (
+          {(() => {
+            const validStaticPaths = ["/", "/propriedades", "/taiba", "/quem-somos", "/termos-e-condicoes", "/politica-de-privacidade", "/contato", "/ventoafavor"];
+            let is404 = false;
+            if (!validStaticPaths.includes(cleanPath) && !isPaginaIndividual) {
+              is404 = true;
+            } else if (isPaginaIndividual) {
+              let slug = cleanPath.replace("/propriedade/", "").split("?")[0].split("#")[0];
+              if (slug.endsWith("/")) slug = slug.slice(0, -1);
+              const found = oportunidadesData.find((o) => o.slug === slug);
+              if (!found) is404 = true;
+            }
+
+            if (is404) {
+              return <Pagina404 onBack={() => runTransitionTo("/")} />;
+            }
+
+            return isPaginaIndividual ? (
+              <PaginaIndividual item={selectedOpportunity} />
+            ) : cleanPath === "/propriedades" ? (
             <div id="propriedades">
               <ListagemPropriedades
                 items={getOportunidadesData(i18n.language).filter(item => !item.unlisted)}
@@ -791,8 +808,8 @@ function App() {
               <section className="beach-banner beach-banner--dji"></section>
               <Depoimentos />
               <FormularioLuxo />
-            </>
-          )}
+            </>;
+          })()}
           <Footer />
         </div>
       </main>
