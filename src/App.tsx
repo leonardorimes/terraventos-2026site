@@ -808,8 +808,9 @@ function App() {
               <section className="beach-banner beach-banner--dji"></section>
               <Depoimentos />
               <FormularioLuxo />
-            </>;
-          })()}
+            </>
+          );
+        })()}
           <Footer />
         </div>
       </main>

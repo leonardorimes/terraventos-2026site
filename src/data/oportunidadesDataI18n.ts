@@ -794,7 +794,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     },
     {
     id: 'new-1',
-    slug: 'terreno-acarau-castelhano',
+    slug: 'terreno-acarau-castelhano-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, Acaraú _ CE/202605191306364488.jpeg',
     badge: 'Oportunidade',
@@ -802,15 +802,31 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Acaraú - CE, Bairro Castelhano',
     rating: 5,
     exclusiveText: 'Terreno à Venda em Acaraú | Bairro Castelhano',
-    summaryDescription: 'Terreno localizado em Acaraú, bairro Castelhano, pronto para venda.',
+    summaryDescription: 'Terreno de 1.680 m² limpo, pé no chão e pronto para construir.',
     about: [
-      'Terreno localizado em Acaraú, bairro Castelhano, com fácil acesso e excelente localização.'
+      'Os 24 metros de frente abrem um horizonte de possibilidades em uma região que já não aceita amadores.',
+      'Pisar nesse chão perto da Vila Carnaúba é entender, na prática, por que o Baixo Acaraú entrou no radar de quem realmente entende de patrimônio.',
+      'São 1.680 m² de terreno limpo, pé no chão e pronto para construir, com a conveniência de já ter dois banheiros estruturados. Você sente a brisa que vem do Preá enquanto visualiza a planta de um condomínio ou de uma casa de veraneio que aproveite os 70 metros de profundidade.',
+      'O ritmo aqui é outro. Tudo o que facilita o dia a dia e a logística de uma obra está ao redor: do supermercado à farmácia, passando pela estrutura de saúde e a proximidade estratégica com o aeroporto.',
+      'Não se trata apenas de metros quadrados, mas de posicionamento geográfico em um eixo de valorização real. É terra firme para quem busca segurança e quer ver o investimento ganhar corpo com a vizinhança de alto padrão que se consolida a cada dia.',
+      'Se você busca o equilíbrio entre o sossego da Praia do Preá e a praticidade urbana de Acaraú, as dimensões deste lote entregam exatamente esse encaixe. Vale a visita para medir o potencial com os próprios olhos.'
     ],
     infra: [
-      'Localização: Bairro Castelhano, Acaraú - CE'
+      'Bairro: CASTELHANO',
+      'Área Total: 1.680,00 m²',
+      'Frente: 24,00 Metros',
+      'Fundo: 70,00 Metros',
+      'Valor por m²: R$ 369,04'
     ],
     facilities: [
-      'Terreno'
+      'Aeroporto',
+      'Creche',
+      'Escola',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, Acaraú _ CE/202605191306364488.jpeg',
@@ -825,15 +841,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=-2.8262348,-40.3646828&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 620.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-2',
-    slug: 'terreno-vila-prea-215m',
+    slug: 'terreno-vila-prea-215m-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m/202606261217521256.jpeg',
     badge: 'Oportunidade',
@@ -841,15 +858,39 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Vila Preá, Cruz - CE',
     rating: 5,
     exclusiveText: '215,80 m² | Vila Preá',
-    summaryDescription: 'Terreno de 215,80 m² localizado na Vila Preá.',
+    summaryDescription: 'Terreno de 215,80 m² localizado na Vila Preá com dimensões perfeitas para construção.',
     about: [
-      'Excelente terreno de 215,80 m² localizado na Vila Preá, ideal para investimento ou construção.'
+      'Terreno para Venda no bairro Vila Preá, região PREÁ.',
+      '04 Lotes disponíveis, cada um com Área Total de 215,80 m².',
+      'Frente do terreno com 8,30 Metros, Fundos do terreno com 8,30 Metros.',
+      'Lateral esquerda do terreno com 26,00 Metros, Lateral direita do terreno com 26,00 Metros.'
     ],
     infra: [
-      'Área Total: 215,80 m²'
+      'Bairro: Vila Preá',
+      'Área Total: 215,80 m²',
+      'Frente: 8,30 Metros',
+      'Fundo: 8,30 Metros',
+      'Esquerda: 26,00 Metros',
+      'Direita: 26,00 Metros'
     ],
     facilities: [
-      '215,80 m²'
+      'Academia',
+      'Lago natural',
+      'Pedra Furada',
+      'Praia de Jericoacoara',
+      'Lagun Beach',
+      'Lagoa Azul',
+      'Lagoa do Paraíso',
+      'Parque Nacional',
+      'Buraco Azul',
+      'Aeroporto',
+      'Creche',
+      'Escola',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m/202606261217521256.jpeg',
@@ -862,15 +903,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=-2.8144661,-40.4039212&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 360.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-3',
-    slug: 'terreno-barrinha-2760m',
+    slug: 'terreno-barrinha-2760m-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m²/1.jpg',
     badge: 'Oportunidade',
@@ -878,15 +920,39 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Barrinha, Acaraú - CE',
     rating: 5,
     exclusiveText: '2.760,00 m² | Terreno em Barrinha',
-    summaryDescription: 'Amplo terreno de 2.760,00 m² localizado no bairro Barrinha.',
+    summaryDescription: 'Terreno Exclusivo de 2.760,00 m² à venda na Praia da Barrinha, região de alta valorização.',
     about: [
-      'Excelente oportunidade de investimento: amplo terreno de 2.760,00 m² localizado na valorizada região da Barrinha.'
+      'Terreno Exclusivo à Venda na Praia da Barrinha!',
+      'Uma excelente oportunidade para quem busca investir em uma das regiões mais valorizadas do litoral cearense.',
+      'Localizado na Praia da Barrinha, com fácil acesso às famosas praias do Preá e Jericoacoara, este terreno reúne localização privilegiada, amplo espaço e grande potencial de valorização.',
+      'Destaques do imóvel:',
+      '✔ Região turística em constante crescimento',
+      '✔ Próximo às praias do Preá e Jericoacoara',
+      '✔ Excelente para empreendimentos turísticos, pousadas ou residências de alto padrão',
+      '✔ Fácil acesso e localização estratégica',
+      '✔ Alto potencial de valorização e retorno sobre o investimento.',
+      'Invista em uma área privilegiada, cercada pelas belezas naturais que tornam essa região uma das mais desejadas do Brasil. Seu próximo grande investimento está aqui.'
     ],
     infra: [
-      'Área Total: 2.760,00 m²'
+      'Bairro: Barrinha',
+      'Área Total: 2.760,00 m²',
+      'Valor por m²: R$ 516,00'
     ],
     facilities: [
-      '2.760,00 m²'
+      'Dunas e Lagoas',
+      "Beira d'água",
+      'Lagun Beach',
+      'Lagoa do Paraíso',
+      'Parque Nacional',
+      'Buraco Azul',
+      'Aeroporto',
+      'Creche',
+      'Lagoa Azul',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, bairro Barrinha, área total 2.760,00 m²/1.jpg',
@@ -902,15 +968,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=-22.9354322,-42.4904624&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 1.426.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-4',
-    slug: 'terreno-praia-do-prea-1273m',
+    slug: 'terreno-praia-do-prea-1273m-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, bairro Praia Do Preá/202606051159349483.jpg',
     badge: 'Oportunidade',
@@ -918,15 +985,29 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Praia do Preá, Cruz - CE',
     rating: 5,
     exclusiveText: '1.273,00 m² | Praia do Preá',
-    summaryDescription: 'Terreno de 1.273,00 m² na Praia do Preá.',
+    summaryDescription: 'Terreno de 1.273,00 m² na Praia do Preá com 12,35 metros de frente.',
     about: [
-      'Terreno com 1.273,00 m² localizado na famosa Praia do Preá.'
+      'Terreno para Venda no bairro Praia Do Preá/CE.',
+      'Área Total de 1.273,00 m².',
+      'Frente do terreno com 12,35 Metros, Fundos do terreno com 24,00 Metros.'
     ],
     infra: [
-      'Área Total: 1.273,00 m²'
+      'Bairro: Praia Do Preá',
+      'Área Total: 1.273,00 m²',
+      'Frente: 12,35 Metros',
+      'Fundo: 24,00 Metros',
+      'Valor por m²: R$ 589,00'
     ],
     facilities: [
-      '1.273,00 m²'
+      'Aeroporto',
+      'Creche',
+      'Escola',
+      'Lagoa Azul',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, bairro Praia Do Preá/202606051159349483.jpg',
@@ -938,15 +1019,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=praia+do+pre%C3%A1&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 750.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-5',
-    slug: 'terreno-praia-do-prea-523m',
+    slug: 'terreno-praia-do-prea-523m-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, bairro Praia Do Preá, área total 523,00 m²/1.jpeg',
     badge: 'Oportunidade',
@@ -954,15 +1036,27 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Praia do Preá, Cruz - CE',
     rating: 5,
     exclusiveText: '523,00 m² | Praia do Preá',
-    summaryDescription: 'Terreno de 523,00 m² na Praia do Preá.',
+    summaryDescription: 'Terreno com 523,00 m² de área total, localizado na Praia do Preá.',
     about: [
-      'Terreno com 523,00 m² localizado na famosa Praia do Preá.'
+      'Terreno para Venda no bairro Praia Do Preá/CE.',
+      'Área Total de 523,00 m².',
+      'Uma excelente oportunidade de investimento ou moradia, cercada de comodidades.'
     ],
     infra: [
-      'Área Total: 523,00 m²'
+      'Bairro: Praia Do Preá',
+      'Área Total: 523,00 m²',
+      'Valor por m²: R$ 699,00'
     ],
     facilities: [
-      '523,00 m²'
+      'Aeroporto',
+      'Creche',
+      'Escola',
+      'Lagoa Azul',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, bairro Praia Do Preá, área total 523,00 m²/1.jpeg',
@@ -971,15 +1065,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       extra: []
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=praia+do+pre%C3%A1&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 366.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-6',
-    slug: 'terreno-praia-do-prea-600m',
+    slug: 'terreno-praia-do-prea-600m-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, bairro Praia Do Preá, área total 600,00 m²/202606241105101964.jpeg',
     badge: 'Oportunidade',
@@ -987,15 +1082,39 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Praia do Preá, Cruz - CE',
     rating: 5,
     exclusiveText: '600,00 m² | Praia do Preá',
-    summaryDescription: 'Terreno de 600,00 m² na Praia do Preá.',
+    summaryDescription: 'Oportunidade de terreno de 600,00 m² na Praia do Preá.',
     about: [
-      'Terreno com 600,00 m² localizado na famosa Praia do Preá.'
+      'OPORTUNIDADE IMPERDÍVEL NA PRAIA DO PREÁ!',
+      'Excelente terreno à venda na Praia do Preá, com 20x30 metros (total de 600m²), em localização estratégica ao lado do restaurante Tempero da Chica.',
+      'Ideal para investimento, construção de pousada, casa de veraneio ou empreendimento comercial, em uma região que cresce cada vez mais e atrai turistas do mundo inteiro.',
+      'Localizado próximo a destinos paradisíacos como Jericoacoara e Barrinha.',
+      'Uma excelente oportunidade para investir em uma das regiões mais valorizadas do litoral cearense!'
     ],
     infra: [
-      'Área Total: 600,00 m²'
+      'Bairro: Praia Do Preá',
+      'Ponto de Referência: Tempero da Chica',
+      'Área Total: 600,00 m²',
+      'Frente: 20,00 Metros',
+      'Fundo: 30,00 Metros',
+      'Valor por m²: R$ 583,00'
     ],
     facilities: [
-      '600,00 m²'
+      'Dunas e Lagoas',
+      'Pedra Furada',
+      'Praia de Jericoacoara',
+      "Beira d'água",
+      'Lagun Beach',
+      'Lagoa do Paraíso',
+      'Parque Nacional',
+      'Buraco Azul',
+      'Aeroporto',
+      'Creche',
+      'Lagoa Azul',
+      'Posto de saúde',
+      'Praia do Preá',
+      'Bares e Restaurantes',
+      'Farmácia',
+      'Supermercado'
     ],
     gallery: {
       main: '/Terreno para Venda, bairro Praia Do Preá, área total 600,00 m²/202606241105101964.jpeg',
@@ -1006,15 +1125,16 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=praia+do+pre%C3%A1&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 350.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
   },
     {
     id: 'new-7',
-    slug: 'terreno-cruz-cavalo-bravo',
+    slug: 'terreno-cruz-cavalo-bravo-simi',
     title: 'VENDA',
     image: '/Terreno para Venda, Cruz _ CE, bairro Cavalo Bravo Preá/1.jpeg',
     badge: 'Oportunidade',
@@ -1022,15 +1142,26 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     location: 'Cruz - CE, Bairro Cavalo Bravo Preá',
     rating: 5,
     exclusiveText: 'Terreno no bairro Cavalo Bravo Preá',
-    summaryDescription: 'Terreno localizado no bairro Cavalo Bravo Preá em Cruz - CE.',
+    summaryDescription: 'Terreno de 231,00 m² (11x21m) no bairro Cavalo Bravo em Cruz.',
     about: [
-      'Terreno localizado em Cavalo Bravo, município de Cruz - CE.'
+      'OPORTUNIDADE IMPERDÍVEL NA PRAIA DO PREÁ!',
+      'Está procurando um excelente investimento ou o lugar ideal para construir seu imóvel na praia? Temos a opção perfeita para você!',
+      'Terreno na Praia do Preá com Medidas: 11m x 21m.',
+      'Uma oportunidade única em uma das regiões que mais crescem no litoral cearense, próxima às belezas naturais, turismo em expansão e com grande potencial de valorização.',
+      '✔ Ideal para morar',
+      '✔ Perfeito para investir',
+      '✔ Excelente localização'
     ],
     infra: [
-      'Localização: Cavalo Bravo Preá, Cruz - CE'
+      'Localização: Praia do Preá / Cavalo Bravo',
+      'Dimensões: 11m x 21m',
+      'Área Total: 231,00 m²'
     ],
     facilities: [
-      'Terreno'
+      'Excelente Localização',
+      'Turismo em Expansão',
+      'Próximo à Praia',
+      'Belezas Naturais'
     ],
     gallery: {
       main: '/Terreno para Venda, Cruz _ CE, bairro Cavalo Bravo Preá/1.jpeg',
@@ -1048,13 +1179,58 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       ]
     },
     mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Pousada+Cavalo+Bravo,+Cruz+-+CE&hl=pt-BR&z=15&output=embed',
     priceTag: '',
-    price: 'Consulte',
+    price: 'R$ 210.000,00',
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
-  }
-  ],
+  },
+  {
+    id: 'new-8',
+    slug: 'terreno-prea-esquina-praca-nova-simi',
+    title: 'VENDA',
+    searchTitle: 'Terreno de Esquina - Praia do Preá',
+    image: '/terreno-prea-esquina/1.png',
+    badge: 'Oportunidade',
+    propertyTitle: 'TERRENO DE ESQUINA PRAIA DO PREÁ',
+    location: 'Praia do Preá, Cruz - CE (Praça Nova)',
+    rating: 5,
+    exclusiveText: 'Terreno de Esquina à Venda na Praia do Preá',
+    summaryDescription: 'Terreno de esquina com 1.350 m² (27x50m), a apenas 350m da praia e próximo à Praça Nova no Preá.',
+    about: [
+      'Terreno de esquina exclusivo à venda na Praia do Preá!',
+      'Com uma área total de 1.350 m² (27x50m), este terreno oferece uma localização estratégica e muito privilegiada.',
+      'Situado próximo à Praça Nova e a apenas 350 metros da praia, é o local perfeito para construir uma pousada, empreendimento comercial ou uma casa de alto padrão.',
+      'Uma oportunidade rara de investimento no coração de um dos litorais mais procurados e valorizados do mundo.'
+    ],
+    infra: [
+      'Bairro: Praia do Preá',
+      'Ponto de Referência: Próximo à Praça Nova e a 350m da praia',
+      'Área Total: 1.350,00 m²',
+      'Dimensões: 27,00m x 50,00m'
+    ],
+    facilities: [
+      'A 350m da Praia',
+      'Terreno de Esquina',
+      'Próximo à Praça Nova',
+      'Excelente Localização',
+      'Alto Potencial Comercial',
+      'Turismo em Expansão'
+    ],
+    gallery: {
+      main: '/terreno-prea-esquina/1.png',
+      sideTop: '/terreno-prea-esquina/1.png',
+      sideBottom: '/terreno-prea-esquina/1.png'
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Pra%C3%A7a+Nova,+Praia+do+Pre%C3%A1,+Cruz+-+CE&hl=pt-BR&z=16&output=embed',
+    priceTag: 'Valor total',
+    price: 'R$ 1.600.000,00',
+    installments: 'Consulte condições',
+    category: 'venda',
+    unlisted: true
+  },],
   en: [
     {
       id: "prado-farol",
@@ -1826,6 +2002,51 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       infra: ['Total Area: 800 m²','Dimensions: 20 x 40 meters','Distance to Lagoon: ~300 meters','Loteamento Barramar'],
       facilities: ['800 m²','Near Lagoon','Kitesurf Paradise','Tourist Zone'],
       priceTag: '', price: 'R$ 215,000.00', installments: 'Contact for terms',
+    unlisted: true
+  },
+  {
+    id: 'new-8',
+    slug: 'terreno-prea-esquina-praca-nova-simi',
+    title: 'VENDA',
+    searchTitle: 'Terreno de Esquina - Praia do Preá',
+    image: '/terreno-prea-esquina/1.png',
+    badge: 'Oportunidade',
+    propertyTitle: 'TERRENO DE ESQUINA PRAIA DO PREÁ',
+    location: 'Praia do Preá, Cruz - CE (Praça Nova)',
+    rating: 5,
+    exclusiveText: 'Terreno de Esquina à Venda na Praia do Preá',
+    summaryDescription: 'Terreno de esquina com 1.350 m² (27x50m), a apenas 350m da praia e próximo à Praça Nova no Preá.',
+    about: [
+      'Terreno de esquina exclusivo à venda na Praia do Preá!',
+      'Com uma área total de 1.350 m² (27x50m), este terreno oferece uma localização estratégica e muito privilegiada.',
+      'Situado próximo à Praça Nova e a apenas 350 metros da praia, é o local perfeito para construir uma pousada, empreendimento comercial ou uma casa de alto padrão.',
+      'Uma oportunidade rara de investimento no coração de um dos litorais mais procurados e valorizados do mundo.'
+    ],
+    infra: [
+      'Bairro: Praia do Preá',
+      'Ponto de Referência: Próximo à Praça Nova e a 350m da praia',
+      'Área Total: 1.350,00 m²',
+      'Dimensões: 27,00m x 50,00m'
+    ],
+    facilities: [
+      'A 350m da Praia',
+      'Terreno de Esquina',
+      'Próximo à Praça Nova',
+      'Excelente Localização',
+      'Alto Potencial Comercial',
+      'Turismo em Expansão'
+    ],
+    gallery: {
+      main: '/terreno-prea-esquina/1.png',
+      sideTop: '/terreno-prea-esquina/1.png',
+      sideBottom: '/terreno-prea-esquina/1.png'
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Pra%C3%A7a+Nova,+Praia+do+Pre%C3%A1,+Cruz+-+CE&hl=pt-BR&z=16&output=embed',
+    priceTag: 'Valor total',
+    price: 'R$ 1.600.000,00',
+    installments: 'Consulte condições',
+    category: 'venda',
     unlisted: true
   },],
   es: [
