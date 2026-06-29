@@ -11,6 +11,18 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "parque-nacional-1-carlos",
+    image: "/Parque Nacional 1/2c38486d-5013-408b-9a5d-7a88fe309740.jpeg",
+    tag: "VENDA",
+    location: "Parque Nacional, Preá - CE",
+    title: "TERRENO EXCLUSIVO PARQUE NACIONAL",
+    area: "3.044 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 2.000.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "prado-farol",
     image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
     tag: "VENDA",

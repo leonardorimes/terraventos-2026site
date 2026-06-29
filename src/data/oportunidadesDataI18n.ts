@@ -1230,7 +1230,504 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
-  },],
+  },
+{
+  id: "parque-nacional-1-carlos",
+  slug: "terreno-parque-nacional-3044m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Parque Nacional 3.044m²",
+  image: "/Parque Nacional 1/2c38486d-5013-408b-9a5d-7a88fe309740.jpeg",
+  badge: "Oportunidade",
+  propertyTitle: "TERRENO EXCLUSIVO PARQUE NACIONAL",
+  location: "Parque Nacional, Preá - CE",
+  rating: 5,
+  exclusiveText: "Terreno de 3.044m² | Todo Murado | Excelente Localização",
+  summaryDescription: "Aproveite esta rara oportunidade de adquirir um terreno totalmente murado com 3.044m² no cobiçado setor do Parque Nacional. Ideal para projetos residenciais de alto padrão ou pousadas de charme.",
+  about: [
+    "Uma oportunidade extraordinária para quem busca espaço, privacidade e contato com a natureza no exclusivo setor do Parque Nacional.",
+    "Este amplo terreno de 3.044m² já se encontra totalmente murado, proporcionando segurança e agilidade para o início do seu projeto.",
+    "Sua localização estratégica o torna ideal tanto para a construção de uma residência luxuosa quanto para o desenvolvimento de uma pousada ou hotel boutique, capitalizando sobre a alta demanda turística da região."
+  ],
+  infra: [
+    "Área Total: 3.044 m²",
+    "Totalmente murado",
+    "Localização: Setor do Parque Nacional",
+    "Excelente potencial de valorização"
+  ],
+  facilities: [
+    "3.044 m²",
+    "Murado",
+    "Pronto para construir",
+    "Contato com a natureza"
+  ],
+  gallery: {
+    main: "/Parque Nacional 1/2c38486d-5013-408b-9a5d-7a88fe309740.jpeg",
+    sideTop: "/Parque Nacional 1/522e880f-3cab-4429-967a-9eff8a89913b.jpeg",
+    sideBottom: "/Parque Nacional 1/bc25485b-8e11-4084-abaf-bbcb18e3f532.jpeg",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 2.000.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "parque-nacional-2-carlos",
+  slug: "terreno-perto-mar-2110m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Perto do Mar Parque Nacional",
+  image: "/Parque Nacional 2/WhatsApp Image 2026-06-26 at 20.22.12.jpeg",
+  badge: "Oportunidade Rara",
+  propertyTitle: "TERRENO PREMIUM PERTO DO MAR",
+  location: "Parque Nacional, Preá - CE",
+  rating: 5,
+  exclusiveText: "Terreno de 2.110m² | Próximo ao Mar | Setor Parque Nacional",
+  summaryDescription: "Excepcional terreno de 2.110m² super bem localizado perto do mar, no cobiçado setor do Parque Nacional. O cenário perfeito para o seu refúgio de luxo.",
+  about: [
+    "Descubra este refúgio perfeito! Um terreno excepcional de 2.110m² com uma localização super privilegiada, a poucos passos do mar.",
+    "Situado no desejado setor do Parque Nacional, esta área oferece a combinação perfeita entre a serenidade da natureza e a proximidade com as belas praias da região.",
+    "Uma oportunidade inigualável para o desenvolvimento de um projeto arquitetônico arrojado, garantindo alta rentabilidade e qualidade de vida."
+  ],
+  infra: [
+    "Área Total: 2.110 m²",
+    "Proximidade com o mar",
+    "Localização premium no Parque Nacional"
+  ],
+  facilities: [
+    "2.110 m²",
+    "Perto do Mar",
+    "Setor Parque Nacional"
+  ],
+  gallery: {
+    main: "/Parque Nacional 2/WhatsApp Image 2026-06-26 at 20.22.12.jpeg",
+    sideTop: "/Parque Nacional 2/WhatsApp Image 2026-06-26 at 20.22.12.jpeg",
+    sideBottom: "/Parque Nacional 2/WhatsApp Image 2026-06-26 at 20.22.12.jpeg",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.700.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-1-carlos",
+  slug: "terreno-prea-1300m-mar-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Preá 1.300m² Perto do Mar",
+  image: "/Carlos_terrenos/Terreno 1/Screenshot from 2026-06-29 11-44-42.png",
+  badge: "Excelente Localização",
+  propertyTitle: "TERRENO PREÁ PERTO DO MAR - 1.300M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.300m² | A poucos metros do mar | Documentação OK",
+  summaryDescription: "Terreno espetacular de 1.300m² localizado a poucos metros das águas cristalinas do Preá. Documentação totalmente regularizada, pronto para construir o projeto dos seus sonhos.",
+  about: [
+    "Apresentamos uma oportunidade imperdível: um magnífico terreno de 1.300m² super bem localizado na vibrante vila do Preá.",
+    "Sua proximidade com o mar (apenas a poucos metros) torna este lote perfeito para quem deseja acordar sentindo a brisa oceânica ou para o desenvolvimento de uma pousada boutique.",
+    "Além da localização privilegiada, o terreno conta com toda a documentação 100% regularizada, garantindo segurança total para o seu investimento."
+  ],
+  infra: [
+    "Área Total: 1.300 m²",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "1.300 m²",
+    "Perto do mar",
+    "Documentação regular"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 1/Screenshot from 2026-06-29 11-44-42.png",
+    sideTop: "/Carlos_terrenos/Terreno 1/Screenshot from 2026-06-29 11-44-42.png",
+    sideBottom: "/Carlos_terrenos/Terreno 1/Screenshot from 2026-06-29 11-44-42.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.500.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-2-carlos",
+  slug: "terreno-prea-1342m-mar-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Preá 1.342m² Perto do Mar",
+  image: "/Carlos_terrenos/Terreno 2/Screenshot from 2026-06-29 11-46-50.png",
+  badge: "Excelente Localização",
+  propertyTitle: "TERRENO PREÁ PERTO DO MAR - 1.342M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.342m² | A poucos metros do mar | Documentação OK",
+  summaryDescription: "Amplo terreno de 1.342m² estrategicamente posicionado a poucos metros do mar no Preá. Invista com segurança em um dos litorais que mais valoriza no Brasil.",
+  about: [
+    "Invista em qualidade de vida com este amplo terreno de 1.342m², situado em uma das localizações mais disputadas do Preá.",
+    "A apenas alguns passos da praia, é o cenário ideal para uma residência pé na areia de luxo ou para empreender no crescente mercado de turismo local.",
+    "Negocie com tranquilidade: a propriedade possui documentação totalmente desembaraçada e pronta para transferência."
+  ],
+  infra: [
+    "Área Total: 1.342 m²",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "1.342 m²",
+    "Perto do mar",
+    "Documentação regular"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 2/Screenshot from 2026-06-29 11-46-50.png",
+    sideTop: "/Carlos_terrenos/Terreno 2/Screenshot from 2026-06-29 11-46-50.png",
+    sideBottom: "/Carlos_terrenos/Terreno 2/Screenshot from 2026-06-29 11-46-50.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.100.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-3-carlos",
+  slug: "terreno-prea-344m-mar-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Preá 344m² Perto do Mar",
+  image: "/Carlos_terrenos/Terreno 3/Screenshot from 2026-06-29 11-48-41.png",
+  badge: "Excelente Localização",
+  propertyTitle: "TERRENO PREÁ PERTO DO MAR - 344M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "344m² | A poucos metros do mar | Documentação OK",
+  summaryDescription: "Compacto e exclusivo: Terreno de 344m² a poucos metros da praia no Preá. A escolha certa para um charmoso refúgio de praia com documentação perfeita.",
+  about: [
+    "Esta é a sua chance de ter um pedaço do paraíso! Terreno charmoso e funcional de 344m², com localização invejável no Preá.",
+    "Perfeito para quem deseja construir uma casa de praia prática e aconchegante, aproveitando a proximidade imediata com o mar.",
+    "Assim como as melhores opções da nossa carteira, conta com documentação rigorosamente em dia, permitindo a você focar apenas no seu projeto de vida."
+  ],
+  infra: [
+    "Área Total: 344 m²",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "344 m²",
+    "Perto do mar",
+    "Documentação regular"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 3/Screenshot from 2026-06-29 11-48-41.png",
+    sideTop: "/Carlos_terrenos/Terreno 3/Screenshot from 2026-06-29 11-48-41.png",
+    sideBottom: "/Carlos_terrenos/Terreno 3/Screenshot from 2026-06-29 11-48-41.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 550.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-4-carlos",
+  slug: "terreno-prea-700m-mar-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Preá 700m² Perto do Mar",
+  image: "/Carlos_terrenos/Terreno 4/Screenshot from 2026-06-29 11-49-45.png",
+  badge: "Excelente Localização",
+  propertyTitle: "TERRENO PREÁ PERTO DO MAR - 700M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "700m² | A poucos metros do mar | Documentação OK",
+  summaryDescription: "Excelente oportunidade: Lote de 700m² incrivelmente posicionado a poucos metros da praia do Preá. Segurança jurídica total para a realização da sua obra.",
+  about: [
+    "Um excelente lote de 700m² que harmoniza tamanho e localização com perfeição. Situado no cobiçado destino do Preá, fica a poucos metros da areia e do mar.",
+    "Este terreno oferece espaço de sobra para um belo projeto residencial de alto padrão ou para pequenos empreendimentos de hospedagem boutique.",
+    "Vendido com toda a documentação aprovada e ok, pronto para você iniciar sua jornada no litoral cearense sem complicações."
+  ],
+  infra: [
+    "Área Total: 700 m²",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "700 m²",
+    "Perto do mar",
+    "Documentação regular"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 4/Screenshot from 2026-06-29 11-49-45.png",
+    sideTop: "/Carlos_terrenos/Terreno 4/Screenshot from 2026-06-29 11-49-45.png",
+    sideBottom: "/Carlos_terrenos/Terreno 4/Screenshot from 2026-06-29 11-49-45.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.000.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-5-carlos",
+  slug: "terreno-prea-1417m-esquina-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Esquina Preá 1.417m²",
+  image: "/Carlos_terrenos/Terreno 5/Screenshot from 2026-06-29 11-51-00.png",
+  badge: "Terreno de Esquina",
+  propertyTitle: "TERRENO PREÁ ESQUINA PERTO DO MAR - 1.417M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.417m² | Terreno de Esquina | A poucos metros do mar",
+  summaryDescription: "Oportunidade ímpar: Grandioso terreno de esquina com 1.417m², a poucos metros do mar no Preá. Dupla frente e excelente potencial arquitetônico.",
+  about: [
+    "A grandiosidade e versatilidade se encontram neste terreno de esquina com expressivos 1.417m² no Preá.",
+    "Sua posição em esquina garante ventilação privilegiada, múltiplas opções de acesso e um design arquitetônico imponente, tudo isso a poucos metros da orla.",
+    "Uma verdadeira joia para investidores que desejam maximizar visibilidade e luxo, acompanhado de documentação 100% regularizada."
+  ],
+  infra: [
+    "Área Total: 1.417 m²",
+    "Características: Terreno de esquina",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "1.417 m²",
+    "Esquina",
+    "Perto do mar"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 5/Screenshot from 2026-06-29 11-51-00.png",
+    sideTop: "/Carlos_terrenos/Terreno 5/Screenshot from 2026-06-29 11-51-27.png",
+    sideBottom: "/Carlos_terrenos/Terreno 5/Screenshot from 2026-06-29 11-51-52.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.400.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-6-carlos",
+  slug: "terreno-prea-1100m-mar-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Preá 1.100m² Perto do Mar",
+  image: "/Carlos_terrenos/Terreno 6/Screenshot from 2026-06-29 11-52-53.png",
+  badge: "Excelente Localização",
+  propertyTitle: "TERRENO PREÁ PERTO DO MAR - 1.100M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.100m² | A poucos metros do mar | Documentação OK",
+  summaryDescription: "Prestigioso lote de 1.100m² com excelente localização na praia do Preá. Ideal para a casa dos sonhos a poucos metros da orla.",
+  about: [
+    "Aproveite a oportunidade de adquirir este prestigiado lote de 1.100m², situado muito próximo ao vibrante litoral do Preá.",
+    "A metragem versátil permite tanto o planejamento de uma residência espaçosa com ampla área de lazer, quanto empreendimentos comerciais de sucesso.",
+    "Segurança total no seu negócio com documentação devidamente regularizada e pronta para assinatura."
+  ],
+  infra: [
+    "Área Total: 1.100 m²",
+    "Localização: A poucos metros do mar",
+    "Situação Jurídica: Documentação toda OK"
+  ],
+  facilities: [
+    "1.100 m²",
+    "Perto do mar",
+    "Documentação regular"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 6/Screenshot from 2026-06-29 11-52-53.png",
+    sideTop: "/Carlos_terrenos/Terreno 6/Screenshot from 2026-06-29 11-53-18.png",
+    sideBottom: "/Carlos_terrenos/Terreno 6/Screenshot from 2026-06-29 11-53-37.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 850.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-8-carlos",
+  slug: "terreno-sitio-fenix-300m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Sítio Fênix 300m²",
+  image: "/Carlos_terrenos/Terreno 8/Screenshot from 2026-06-29 11-54-38.png",
+  badge: "Ótima Oportunidade",
+  propertyTitle: "TERRENO RUA DO SÍTIO FÊNIX - 300M²",
+  location: "Rua do Sítio Fênix, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "Terreno localizado na Rua do Sítio Fênix | 300m²",
+  summaryDescription: "Praticidade e boa localização definem este terreno de 300m² na conceituada Rua do Sítio Fênix. Um investimento inteligente com excelente custo-benefício.",
+  about: [
+    "Localizado estrategicamente na calma e valorizada Rua do Sítio Fênix, este terreno de 300m² é uma oportunidade inteligente para moradia ou investimento.",
+    "Seu tamanho prático é ideal para uma casa de veraneio moderna, minimizando custos de manutenção sem perder o conforto e a proximidade com as principais vias de acesso."
+  ],
+  infra: [
+    "Área Total: 300 m²",
+    "Localização: Rua do Sítio Fênix",
+    "Perfil: Residencial"
+  ],
+  facilities: [
+    "300 m²",
+    "Boa localização",
+    "Pronto para construir"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 8/Screenshot from 2026-06-29 11-54-38.png",
+    sideTop: "/Carlos_terrenos/Terreno 8/Screenshot from 2026-06-29 11-54-38.png",
+    sideBottom: "/Carlos_terrenos/Terreno 8/Screenshot from 2026-06-29 11-54-38.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 750.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-10-carlos",
+  slug: "terreno-esquina-murado-1500m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Esquina Murado Preá 1.500m²",
+  image: "/Carlos_terrenos/Terreno 10/Screenshot from 2026-06-29 11-55-49.png",
+  badge: "Destaque",
+  propertyTitle: "TERRENO PREÁ DE ESQUINA MURADO - 1.500M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.500m² | Esquina | Todo Murado",
+  summaryDescription: "Terreno magnífico de esquina com 1.500m², totalmente murado e incrivelmente bem localizado no Preá. O cenário pronto para o seu próximo grande empreendimento.",
+  about: [
+    "Apresentamos um ativo raro e poderoso no Preá: um terreno de esquina com 1.500m², que já se encontra integralmente murado.",
+    "Sua visibilidade e dupla frente proporcionam um valor comercial inestimável para pousadas, bem como uma privacidade ímpar para uma suntuosa residência privada.",
+    "Estando super bem localizado, ele garante fácil acesso às melhores atrações e às belezas naturais da região."
+  ],
+  infra: [
+    "Área Total: 1.500 m²",
+    "Características: Esquina e Todo murado",
+    "Localização premium no Preá"
+  ],
+  facilities: [
+    "1.500 m²",
+    "Esquina",
+    "Todo Murado",
+    "Alta Visibilidade"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 10/Screenshot from 2026-06-29 11-55-49.png",
+    sideTop: "/Carlos_terrenos/Terreno 10/Screenshot from 2026-06-29 11-56-20.png",
+    sideBottom: "/Carlos_terrenos/Terreno 10/Screenshot from 2026-06-29 11-55-49.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.900.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-11-carlos",
+  slug: "terreno-vista-parque-nacional-1000m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Vista Parque Nacional 1.000m²",
+  image: "/Carlos_terrenos/Terreno 11/Screenshot from 2026-06-29 11-57-21.png",
+  badge: "Vista Panorâmica",
+  propertyTitle: "TERRENO PREÁ VISTA PARQUE NACIONAL - 1.000M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.000m² | Vista para o Parque Nacional",
+  summaryDescription: "Viva a natureza! Terreno de 1.000m² com vista espetacular para o Parque Nacional de Jericoacoara e localização privilegiada no Preá.",
+  about: [
+    "A serenidade e a beleza natural definem este maravilhoso terreno de 1.000m², que ostenta uma deslumbrante vista permanente para o Parque Nacional.",
+    "Localizado super bem no Preá, ele combina o conforto de estar perto das facilidades da vila com o privilégio de ter a natureza exuberante como sua vizinha diária.",
+    "Uma propriedade perfeita para relaxar e desfrutar dos famosos fins de tarde cearenses."
+  ],
+  infra: [
+    "Área Total: 1.000 m²",
+    "Destaque: Vista para o Parque Nacional",
+    "Localização: Super bem localizado em Preá"
+  ],
+  facilities: [
+    "1.000 m²",
+    "Vista Parque Nacional",
+    "Natureza"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 11/Screenshot from 2026-06-29 11-57-21.png",
+    sideTop: "/Carlos_terrenos/Terreno 11/Screenshot from 2026-06-29 11-57-21.png",
+    sideBottom: "/Carlos_terrenos/Terreno 11/Screenshot from 2026-06-29 11-57-21.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 680.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+},
+{
+  id: "terreno-12-carlos",
+  slug: "terreno-esquina-150m-mar-1126m-carlos",
+  title: "VENDA",
+  searchTitle: "Terreno Esquina 150m do Mar 1.126m²",
+  image: "/Carlos_terrenos/Terreno 12/Screenshot from 2026-06-29 11-58-24.png",
+  badge: "Oportunidade Premium",
+  propertyTitle: "TERRENO PREÁ ESQUINA 150M DO MAR - 1.126M²",
+  location: "Preá, Ceará, Brasil",
+  rating: 5,
+  exclusiveText: "1.126m² | De Esquina | Apenas 150m do Mar",
+  summaryDescription: "Terreno de esquina premium com 1.126m², situado a exatos 150 metros das ondas do Preá. Potencial máximo de valorização e luxo.",
+  about: [
+    "Para os compradores mais exigentes, apresentamos este lote premium de 1.126m², estrategicamente localizado a incríveis 150 metros da praia.",
+    "Por ser de esquina, ele maximiza a entrada de luz natural e a ventilação constante, fundamentais para uma residência sustentável e arejada na praia.",
+    "A localização não poderia ser melhor: no coração do Preá, um dos polos de turismo e esportes de vento de maior crescimento internacional."
+  ],
+  infra: [
+    "Área Total: 1.126 m²",
+    "Características: De esquina",
+    "Distância: A 150m do mar"
+  ],
+  facilities: [
+    "1.126 m²",
+    "Esquina",
+    "150m do mar",
+    "Alta valorização"
+  ],
+  gallery: {
+    main: "/Carlos_terrenos/Terreno 12/Screenshot from 2026-06-29 11-58-24.png",
+    sideTop: "/Carlos_terrenos/Terreno 12/Screenshot from 2026-06-29 11-58-24.png",
+    sideBottom: "/Carlos_terrenos/Terreno 12/Screenshot from 2026-06-29 11-58-24.png",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Preá,+CE&z=15&output=embed",
+  videoSources: [],
+  priceTag: "Valor",
+  price: "R$ 1.500.000,00",
+  installments: "Consulte condições",
+  category: "venda"
+}
+  ],
   en: [
     {
       id: "prado-farol",
