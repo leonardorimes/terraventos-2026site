@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Instalar dependências
+        run: pip install feedparser
+
       - name: Executar script de atualização
         run: python .github/scripts/update_blog.py
 

@@ -3,12 +3,12 @@
 Verifica o feed RSS do TerraVentos Substack e atualiza BlogSection.tsx
 com novas postagens em português (sem tradução automática).
 """
-import os
 import re
 import subprocess
 import sys
-import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
+
+import feedparser
 
 FEED_URL = "https://terraventos.substack.com/feed"
 BLOG_FILE = "src/components/BlogSection.tsx"
@@ -27,48 +27,49 @@ def fetch_feed():
         capture_output=True, timeout=35
     )
     if result.returncode != 0:
-        raise RuntimeError(f"curl falhou: {result.stderr.decode()}")
+        sys.exit(f"curl falhou: {result.stderr.decode()}")
     return result.stdout
 
 
-def parse_rss(xml_bytes):
-    root = ET.fromstring(xml_bytes)
-    ns = {
-        'content': 'http://purl.org/rss/1.0/modules/content/',
-        'media': 'http://search.yahoo.com/mrss/',
-    }
+def parse_rss(raw_bytes):
+    feed = feedparser.parse(raw_bytes)
     posts = []
-    for item in root.find('channel').findall('item')[:MAX_POSTS]:
-        title = item.findtext('title', '').strip()
-        url = item.findtext('link', '').strip()
+    for entry in feed.entries[:MAX_POSTS]:
+        title = entry.get('title', '').strip()
+        url = entry.get('link', '').strip()
 
-        raw = item.findtext('content:encoded', '', ns) or item.findtext('description', '')
+        # Descrição: tenta content primeiro, depois summary
+        raw = ''
+        if entry.get('content'):
+            raw = entry['content'][0].get('value', '')
+        if not raw:
+            raw = entry.get('summary', '')
         desc = re.sub(r'<[^>]+>', ' ', raw)
         desc = re.sub(r'\s+', ' ', desc).strip()[:400]
 
+        # Imagem: enclosure → media_content → primeira img do HTML
         image = ''
-        enc = item.find('enclosure')
-        if enc is not None:
-            image = enc.get('url', '')
+        for enc in entry.get('enclosures', []):
+            if enc.get('url'):
+                image = enc['url']
+                break
         if not image:
-            mc = item.find('media:content', ns)
-            if mc is not None:
-                image = mc.get('url', '')
+            for mc in entry.get('media_content', []):
+                if mc.get('url'):
+                    image = mc['url']
+                    break
         if not image:
             m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', raw)
             if m:
                 image = m.group(1)
 
-        pub = item.findtext('pubDate', '').strip()
+        # Data
         date_obj = None
-        for fmt in ['%a, %d %b %Y %H:%M:%S %z', '%a, %d %b %Y %H:%M:%S GMT']:
-            try:
-                date_obj = datetime.strptime(pub, fmt)
-                break
-            except ValueError:
-                continue
+        if entry.get('published_parsed'):
+            date_obj = datetime(*entry.published_parsed[:6], tzinfo=timezone.utc)
 
         posts.append({'title': title, 'url': url, 'description': desc, 'image': image, 'date_obj': date_obj})
+
     return posts
 
 
@@ -136,7 +137,7 @@ def extract_lang_posts(content, lang):
                 fm = re.search(rf'{name}:\s*"((?:[^"\\]|\\.)*)"', s)
                 return fm.group(1) if fm else ''
 
-            posts.append({k: field(k) for k in ('title', 'summary', 'url', 'image', 'date')})
+            posts.append({key: field(key) for key in ('title', 'summary', 'url', 'image', 'date')})
             j = k
         else:
             j += 1
@@ -187,7 +188,6 @@ def main():
 
     print(f'  {len(new_items)} postagem(ns) nova(s) encontrada(s).')
 
-    # Usa o mesmo conteúdo (português) para os 3 idiomas
     new_by_lang = {lang: [] for lang in ('pt', 'en', 'es')}
     for item in new_items:
         for lang in ('pt', 'en', 'es'):
