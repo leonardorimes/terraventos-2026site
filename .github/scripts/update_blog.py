@@ -5,8 +5,8 @@ com novas postagens em português (sem tradução automática).
 """
 import os
 import re
+import subprocess
 import sys
-import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
 
@@ -22,9 +22,13 @@ MONTHS = {
 
 
 def fetch_feed():
-    req = urllib.request.Request(FEED_URL, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read()
+    result = subprocess.run(
+        ['curl', '-sL', '--max-time', '30', FEED_URL],
+        capture_output=True, timeout=35
+    )
+    if result.returncode != 0:
+        raise RuntimeError(f"curl falhou: {result.stderr.decode()}")
+    return result.stdout
 
 
 def parse_rss(xml_bytes):
