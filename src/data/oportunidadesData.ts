@@ -188,9 +188,9 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
       ]
     },
     mapImage: '/mapa.avif',
-    mapUrl: 'https://maps.google.com/maps?q=-3.504229,-38.904481&hl=pt-BR&z=15&output=embed',
+    mapUrl: 'https://maps.google.com/maps?q=-3.516653,-38.884544&hl=pt-BR&z=15&output=embed',
     priceTag: 'Valor',
-    price: 'Sob Consulta',
+    price: 'R$ 1.100.000,00',
     installments: 'Consulte condições',
     category: 'venda'
   },
