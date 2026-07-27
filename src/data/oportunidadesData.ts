@@ -161,7 +161,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     priceTag: 'Valor',
     price: 'R$ 850.000,00',
     installments: 'Consulte condições',
-    category: 'venda'
+    category: 'venda',
+    unlisted: true
   },
   {
     id: 'casa-praia-taiba',
@@ -208,7 +209,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     priceTag: 'Valor',
     price: 'R$ 1.100.000,00',
     installments: 'Consulte condições',
-    category: 'venda'
+    category: 'venda',
+    unlisted: true
   },
   {
     id: 'imovel-duplex-vila-chapeu',
