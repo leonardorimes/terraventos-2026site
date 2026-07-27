@@ -8,7 +8,7 @@ import { toSocialSafeImage } from './src/utils/seoImages.ts';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const baseUrl = 'https://terraventos.com';
+const baseUrl = 'https://www.terraventos.com';
 
 // Metadados fixos de cada idioma. A lista de imóveis é derivada diretamente de
 // getOportunidadesData() — a mesma fonte de dados usada pelo app — para que toda

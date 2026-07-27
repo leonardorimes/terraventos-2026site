@@ -19,4 +19,4 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
-Sitemap: https://terraventos.com/sitemap.xml
+Sitemap: https://www.terraventos.com/sitemap.xml
