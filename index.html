@@ -111,12 +111,14 @@
     fbq('init', '1009918471445149');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1009918471445149&ev=PageView&noscript=1"
-    /></noscript>
     <!-- End Meta Pixel Code -->
   </head>
   <body>
+    <!-- Meta Pixel Code (noscript fallback) — precisa ficar no body, não no head:
+         <img> dentro de <noscript> em <head> é HTML inválido (parse5/Vite rejeita o build) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1009918471445149&ev=PageView&noscript=1"
+    /></noscript>
     <div id="root"></div>
     <!-- GHL form embed script -->
     <script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
