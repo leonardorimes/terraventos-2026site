@@ -12,7 +12,7 @@ import PropertyLocationMap from './PropertyLocationMap';
 import MediaViewerPortals from './MediaViewerPortals';
 import { useMediaViewer } from './useMediaViewer';
 import { derivePropertyKeywords, type SeoLang } from '../../utils/seoKeywords';
-import { toSocialSafeImage } from '../../utils/seoImages';
+import { toOgImage } from '../../utils/seoImages';
 
 type PaginaIndividualProps = {
   item: OportunidadeDetalhe;
@@ -41,7 +41,7 @@ export default function PaginaIndividual({ item }: PaginaIndividualProps) {
 
     const title = `${item.propertyTitle} | Terra Ventos`;
     const description = item.exclusiveText || item.about[0] || '';
-    const socialImage = toSocialSafeImage(item.image);
+    const socialImage = toOgImage(item.image);
     const imageUrl = socialImage.startsWith('http') ? socialImage : window.location.origin + socialImage;
     const url = window.location.href;
 

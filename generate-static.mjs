@@ -3,7 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { getOportunidadesData } from './src/data/oportunidadesDataI18n.ts';
 import { derivePropertyKeywords, PAGE_KEYWORDS } from './src/utils/seoKeywords.ts';
-import { toSocialSafeImage } from './src/utils/seoImages.ts';
+import { toOgImage } from './src/utils/seoImages.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -76,9 +76,11 @@ const SECTION_LABELS = {
 
 function generatePage(targetPath, title, desc, img, url, langCode, langId, imgAlt = null, suffix = '/', property = null, keywords = '') {
   let html = template;
-  // og:image/twitter:image nunca em avif — suporte inconsistente nos crawlers de preview
-  // social (WhatsApp/Instagram/Facebook); o <img> visível na página pode seguir usando avif.
-  const socialImg = toSocialSafeImage(img);
+  // og:image/twitter:image usa o recorte 1200x630 pré-gerado (nunca a foto original direto):
+  // resolve tanto o aspect ratio (fotos reais são quase quadradas ou 16:9) quanto o avif
+  // (suporte inconsistente nos crawlers de preview social). O <img> visível na página segue
+  // usando a imagem original normalmente.
+  const socialImg = toOgImage(img);
   const fullImageUrl = socialImg.startsWith('http') ? socialImg : `${baseUrl}${socialImg}`;
   const displayTitle = title.includes('Terra Ventos') ? title : `${title} | Terra Ventos`;
   const imageAltText = imgAlt || displayTitle;

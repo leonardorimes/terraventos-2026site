@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./VentoAfavor.css";
 import { useLang } from "../router/useLang";
 import { PAGE_KEYWORDS, type SeoLang } from "../utils/seoKeywords";
+import { toOgImage } from "../utils/seoImages";
 
 interface VentoAfavorProps {
   onBack: () => void;
@@ -30,7 +31,7 @@ export default function VentoAfavor({ onBack }: VentoAfavorProps) {
   useEffect(() => {
     const { title, description } = SEO_COPY[lang] || SEO_COPY.pt;
     const baseUrl = window.location.origin;
-    const imageUrl = `${baseUrl}/og-propriedades.png`;
+    const imageUrl = `${baseUrl}${toOgImage('/og-propriedades.png')}`;
     const cleanPath = '/ventoafavor';
 
     document.title = title;

@@ -10,6 +10,7 @@ import LocalizedLink from './LocalizedLink';
 import { scrollToSection } from '../utils/scrollToSection';
 import { AppShellCtx } from './appShellContext';
 import { PAGE_KEYWORDS, type SeoLang } from '../utils/seoKeywords';
+import { toOgImage } from '../utils/seoImages';
 
 export default function AppShell() {
   const { t, i18n } = useTranslation();
@@ -157,7 +158,7 @@ export default function AppShell() {
     const description =
       'Curadoria exclusiva de imóveis de alto padrão e oportunidades de investimento no litoral cearense (Preá, Tatajuba, Bitupitá).';
     const keywords = PAGE_KEYWORDS[cleanPath === '/propriedades' ? 'propriedades' : 'home'][lang as SeoLang] || PAGE_KEYWORDS.home.pt;
-    const imageUrl = `${window.location.origin}/banners/banners-01.webp`;
+    const imageUrl = `${window.location.origin}${toOgImage('/banners/banners-01.webp')}`;
     const url = window.location.origin + displayLocation.pathname;
 
     document.title = title;

@@ -5,6 +5,7 @@ import './PaginaIndividual/PaginaIndividual.css';
 import { getFacilityIcon } from '../utils/facilityIcons';
 import LocalizedLink from '../router/LocalizedLink';
 import { PAGE_KEYWORDS, type SeoLang } from '../utils/seoKeywords';
+import { toOgImage } from '../utils/seoImages';
 
 const getTaibaData = (lang: string) => {
   const isEs = lang.startsWith('es');
@@ -184,7 +185,7 @@ export default function PaginaTaiba() {
   useEffect(() => {
     const title = 'Oportunidades Exclusivas em Taíba | Terra Ventos';
     const description = 'Terrenos selecionados com alto potencial de valorização e segurança jurídica na Taíba. Opções com MATRÍCULA e VISTA MAR.';
-    const imageUrl = window.location.origin + '/imoveis/lote-barramar-lagoa-taiba-03.webp';
+    const imageUrl = window.location.origin + toOgImage('/imoveis/lote-barramar-lagoa-taiba-03.webp');
     const url = window.location.href;
 
     document.title = title;
