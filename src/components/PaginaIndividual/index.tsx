@@ -1,0 +1,123 @@
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import './PaginaIndividual.css';
+import { resolveLoteView, type OportunidadeDetalhe } from '../../data/oportunidadesData';
+import VideoGallery from '../VideoGallery';
+import PropertyGallery from './PropertyGallery';
+import PropertyHeader from './PropertyHeader';
+import PropertyAbout from './PropertyAbout';
+import PropertyDocuments from './PropertyDocuments';
+import PropertySidebarCTA from './PropertySidebarCTA';
+import PropertyLocationMap from './PropertyLocationMap';
+import MediaViewerPortals from './MediaViewerPortals';
+import { useMediaViewer } from './useMediaViewer';
+import { derivePropertyKeywords, type SeoLang } from '../../utils/seoKeywords';
+import { toSocialSafeImage } from '../../utils/seoImages';
+
+type PaginaIndividualProps = {
+  item: OportunidadeDetalhe;
+};
+
+export default function PaginaIndividual({ item }: PaginaIndividualProps) {
+  const { i18n } = useTranslation();
+
+  const hasLotes = !!item.lotes?.length;
+  const [selectedLoteId, setSelectedLoteId] = useState(item.lotes?.[0]?.id ?? '');
+  const activeRecord = hasLotes ? resolveLoteView(item, selectedLoteId) : item;
+
+  const mediaViewer = useMediaViewer();
+
+  // Coleta todas as fotos disponíveis para o álbum
+  const allPhotos = Array.from(new Set([
+    activeRecord.gallery.main,
+    activeRecord.gallery.sideTop,
+    activeRecord.gallery.sideBottom,
+    ...(activeRecord.gallery.extra || [])
+  ].filter(Boolean)));
+
+  // SEO Update
+  useEffect(() => {
+    if (!item) return;
+
+    const title = `${item.propertyTitle} | Terra Ventos`;
+    const description = item.exclusiveText || item.about[0] || '';
+    const socialImage = toSocialSafeImage(item.image);
+    const imageUrl = socialImage.startsWith('http') ? socialImage : window.location.origin + socialImage;
+    const url = window.location.href;
+
+    document.title = title;
+
+    const updateMeta = (name: string, content: string, isProperty = false) => {
+      const attr = isProperty ? 'property' : 'name';
+      let element = document.querySelector(`meta[${attr}="${name}"]`);
+      if (!element) {
+        element = document.createElement('meta');
+        element.setAttribute(attr, name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    };
+
+    updateMeta('description', description);
+    updateMeta('keywords', derivePropertyKeywords(item, (i18n.language as SeoLang) || 'pt'));
+    updateMeta('og:title', title, true);
+    updateMeta('og:description', description, true);
+    updateMeta('og:image', imageUrl, true);
+    updateMeta('og:url', url, true);
+    updateMeta('twitter:title', title);
+    updateMeta('twitter:description', description);
+    updateMeta('twitter:image', imageUrl);
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [item, i18n.language]);
+
+  return (
+    <section className="pagina-individual">
+      <div className="pi-main">
+        <PropertyGallery
+          item={activeRecord}
+          allPhotos={allPhotos}
+          onOpenLightbox={mediaViewer.openLightbox}
+          onOpenAlbum={mediaViewer.openAlbum}
+        />
+
+        <PropertyHeader item={activeRecord} />
+
+        <div className="pi-content-grid">
+          <div className="pi-content-main">
+            <PropertyAbout item={activeRecord} />
+
+            <VideoGallery
+              videoSources={activeRecord.videoSources || []}
+              mainImage={activeRecord.gallery.main}
+              title={activeRecord.propertyTitle}
+              credits={activeRecord.videoGalleryCredits}
+              onOpenVideo={mediaViewer.openVideo}
+            />
+
+            {activeRecord.documents && activeRecord.documents.length > 0 && (
+              <PropertyDocuments documents={activeRecord.documents} />
+            )}
+          </div>
+
+          <PropertySidebarCTA
+            item={activeRecord}
+            lotes={item.lotes}
+            selectedLoteId={selectedLoteId}
+            onSelectLote={setSelectedLoteId}
+          />
+        </div>
+
+        <PropertyLocationMap item={activeRecord} />
+      </div>
+
+      <MediaViewerPortals
+        {...mediaViewer}
+        allPhotos={allPhotos}
+        propertyTitle={activeRecord.propertyTitle}
+      />
+    </section>
+  );
+}

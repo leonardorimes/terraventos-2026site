@@ -1,21 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
+import LocalizedLink from '../router/LocalizedLink';
 
 export default function Footer() {
-  const { t, i18n } = useTranslation();
-
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
-    e.preventDefault();
-    const lang = (i18n.language || 'pt').split('-')[0];
-    const prefixedPath = lang === 'pt' ? path : `/${lang}${path}`;
-    const event = new CustomEvent('navigate', { detail: prefixedPath });
-    window.dispatchEvent(event);
-  };
-
-  const getPrefixedPath = (path: string) => {
-    const lang = (i18n.language || 'pt').split('-')[0];
-    return lang === 'pt' ? path : `/${lang}${path}`;
-  };
+  const { t } = useTranslation();
 
   return (
     <footer className="footer-luxo">
@@ -33,18 +21,10 @@ export default function Footer() {
 
         <div className="footer-luxo-links">
           <h4>{t('nav.quemSomos')} & {t('nav.contato_dedicado')}</h4>
-          <a href={getPrefixedPath('/quem-somos')} onClick={(e) => handleLinkClick(e, '/quem-somos')}>
-            {t('nav.quemSomos')}
-          </a>
-          <a href={getPrefixedPath('/contato')} onClick={(e) => handleLinkClick(e, '/contato')}>
-            {t('nav.contato_dedicado')}
-          </a>
-          <a href={getPrefixedPath('/termos-e-condicoes')} onClick={(e) => handleLinkClick(e, '/termos-e-condicoes')}>
-            {t('nav.termos')}
-          </a>
-          <a href={getPrefixedPath('/politica-de-privacidade')} onClick={(e) => handleLinkClick(e, '/politica-de-privacidade')}>
-            {t('nav.privacidade')}
-          </a>
+          <LocalizedLink to="/quem-somos">{t('nav.quemSomos')}</LocalizedLink>
+          <LocalizedLink to="/contato">{t('nav.contato_dedicado')}</LocalizedLink>
+          <LocalizedLink to="/termos-e-condicoes">{t('nav.termos')}</LocalizedLink>
+          <LocalizedLink to="/politica-de-privacidade">{t('nav.privacidade')}</LocalizedLink>
         </div>
 
         <div className="footer-luxo-right">

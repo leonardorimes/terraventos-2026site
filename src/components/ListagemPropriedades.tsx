@@ -2,6 +2,8 @@ import React, { useState, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { OportunidadeDetalhe } from '../data/oportunidadesData';
 import './ListagemPropriedades.css';
+import LocalizedLink from '../router/LocalizedLink';
+import { useTransitionNavigate } from '../router/useTransitionNavigate';
 
 interface ListagemPropriedadesProps {
   items: OportunidadeDetalhe[];
@@ -25,6 +27,7 @@ const parsePrice = (priceStr: string | undefined): number | null => {
 
 const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSelect }) => {
   const { t } = useTranslation();
+  const transitionNavigate = useTransitionNavigate();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [userMaxPrice, setUserMaxPrice] = useState<number | null>(null);
@@ -77,16 +80,12 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
   return (
     <section className="listing-page" data-reveal-managed="true">
       <div className="listing-header">
-        <button 
-          className="back-to-home" 
-          onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: '/' }))}
-          aria-label="Voltar para o início"
-        >
+        <LocalizedLink to="/" className="back-to-home" aria-label="Voltar para o início">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-        </button>
+        </LocalizedLink>
         <h1 className="listing-title">{t('nav.oportunidades')}</h1>
         <p className="listing-subtitle">{t('oportunidades.badge')}</p>
       </div>
@@ -144,10 +143,10 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
             className="property-card"
             onClick={(e) => {
               e.preventDefault();
-              window.dispatchEvent(new CustomEvent('navigate', { detail: '/taiba' }));
+              transitionNavigate('/taiba');
             }}
           >
-            <div className="property-card-image" style={{ backgroundImage: `url("/taiba/Picture.png")` }}>
+            <div className="property-card-image" style={{ backgroundImage: `url("/imoveis/lote-barramar-lagoa-taiba-03.webp")` }}>
               <div className="property-badge">Investimento</div>
             </div>
             <div className="property-card-content">

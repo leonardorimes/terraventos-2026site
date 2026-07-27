@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { type OportunidadeDetalhe } from "../data/oportunidadesData";
 import { getOportunidadesData } from "../data/oportunidadesDataI18n";
 import LazyImage from "./LazyImage";
+import { useTransitionNavigate } from "../router/useTransitionNavigate";
 
 type ProjetosDestaqueProps = {
   onSelect: (item: OportunidadeDetalhe) => void;
@@ -12,7 +13,7 @@ type ProjetosDestaqueProps = {
 const projetos = [
   {
     id: "parque-nacional-1-carlos",
-    image: "/Parque Nacional 1/2c38486d-5013-408b-9a5d-7a88fe309740.jpeg",
+    image: "/imoveis/terreno-parque-nacional-3044m-carlos-01.webp",
     tag: "VENDA",
     location: "Parque Nacional, Preá - CE",
     title: "TERRENO EXCLUSIVO PARQUE NACIONAL",
@@ -24,7 +25,7 @@ const projetos = [
   },
   {
     id: "prado-farol",
-    image: "/PradoFarol/WhatsApp Image 2026-06-23 at 07.58.08.jpeg",
+    image: "/imoveis/terreno-praia-do-farol-01.webp",
     tag: "VENDA",
     location: "Farol do Itapajé - Itarema, CE",
     title: "Terreno Praia do Farol",
@@ -36,7 +37,7 @@ const projetos = [
   },
   {
     id: "terreno-barrinha",
-    image: "/barrinhaNova/barrinha-1.jpeg",
+    image: "/imoveis/terreno-barrinha-1753m-01.webp",
     tag: "VENDA",
     location: "Sítio Barrinha, Acaraú - CE",
     title: "Terreno Barrinha Pé na Areia",
@@ -48,7 +49,7 @@ const projetos = [
   },
   /* {
     id: "15",
-    image: "/taiba/taiba-lotes-1.jpg",
+    image: "/imoveis/lotes-exclusivos-taiba-01.webp",
     tag: "VENDA",
     location: "Taíba, Ceará",
     title: "Lotes Exclusivos Taíba",
@@ -61,7 +62,7 @@ const projetos = [
  */
   {
     id: "14",
-    image: "/jericoacara/terreno-serrote.jpeg",
+    image: "/imoveis/terreno-serrote-jericoacoara-01.webp",
     tag: "VENDA",
     location: "Jericoacoara, Ceará",
     title: "Terreno Serrote Jericoacoara",
@@ -73,7 +74,7 @@ const projetos = [
   },
   {
     id: "vila-aysu-jericoacoara",
-    image: "/jericoacara/jericoacoara-07.jpeg",
+    image: "/imoveis/vila-aysu-jericoacoara-01.webp",
     tag: "VENDA",
     location: "Jericoacoara, Ceará",
     title: "Vila Aysú",
@@ -85,7 +86,7 @@ const projetos = [
   },
   {
     id: "13",
-    image: "/mansoes/20240701_064733.jpg",
+    image: "/imoveis/mansao-praia-do-prea-01.webp",
     tag: "VENDA",
     location: "Praia do Preá, Ceará, Brasil",
     title: "CASA ALTO PADRÃO NA PRAIA DO PREÁ",
@@ -97,7 +98,7 @@ const projetos = [
   },
   {
     id: "10",
-    image: "/CasadeAltoPadraonaPraiadaBarrinha/fotosTerraVentos/1.jpg",
+    image: "/imoveis/casa-alto-padrao-praia-barrinha-01.webp",
     tag: "VENDA",
     location: "Barrinha - Acaraú, CE",
     title: "Casa de Alto Padrão na Praia da Barrinha",
@@ -121,7 +122,7 @@ const projetos = [
   },
   {
     id: "08",
-    image: "/TATAJUBA/WhatsApp Image 2026-04-23 at 18.35.22.jpeg",
+    image: "/imoveis/terreno-exclusivo-tatajuba-1000m-homepage-01.webp",
     tag: "VENDA",
     location: "Tatajuba, Ceará, Brasil",
     title: "Terreno Exclusivo Tatajuba",
@@ -133,7 +134,7 @@ const projetos = [
   },
   {
     id: "07",
-    image: "/prea oportunidade/WhatsApp Image 2026-04-21 at 09.32.47.jpeg",
+    image: "/imoveis/terreno-exclusivo-prea-200m-mar-01.webp",
     tag: "VENDA",
     location: "Preá, Ceará, Brasil",
     title: "Terreno Exclusivo Preá",
@@ -145,7 +146,7 @@ const projetos = [
   },
   {
     id: "06",
-    image: "/Prea House/WhatsApp Image 2026-04-20 at 09.12.53.jpeg",
+    image: "/imoveis/prea-house-homepage-01.webp",
     tag: "VENDA",
     location: "Preá, Ceará, Brasil",
     title: "Preá House",
@@ -157,7 +158,7 @@ const projetos = [
   },
   {
     id: "04",
-    image: "/VILLA_PRABHU/WhatsApp Image 2026-04-01 at 14.58.56 (3).jpeg",
+    image: "/imoveis/villa-prabhu-homepage-01.webp",
     tag: "LANÇAMENTO",
     location: "Paracuru, Ceará, Brasil",
     title: "Villa Prabhu — Paracuru-CE",
@@ -169,19 +170,19 @@ const projetos = [
   },
   {
     id: "02",
-    image: "/bitupitaPaginaIndividual/DJI_20251020023318_0221_D.jpg",
+    image: "/imoveis/terrenos-bitupita-01.webp",
     tag: "VENDA",
     location: "Bitupitá, Ceará, Brasil",
     title: "Terrenos em Bitupitá",
     area: "4.300 m²",
     beds: null,
     baths: null,
-    price: "A partir de R$ 120 MIL",
+    price: "A partir de R$ 150 MIL",
     detailIndex: 3,
   },
   {
     id: "03",
-    image: "/viladoinglesPaginaInicial/Final 04 (1).png",
+    image: "/imoveis/vila-do-ingles-01.webp",
     tag: "INVESTIMENTO",
     location: "Preá, Ceará, Brasil",
     title: "Vila do Inglês",
@@ -193,7 +194,7 @@ const projetos = [
   },
   {
     id: "05",
-    image: "/Matanzas/WhatsApp Image 2026-04-30 at 17.39.11 (3).jpeg",
+    image: "/imoveis/casa-matanzas-01.webp",
     tag: "TEMPORADA",
     location: "Navidad, Chile",
     title: "Casa Matanzas",
@@ -205,7 +206,7 @@ const projetos = [
   },
   {
     id: "01",
-    image: "/terra_ventos_house/compressed/Terra Ventos House - Conduru 3 - Formato Paisagem - Foto Thiago Faquineli -1.webp",
+    image: "/imoveis/villa-conduru-3-01.webp",
     tag: "ALUGUEL DE TEMPORADA",
     location: "FRENTE À PRAIA DO PREÁ",
     title: "CASA ALTO PADRÃO 3 SUÍTES",
@@ -219,6 +220,7 @@ const projetos = [
 
 export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
   const { t, i18n } = useTranslation();
+  const transitionNavigate = useTransitionNavigate();
   const localizedData = getOportunidadesData(i18n.language).filter(item => !item.unlisted);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -252,9 +254,7 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
   };
 
   const handleSeeAll = () => {
-    window.dispatchEvent(
-      new CustomEvent("navigate", { detail: "/propriedades" }),
-    );
+    transitionNavigate("/propriedades");
   };
 
   return (
@@ -331,8 +331,6 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
                   onClick={(e) => {
                     e.preventDefault();
                     onSelect(itemFromData as OportunidadeDetalhe);
-                    window.dispatchEvent(new CustomEvent("navigate", { detail: `/propriedade/${itemFromData.slug}` }));
-                    window.scrollTo(0, 0);
                   }}
                 >
                   <div className="pd-image-wrapper">
@@ -386,11 +384,11 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
               className="pd-card"
               onClick={(e) => {
                 e.preventDefault();
-                window.dispatchEvent(new CustomEvent('navigate', { detail: '/taiba' }));
+                transitionNavigate('/taiba');
               }}
             >
               <div className="pd-image-wrapper">
-                <LazyImage src="/taiba/Picture.png" alt="Oportunidades em Taíba" className="pd-image" />
+                <LazyImage src="/imoveis/lote-barramar-lagoa-taiba-03.webp" alt="Oportunidades em Taíba" className="pd-image" />
                 <div className="pd-tag">INVESTIMENTO</div>
               </div>
               <div className="pd-content">

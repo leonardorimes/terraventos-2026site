@@ -1,6 +1,18 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/propriedade/terreno-terreno-acarau-castelhano-simi",
+      "destination": "/propriedade/terreno-acarau-castelhano-simi",
+      "permanent": true
+    },
+    {
+      "source": "/propriedade/villa-condudu-3",
+      "destination": "/propriedade/villa-conduru-3",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!assets|favicon\\.ico|api|bitupita|advogados|parceiros|founders|llms\\.txt|robots\\.txt)[^.]*)",

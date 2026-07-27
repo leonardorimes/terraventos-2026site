@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { useTranslation } from 'react-i18next';
-import './PaginaIndividual.css';
+import './PaginaIndividual/PaginaIndividual.css';
+import { getFacilityIcon } from '../utils/facilityIcons';
+import LocalizedLink from '../router/LocalizedLink';
+import { PAGE_KEYWORDS, type SeoLang } from '../utils/seoKeywords';
 
 const getTaibaData = (lang: string) => {
   const isEs = lang.startsWith('es');
@@ -53,8 +56,8 @@ const getTaibaData = (lang: string) => {
       ],
       facilities: isEs ? ['560 m²', 'MATRÍCULA', 'Listo para Construir', 'Totalmente Amurallado'] : isEn ? ['560 m²', 'MATRÍCULA', 'Ready to Build', 'Fully Walled'] : ['560 m²', 'MATRÍCULA', 'Pronto para Construir', 'Totalmente Murado'],
       gallery: {
-        main: '/taiba/lote109_img-000.jpg',
-        sideTop: '/taiba/lote109_img-001.jpg',
+        main: '/imoveis/lote-109-taiba-01.webp',
+        sideTop: '/imoveis/lote-109-taiba-02.webp',
         sideBottom: null
       }
     },
@@ -105,8 +108,8 @@ const getTaibaData = (lang: string) => {
       mapLink: 'https://maps.app.goo.gl/afLskbzZK68TQ97g9',
       mapUrl: 'https://maps.google.com/maps?q=-3.480756,-38.928636&z=16&output=embed',
       gallery: {
-        main: '/taiba/barramar720_img-000.jpg',
-        sideTop: '/taiba/barramar720_img-001.jpg',
+        main: '/imoveis/lote-barramar-lagoa-taiba-01.webp',
+        sideTop: '/imoveis/lote-barramar-lagoa-taiba-02.webp',
         sideBottom: null
       }
     },
@@ -157,7 +160,7 @@ const getTaibaData = (lang: string) => {
       mapLink: 'https://google.com/maps/place/-3.476286,-38.931827',
       mapUrl: 'https://maps.google.com/maps?q=-3.476286,-38.931827&z=16&output=embed',
       gallery: {
-        main: '/taiba/Picture.png',
+        main: '/imoveis/lote-barramar-lagoa-taiba-03.webp',
         sideTop: null,
         sideBottom: null
       }
@@ -181,7 +184,7 @@ export default function PaginaTaiba() {
   useEffect(() => {
     const title = 'Oportunidades Exclusivas em Taíba | Terra Ventos';
     const description = 'Terrenos selecionados com alto potencial de valorização e segurança jurídica na Taíba. Opções com MATRÍCULA e VISTA MAR.';
-    const imageUrl = window.location.origin + '/taiba/Picture.png';
+    const imageUrl = window.location.origin + '/imoveis/lote-barramar-lagoa-taiba-03.webp';
     const url = window.location.href;
 
     document.title = title;
@@ -198,6 +201,7 @@ export default function PaginaTaiba() {
     };
 
     updateMeta('description', description);
+    updateMeta('keywords', PAGE_KEYWORDS.taiba[(i18n.language as SeoLang) || 'pt']);
     updateMeta('og:title', title, true);
     updateMeta('og:description', description, true);
     updateMeta('og:image', imageUrl, true);
@@ -217,14 +221,7 @@ export default function PaginaTaiba() {
     document.body.style.overflow = '';
   };
 
-  const getIcon = (fac: string) => {
-    const l = fac.toLowerCase();
-    if (l.includes('mar') || l.includes('praia')) return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2v2M5.6 5.6L4.2 4.2M2 12h2M5.6 18.4l-1.4 1.4M12 22v-2M18.4 18.4l1.4 1.4M22 12h-2M18.4 5.6l1.4-1.4" /><path d="M18 12c0 3.3-2.7 6-6 6s-6-2.7-6-6 2.7-6 6-6 6 2.7 6 6z" /><path d="M22 22c-2.4-1.2-4.8 0-7.2 0s-4.8-1.2-7.2 0-4.8 0-7.6-1.2" /></svg>;
-    if (l.includes('matrícula')) return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>;
-    if (l.includes('murado')) return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M9 17V7h4a3 3 0 0 1 0 6H9" /></svg>;
-    if (l.includes('lagoa')) return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 12c0 5.5-4.5 10-10 10S2 17.5 2 12s4.5-10 10-10 10 4.5 10 10z" /><path d="M7 12c0 2.8 2.2 5 5 5s5-2.2 5-5" /></svg>;
-    return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="16" /><line x1="8" y1="12" x2="16" y2="12" /></svg>;
-  };
+  const getIcon = getFacilityIcon;
 
   const openWhatsApp = (title: string) => {
     const message = `Olá, tenho interesse no terreno em Taíba: ${title}`;
@@ -232,21 +229,18 @@ export default function PaginaTaiba() {
     window.open(`https://wa.me/5585985572807?text=${encoded}`, '_blank');
   };
 
-  const mainImage = '/taiba/Picture.png';
+  const mainImage = '/imoveis/lote-barramar-lagoa-taiba-03.webp';
 
   return (
     <section className="pagina-individual" style={{ paddingTop: '24px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <button 
-          className="pi-back-button"
-          onClick={() => window.dispatchEvent(new CustomEvent('navigate', { detail: '/' }))}
-        >
+        <LocalizedLink to="/" className="pi-back-button">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
           Voltar para o Início
-        </button>
+        </LocalizedLink>
 
         <button 
           className="pi-share-btn"
@@ -473,11 +467,8 @@ export default function PaginaTaiba() {
               <p className="pi-experience-text">
                 {i18n.language.startsWith('es') ? 'Habla directamente con nuestro equipo especializado.' : i18n.language.startsWith('en') ? 'Speak directly with our specialized team.' : 'Fale diretamente com nossa equipe especializada.'}
               </p>
-              <div className="pi-stars">
-                ★★★★★
-              </div>
-              
-              <button 
+
+              <button
                 onClick={() => openWhatsApp(selectedLote.propertyTitle)}
                 className="pi-cta"
               >

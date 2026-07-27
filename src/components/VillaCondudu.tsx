@@ -18,8 +18,8 @@ export default function VillaCondudu({ onSelect }: VillaConduduProps) {
     getOportunidadesData(i18n.language)[0];
 
   const sliderImages = [
-    "/VillaCondutuPaginaInicial/Final 01 (2).png",
-    "/VillaCondutuPaginaInicial/FINAL 02 (1).png",
+    "/imoveis/villa-conduru-3-homepage-01.webp",
+    "/imoveis/villa-conduru-3-homepage-02.webp",
   ];
 
   const handleNext = (e: React.MouseEvent) => {
