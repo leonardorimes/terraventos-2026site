@@ -30,6 +30,7 @@ export default function AppShell() {
   const cleanPath =
     displayLocation.pathname.replace(/^\/(en|es)/, '').replace(/\/$/, '') || '/';
   const isPaginaIndividual = cleanPath.startsWith('/propriedade/');
+  const isBlogPage = cleanPath.startsWith('/blog');
 
   // O idioma da URL é a fonte da verdade — sincroniza o i18next sempre que o prefixo mudar
   // (ex: acesso direto a /en/... deve exibir inglês, não o que o language-detector adivinhar).
@@ -139,7 +140,7 @@ export default function AppShell() {
   // Global SEO Reset — só se aplica às páginas que não gerenciam a própria SEO
   // (individual e institucional cuidam disso sozinhas)
   useEffect(() => {
-    if (isPaginaIndividual) return;
+    if (isPaginaIndividual || isBlogPage) return;
 
     // Rotas que gerenciam a própria SEO (não devem ser sobrescritas pelo reset global).
     // /taiba precisa estar aqui: seu useEffect roda antes (filho-antes-do-pai), então
@@ -183,7 +184,7 @@ export default function AppShell() {
     updateMeta('twitter:title', title);
     updateMeta('twitter:description', description);
     updateMeta('twitter:image', imageUrl);
-  }, [displayLocation, cleanPath, isPaginaIndividual, lang, t]);
+  }, [displayLocation, cleanPath, isPaginaIndividual, isBlogPage, lang, t]);
 
   // Hreflang tags for SEO — cada alternate deve apontar para a versão
   // traduzida desta MESMA página, não para a página atual repetida 3x

@@ -1,0 +1,141 @@
+.blog-index-page {
+  padding: 140px 0 100px;
+  background-color: #f8f8f8;
+  color: #111827;
+  min-height: 60vh;
+}
+
+.blog-index-page .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.blog-index-page .blog-header {
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.blog-index-title {
+  font-family: 'Avenir', sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #111827;
+}
+
+.blog-index-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.blog-index-status {
+  color: #666;
+  font-size: 15px;
+}
+
+@media (max-width: 1200px) {
+  .blog-index-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-index-page {
+    padding: 100px 0 60px;
+  }
+
+  .blog-index-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 60px;
+}
+
+.blog-pagination-pages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-pagination-arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.blog-pagination-arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+.blog-pagination-arrow:hover:not(:disabled) {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+.blog-pagination-arrow:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.blog-pagination-page {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 100px;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  color: #6b7280;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog-pagination-page:hover {
+  background: #ede9e3;
+  border-color: #c4b096;
+  color: #111827;
+}
+
+.blog-pagination-page.active {
+  background: #111827;
+  border-color: #111827;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .blog-pagination {
+    flex-wrap: wrap;
+  }
+
+  .blog-pagination-pages {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+  }
+}

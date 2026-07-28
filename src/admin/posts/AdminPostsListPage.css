@@ -1,0 +1,60 @@
+.admin-posts-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.admin-posts-list-header h1 {
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  font-size: 1.9rem;
+}
+
+.admin-posts-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.admin-posts-table th,
+.admin-posts-table td {
+  text-align: left;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #eef0f2;
+  font-size: 0.9rem;
+}
+
+.admin-posts-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #6b7280;
+  background: #f9fafb;
+}
+
+.admin-status-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.admin-status-badge.is-published {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.admin-status-badge.is-draft {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.admin-posts-table-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

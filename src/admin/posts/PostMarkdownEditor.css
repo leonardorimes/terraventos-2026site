@@ -1,0 +1,81 @@
+.post-md-editor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.post-md-pane {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.post-md-pane-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.post-md-pane textarea {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 320px;
+}
+
+.post-md-pane textarea:focus {
+  outline: none;
+  border-color: #c4b096;
+}
+
+.post-md-preview {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  min-height: 320px;
+  overflow-y: auto;
+  background: #fff;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.post-md-preview :first-child {
+  margin-top: 0;
+}
+
+.post-md-preview h1,
+.post-md-preview h2,
+.post-md-preview h3 {
+  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+  margin: 0.9em 0 0.3em;
+}
+
+.post-md-preview p {
+  margin: 0.6em 0;
+}
+
+.post-md-preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.75em 0;
+}
+
+.post-md-preview th,
+.post-md-preview td {
+  border: 1px solid #e5e7eb;
+  padding: 0.4em 0.6em;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .post-md-editor {
+    grid-template-columns: 1fr;
+  }
+}

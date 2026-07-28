@@ -193,7 +193,16 @@ i18n
             badge: "Insights & Mercado",
             title: "ACOMPANHE NOSSA<br />CURADORIA NO BLOG",
             readMore: "Leia mais",
-            viewAll: "Ver todos os artigos"
+            viewAll: "Ver todos os artigos",
+            pageTitle: "Blog",
+            pageDescription: "Curadoria de artigos sobre investimento imobiliário e o litoral do Ceará.",
+            empty: "Ainda não há posts publicados.",
+            loading: "Carregando…",
+            publishedOn: "Publicado em",
+            backToBlog: "Voltar para o blog",
+            previousPage: "Anterior",
+            nextPage: "Próxima",
+            pageIndicator: "Página {{current}} de {{total}}"
           },
           pagina: {
             back: "Voltar",
@@ -368,7 +377,16 @@ i18n
             badge: "Insights & Market",
             title: "FOLLOW OUR<br />CURATION ON THE BLOG",
             readMore: "Read more",
-            viewAll: "View all articles"
+            viewAll: "View all articles",
+            pageTitle: "Blog",
+            pageDescription: "Curated articles on real estate investment and the Ceará coast.",
+            empty: "No posts published yet.",
+            loading: "Loading…",
+            publishedOn: "Published on",
+            backToBlog: "Back to blog",
+            previousPage: "Previous",
+            nextPage: "Next",
+            pageIndicator: "Page {{current}} of {{total}}"
           },
           pagina: {
             back: "Back",
@@ -553,7 +571,16 @@ i18n
             badge: "Insights y Mercado",
             title: "SIGA NUESTRA<br />CURADURÍA EN EL BLOG",
             readMore: "Leer más",
-            viewAll: "Ver todos los artículos"
+            viewAll: "Ver todos los artículos",
+            pageTitle: "Blog",
+            pageDescription: "Curaduría de artículos sobre inversión inmobiliaria y el litoral de Ceará.",
+            empty: "Aún no hay posts publicados.",
+            loading: "Cargando…",
+            publishedOn: "Publicado el",
+            backToBlog: "Volver al blog",
+            previousPage: "Anterior",
+            nextPage: "Siguiente",
+            pageIndicator: "Página {{current}} de {{total}}"
           },
           pagina: {
             back: "Volver",

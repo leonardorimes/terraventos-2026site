@@ -1,0 +1,62 @@
+.admin-guard-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Manrope', system-ui, sans-serif;
+  color: #4b5563;
+}
+
+.admin-btn {
+  font-family: 'Manrope', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.admin-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-btn-primary {
+  background: #111827;
+  color: #fff;
+}
+
+.admin-btn-primary:hover:not(:disabled) {
+  background: #1f2a33;
+}
+
+.admin-btn-accent {
+  background: #c4b096;
+  color: #111827;
+}
+
+.admin-btn-accent:hover:not(:disabled) {
+  background: #b39d80;
+}
+
+.admin-btn-ghost {
+  background: transparent;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+.admin-btn-ghost:hover:not(:disabled) {
+  background: #f8f8f8;
+}
+
+.admin-btn-danger {
+  background: #fff;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+.admin-btn-danger:hover:not(:disabled) {
+  background: #fef2f2;
+}

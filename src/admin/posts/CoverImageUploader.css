@@ -1,0 +1,41 @@
+.cover-uploader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cover-uploader-preview {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cover-uploader-preview img {
+  width: 120px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+}
+
+.cover-uploader-preview-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.cover-uploader-credit {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.cover-uploader-credit a {
+  color: #6b7280;
+  text-decoration: underline;
+}
+
+.cover-uploader-actions {
+  display: flex;
+  gap: 0.5rem;
+}
