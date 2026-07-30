@@ -52,9 +52,10 @@ export default async function handler(req, res) {
     console.error('[posts-api] missing Supabase service credentials');
     return res.status(500).json({ error: 'Credenciais do Supabase não configuradas' });
   }
-  const supabase = createClient(supabaseUrl, serviceRoleKey);
 
   try {
+    const supabase = createClient(supabaseUrl, serviceRoleKey);
+
     if (req.method === 'GET') {
       const { id, slug } = req.query || {};
       if (!id && !slug) {
