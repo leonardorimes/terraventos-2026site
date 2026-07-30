@@ -53,6 +53,11 @@
   color: #6b7280;
 }
 
+.admin-status-badge.is-scheduled {
+  background: #fdf6e8;
+  color: #9a7b3f;
+}
+
 .admin-posts-table-actions {
   display: flex;
   gap: 0.5rem;

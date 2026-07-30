@@ -24,6 +24,37 @@
   color: #374151;
 }
 
+.admin-schedule-field {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #374151;
+}
+
+.admin-schedule-field .admin-field-label {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.admin-schedule-field input[type='datetime-local'] {
+  font-family: inherit;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+.admin-schedule-hint {
+  margin: -0.75rem 0 1.5rem;
+  font-size: 0.85rem;
+  color: #9a7b3f;
+  background: #fdf6e8;
+  border: 1px solid #f1e0b0;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+}
+
 .admin-post-editor-meta {
   display: flex;
   align-items: flex-start;

@@ -78,9 +78,26 @@ export default function AdminPostsListPage() {
               <tr key={post.id}>
                 <td>{post.title_pt || '(sem título)'}</td>
                 <td>
-                  <span className={`admin-status-badge ${post.published ? 'is-published' : 'is-draft'}`}>
-                    {post.published ? 'Publicado' : 'Rascunho'}
-                  </span>
+                  {(() => {
+                    const isScheduled =
+                      !post.published && !!post.published_at && new Date(post.published_at) > new Date();
+                    return (
+                      <span
+                        className={`admin-status-badge ${
+                          post.published ? 'is-published' : isScheduled ? 'is-scheduled' : 'is-draft'
+                        }`}
+                      >
+                        {post.published
+                          ? 'Publicado'
+                          : isScheduled
+                            ? `Agendado · ${new Date(post.published_at as string).toLocaleString('pt-BR', {
+                                dateStyle: 'short',
+                                timeStyle: 'short',
+                              })}`
+                            : 'Rascunho'}
+                      </span>
+                    );
+                  })()}
                 </td>
                 <td>{new Date(post.updated_at).toLocaleDateString('pt-BR')}</td>
                 <td className="admin-posts-table-actions">

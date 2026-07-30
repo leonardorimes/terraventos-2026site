@@ -13,6 +13,20 @@ type LangField = 'title' | 'excerpt' | 'content';
 
 const LANG_LABELS: Record<LangTab, string> = { pt: 'Português', en: 'English', es: 'Español' };
 
+/** Converte um ISO string (UTC) para o formato aceito por <input type="datetime-local"> no horário local. */
+function isoToLocalInput(iso: string | null): string {
+  if (!iso) return '';
+  const date = new Date(iso);
+  const offsetMs = date.getTimezoneOffset() * 60000;
+  return new Date(date.getTime() - offsetMs).toISOString().slice(0, 16);
+}
+
+/** Converte o valor de <input type="datetime-local"> (horário local, sem timezone) de volta para ISO/UTC. */
+function localInputToIso(value: string): string | null {
+  if (!value) return null;
+  return new Date(value).toISOString();
+}
+
 function getLangField(form: PostFormState, lang: LangTab, field: LangField): string {
   if (field === 'title') return lang === 'en' ? form.title_en : lang === 'es' ? form.title_es : form.title_pt;
   if (field === 'excerpt') return lang === 'en' ? form.excerpt_en : lang === 'es' ? form.excerpt_es : form.excerpt_pt;
@@ -123,6 +137,18 @@ export default function AdminPostEditorPage() {
       <div className="admin-post-editor-header">
         <h1>{isNew ? 'Novo post' : 'Editar post'}</h1>
         <div className="admin-post-editor-header-actions">
+          {!form.published && (
+            <label className="admin-schedule-field">
+              <span className="admin-field-label">Agendar publicação</span>
+              <input
+                type="datetime-local"
+                value={isoToLocalInput(form.published_at)}
+                onChange={(event) =>
+                  setForm((prev) => ({ ...prev, published_at: localInputToIso(event.target.value) }))
+                }
+              />
+            </label>
+          )}
           <label className="admin-publish-toggle">
             <input
               type="checkbox"
@@ -136,6 +162,12 @@ export default function AdminPostEditorPage() {
           </button>
         </div>
       </div>
+      {!form.published && form.published_at && new Date(form.published_at) > new Date() && (
+        <p className="admin-schedule-hint">
+          Este post será publicado automaticamente em{' '}
+          {new Date(form.published_at).toLocaleString('pt-BR', { dateStyle: 'long', timeStyle: 'short' })}.
+        </p>
+      )}
 
       <div className="admin-post-editor-meta">
         <label className="admin-field">

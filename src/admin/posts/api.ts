@@ -17,7 +17,7 @@ export async function getPostById(id: string): Promise<BlogPostRow | null> {
 export async function createPost(input: PostFormState): Promise<BlogPostRow> {
   const payload = {
     ...input,
-    published_at: input.published ? input.published_at ?? new Date().toISOString() : null,
+    published_at: input.published ? input.published_at ?? new Date().toISOString() : input.published_at,
   };
   const { data, error } = await supabase.from('posts').insert(payload).select().single();
   if (error) throw error;
