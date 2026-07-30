@@ -28,7 +28,7 @@ function pickAllowedFields(body) {
 
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-api-key');
 
   if (req.method === 'OPTIONS') {
@@ -105,6 +105,19 @@ export default async function handler(req, res) {
         if (error.code === '23505') return res.status(409).json({ error: 'Esse slug já existe' });
         throw error;
       }
+      if (!data) return res.status(404).json({ error: 'Post não encontrado' });
+      return res.status(200).json({ success: true, post: data });
+    }
+
+    if (req.method === 'DELETE') {
+      const { id, slug } = req.query || {};
+      if (!id && !slug) {
+        return res.status(400).json({ error: 'Informe id ou slug na query string' });
+      }
+      let query = supabase.from('posts').delete();
+      query = id ? query.eq('id', id) : query.eq('slug', slug);
+      const { data, error } = await query.select().maybeSingle();
+      if (error) throw error;
       if (!data) return res.status(404).json({ error: 'Post não encontrado' });
       return res.status(200).json({ success: true, post: data });
     }
