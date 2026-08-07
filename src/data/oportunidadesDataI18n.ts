@@ -2547,6 +2547,93 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     installments: 'Consulte condições',
     category: 'venda',
     unlisted: true
+  },
+  {
+    id: "terreno-tatajuba-5405m2",
+    slug: "terreno-tatajuba-camocim-5405m2",
+    title: "FOR SALE",
+    searchTitle: "Tatajuba Land – 5,405 sqm",
+    image: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
+    badge: "Exclusive Opportunity",
+    propertyTitle: "TATAJUBA LAND – 5,405 SQM",
+    location: "Vila de Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "5,405 sqm in 3 Plots | Between the Dunes and the River Mouth | Georeferenced Documentation",
+    summaryDescription: "5,405 sqm land in Vila de Tatajuba, Guriú District (Camocim, CE), divided into 3 plots, nestled between the dunes and the river mouth, just steps from the sea. Documentation includes a georeferenced topographic survey.",
+    about: [
+      "A rare opportunity in the buzzing Vila de Tatajuba: a 5,405 sqm plot nestled between the dunes and the river mouth, in the Guriú District of Camocim (CE) — one of the most sought-after spots on the Ceará coast for kitesurfers and lovers of unspoiled nature.",
+      "The area is divided into three complementary plots (1,064.46 sqm, 4,086.84 sqm and 254.44 sqm), allowing for anything from a single large property to a fractional project such as a boutique inn, a cluster of villas, or a private high-end retreat.",
+      "Coconut palms and native vegetation frame the land, just steps from the sand and the unique landscape formed where the river meets the sea — the setting that made Tatajuba one of the 'hidden kitesurf paradises' of the Ceará coast.",
+      "Documentation in order: Georeferenced Topographic Survey (ART CE20241475260), with a detailed descriptive report of the three plots, available for download on this page."
+    ],
+    infra: [
+      "Total Area: 5,405 sqm (3 plots)",
+      "Plot A: 1,064.46 sqm",
+      "Plot B: 4,086.84 sqm",
+      "Plot C: 254.44 sqm",
+      "Location: Vila de Tatajuba, Guriú District, Camocim - CE",
+      "Documentation: Georeferenced Topographic Survey (ART CE20241475260)"
+    ],
+    facilities: ["5,405 sqm", "3 Plots", "On the Dunes", "Close to the Sea", "River Mouth"],
+    documents: [
+      {
+        label: "Georeferenced Topographic Survey",
+        url: "/documentos/terreno-tatajuba-5405m2-planta-topografica-georreferenciada.pdf",
+        legend: "Georeferenced topographic survey with the division of the 3 plots (ART CE20241475260)."
+      }
+    ],
+    priceTag: "Price",
+    price: "Inquire",
+    installments: "Contact us for pricing and payment terms",
+    category: "venda"
+  },
+  {
+    id: "lotes-tatajuba-5-lotes",
+    slug: "lotes-tatajuba-camocim",
+    title: "FOR SALE",
+    searchTitle: "Tatajuba Lots – starting at 400 sqm",
+    image: "/imoveis/lotes-tatajuba-camocim-01.webp",
+    badge: "New Release",
+    propertyTitle: "TATAJUBA LOTS — CAMOCIM, CE",
+    location: "Vila de Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "5 Lots from 400 to 604 sqm | Next to La Ventana and Avra | Starting at R$ 330,000.00",
+    summaryDescription: "A set of 5 lots in Vila de Tatajuba, next to the La Ventana and Avra villas and close to the seafront, with areas between 400.86 sqm and 604.06 sqm. Starting at R$ 330,000.00 per lot.",
+    about: [
+      "An exclusive set of 5 lots for sale in Vila de Tatajuba (Camocim, CE), right next to the renowned La Ventana and Avra villas and just steps from the seafront — one of the fastest-appreciating areas on the Ceará coast in recent years.",
+      "There are 5 lots ranging from 400.86 sqm to 604.06 sqm, ideal for high-end residential projects, boutique inns, or an investment with strong appreciation potential given the proximity to already-established developments.",
+      "The privileged location provides easy access to the beach, the lagoon and the river mouth, plus the infrastructure already in place nearby — high-end homes, inns and an internationally-flavored neighborhood.",
+      "Each lot can be purchased individually (starting at R$ 330,000.00) or as a set. The plan with the detailed division of the 5 areas is available for download on this page."
+    ],
+    infra: [
+      "Total Area: 2,511.85 sqm (5 lots)",
+      "Lot 01: 604.06 sqm",
+      "Lot 02: 400.86 sqm",
+      "Lot 03: 503.69 sqm",
+      "Lot 04: 501.71 sqm",
+      "Lot 05: 501.53 sqm",
+      "Location: Vila de Tatajuba, next to La Ventana and Avra"
+    ],
+    facilities: ["5 Lots", "400 to 604 sqm", "Next to La Ventana and Avra", "Close to the Seafront"],
+    documents: [
+      {
+        label: "Plan with the Division of the 5 Lots",
+        url: "/documentos/lotes-tatajuba-planta-divisao-5-lotes.pdf",
+        legend: "Plan showing the division of the 5 lots and each individual area."
+      }
+    ],
+    priceTag: "Starting at",
+    price: "R$ 330,000.00",
+    installments: "Individual lots: R$ 330,000.00 each",
+    category: "venda",
+    lotes: [
+      { id: "all", label: "All 5 Lots (2,511.85 sqm)", priceTag: "Total price", price: "R$ 1,650,000.00" },
+      { id: "lote-01", label: "Lot 01 (604.06 sqm)", priceTag: "Price", price: "R$ 330,000.00" },
+      { id: "lote-02", label: "Lot 02 (400.86 sqm)", priceTag: "Price", price: "R$ 330,000.00" },
+      { id: "lote-03", label: "Lot 03 (503.69 sqm)", priceTag: "Price", price: "R$ 330,000.00" },
+      { id: "lote-04", label: "Lot 04 (501.71 sqm)", priceTag: "Price", price: "R$ 330,000.00" },
+      { id: "lote-05", label: "Lot 05 (501.53 sqm)", priceTag: "Price", price: "R$ 330,000.00" }
+    ]
   },],
   es: [
     {
@@ -3320,6 +3407,93 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       facilities: ['800 m²','Cerca de Laguna','Kitesurf Paraíso','Zona Turística'],
       priceTag: '', price: 'R$ 215.000,00', installments: 'Consulte condiciones',
     unlisted: true
+  },
+  {
+    id: "terreno-tatajuba-5405m2",
+    slug: "terreno-tatajuba-camocim-5405m2",
+    title: "VENTA",
+    searchTitle: "Terreno en Tatajuba – 5.405 m²",
+    image: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
+    badge: "Oportunidad Exclusiva",
+    propertyTitle: "TERRENO EN TATAJUBA – 5.405 M²",
+    location: "Vila de Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "5.405 m² en 3 Parcelas | Entre las Dunas y la Desembocadura del Río | Documentación Georreferenciada",
+    summaryDescription: "Terreno de 5.405 m² en Vila de Tatajuba, Distrito de Guriú (Camocim-CE), dividido en 3 parcelas, ubicado entre las dunas y la desembocadura del río, a pocos pasos del mar. Documentación con levantamiento planialtimétrico georreferenciado.",
+    about: [
+      "Una oportunidad poco común en la animada Vila de Tatajuba: terreno de 5.405 m² ubicado entre las dunas y la desembocadura del río, en el Distrito de Guriú, Camocim (CE) — uno de los puntos más buscados del litoral cearense por los kitesurfistas y los amantes de la naturaleza preservada.",
+      "El área está dividida en tres parcelas complementarias (1.064,46 m², 4.086,84 m² y 254,44 m²), lo que permite planificar desde una gran propiedad única hasta un proyecto fraccionado, como una posada boutique, un conjunto de villas o un refugio privado de alto standing.",
+      "Cocoteros y vegetación nativa enmarcan el terreno, ubicado a pocos pasos de la franja de arena y del paisaje único formado por el encuentro del río con el mar — escenario que consagró a Tatajuba como uno de los 'paraísos escondidos del kitesurf' del litoral cearense.",
+      "Documentación en regla: Levantamiento Planialtimétrico Georreferenciado (ART CE20241475260), con memoria descriptiva detallada de las tres parcelas, disponible para descargar en esta página."
+    ],
+    infra: [
+      "Área Total: 5.405 m² (3 parcelas)",
+      "Parcela A: 1.064,46 m²",
+      "Parcela B: 4.086,84 m²",
+      "Parcela C: 254,44 m²",
+      "Ubicación: Vila de Tatajuba, Distrito de Guriú, Camocim - CE",
+      "Documentación: Levantamiento Planialtimétrico Georreferenciado (ART CE20241475260)"
+    ],
+    facilities: ["5.405 m²", "3 Parcelas", "Sobre las Dunas", "Cerca del Mar", "Desembocadura del Río"],
+    documents: [
+      {
+        label: "Levantamiento Planialtimétrico Georreferenciado",
+        url: "/documentos/terreno-tatajuba-5405m2-planta-topografica-georreferenciada.pdf",
+        legend: "Levantamiento planialtimétrico georreferenciado con la división de las 3 parcelas (ART CE20241475260)."
+      }
+    ],
+    priceTag: "Valor",
+    price: "Consultar",
+    installments: "Consulte condiciones y forma de pago",
+    category: "venda"
+  },
+  {
+    id: "lotes-tatajuba-5-lotes",
+    slug: "lotes-tatajuba-camocim",
+    title: "VENTA",
+    searchTitle: "Lotes en Tatajuba – desde 400 m²",
+    image: "/imoveis/lotes-tatajuba-camocim-01.webp",
+    badge: "Lanzamiento",
+    propertyTitle: "LOTES EN TATAJUBA — CAMOCIM, CE",
+    location: "Vila de Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "5 Lotes de 400 a 604 m² | Junto a La Ventana y Avra | Desde R$ 330.000,00",
+    summaryDescription: "Conjunto de 5 lotes en Vila de Tatajuba, junto a las villas La Ventana y Avra y cerca de la orilla, con áreas entre 400,86 m² y 604,06 m². Desde R$ 330.000,00 cada lote.",
+    about: [
+      "Conjunto exclusivo de 5 lotes en venta en Vila de Tatajuba (Camocim-CE), vecino de las reconocidas villas La Ventana y Avra y a pocos pasos de la orilla — una de las zonas de mayor valorización del litoral cearense en los últimos años.",
+      "Son 5 lotes con áreas entre 400,86 m² y 604,06 m², ideales para proyectos residenciales de alto standing, posadas boutique o inversión con gran potencial de valorización, dada la cercanía con emprendimientos ya consolidados en la región.",
+      "La ubicación privilegiada garantiza fácil acceso a la playa, a la laguna y a la desembocadura del río, además de contar con la infraestructura ya instalada en los alrededores — casas de alto standing, posadas y un vecindario de nivel internacional.",
+      "Cada lote puede adquirirse individualmente (desde R$ 330.000,00) o en conjunto. El plano con la división detallada de las 5 áreas está disponible para descargar en esta página."
+    ],
+    infra: [
+      "Área Total: 2.511,85 m² (5 lotes)",
+      "Lote 01: 604,06 m²",
+      "Lote 02: 400,86 m²",
+      "Lote 03: 503,69 m²",
+      "Lote 04: 501,71 m²",
+      "Lote 05: 501,53 m²",
+      "Ubicación: Vila de Tatajuba, junto a La Ventana y Avra"
+    ],
+    facilities: ["5 Lotes", "400 a 604 m²", "Junto a La Ventana y Avra", "Cerca de la Orilla"],
+    documents: [
+      {
+        label: "Plano con la División de los 5 Lotes",
+        url: "/documentos/lotes-tatajuba-planta-divisao-5-lotes.pdf",
+        legend: "Plano con la división de los 5 lotes y las áreas individuales de cada uno."
+      }
+    ],
+    priceTag: "Desde",
+    price: "R$ 330.000,00",
+    installments: "Lotes individuales: R$ 330.000,00 cada uno",
+    category: "venda",
+    lotes: [
+      { id: "all", label: "Los 5 Lotes (2.511,85 m²)", priceTag: "Valor total", price: "R$ 1.650.000,00" },
+      { id: "lote-01", label: "Lote 01 (604,06 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+      { id: "lote-02", label: "Lote 02 (400,86 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+      { id: "lote-03", label: "Lote 03 (503,69 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+      { id: "lote-04", label: "Lote 04 (501,71 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+      { id: "lote-05", label: "Lote 05 (501,53 m²)", priceTag: "Valor", price: "R$ 330.000,00" }
+    ]
   },],
 };
 
