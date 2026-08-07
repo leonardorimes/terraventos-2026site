@@ -12,6 +12,30 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "terreno-tatajuba-5405m2",
+    image: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
+    tag: "VENDA",
+    location: "Vila de Tatajuba, Camocim - CE",
+    title: "TERRENO EM TATAJUBA – 5.405 M²",
+    area: "5.405 m²",
+    beds: null,
+    baths: null,
+    price: "Consulte",
+    detailIndex: 0,
+  },
+  {
+    id: "lotes-tatajuba-5-lotes",
+    image: "/imoveis/lotes-tatajuba-camocim-01.webp",
+    tag: "VENDA",
+    location: "Vila de Tatajuba, Camocim - CE",
+    title: "LOTES EM TATAJUBA — CAMOCIM, CE",
+    area: "400 a 604 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 330.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "parque-nacional-1-carlos",
     image: "/imoveis/terreno-parque-nacional-3044m-carlos-01.webp",
     tag: "VENDA",
@@ -319,8 +343,8 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
           onScroll={checkScroll}
         >
           <div className="pd-slider-track">
-            {/* PRIMEIRA PROPRIEDADE (VILA AYSU) */}
-            {projetos.slice(0, 1).map((projeto) => {
+            {/* PRIMEIRAS PROPRIEDADES (terrenos novos em destaque) */}
+            {projetos.slice(0, 2).map((projeto) => {
               const itemFromData = localizedData.find((d) => d.id === projeto.id);
               if (!itemFromData) return null;
               return (
@@ -417,7 +441,7 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
             </a>
 
             {/* RESTANTE DOS PROJETOS */}
-            {projetos.slice(1).map((projeto) => {
+            {projetos.slice(2).map((projeto) => {
               const itemFromData = localizedData.find(
                 (d) => d.id === projeto.id,
               );

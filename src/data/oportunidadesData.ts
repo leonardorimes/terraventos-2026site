@@ -2197,5 +2197,115 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   price: "R$ 1.500.000,00",
   installments: "Consulte condições",
   category: "venda"
+},
+{
+  id: "terreno-tatajuba-5405m2",
+  slug: "terreno-tatajuba-camocim-5405m2",
+  title: "VENDA",
+  searchTitle: "Terreno em Tatajuba – 5.405 m²",
+  image: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "TERRENO EM TATAJUBA – 5.405 M²",
+  location: "Vila de Tatajuba, Camocim - CE",
+  rating: 5,
+  exclusiveText: "5.405 m² em 3 Glebas | Entre Dunas e a Foz do Rio | Documentação Georreferenciada",
+  summaryDescription: "Terreno de 5.405 m² na Vila de Tatajuba, Distrito de Guriú (Camocim-CE), dividido em 3 glebas, encravado entre as dunas e a foz do rio, a poucos passos do mar. Documentação com levantamento planialtimétrico georreferenciado.",
+  about: [
+    "Uma oportunidade rara na badalada Vila de Tatajuba: terreno de 5.405 m² encravado entre as dunas e a foz do rio, no Distrito de Guriú, em Camocim (CE) — um dos points mais procurados do litoral cearense por kitesurfistas e amantes de natureza preservada.",
+    "A área é dividida em três glebas complementares (1.064,46 m², 4.086,84 m² e 254,44 m²), o que permite planejar desde uma grande propriedade única até um projeto fracionado, como pousada boutique, vila de casas ou refúgio particular de alto padrão.",
+    "Vegetação de coqueiros e mata nativa emolduram o terreno, que fica a poucos passos da faixa de areia e da paisagem única formada pelo encontro do rio com o mar — cenário que consagrou Tatajuba como um dos 'paraísos escondidos do kitesurf' no litoral do Ceará.",
+    "Documentação em dia: Levantamento Planialtimétrico Georreferenciado (ART CE20241475260), com memorial descritivo detalhado das três glebas, disponível para download nesta página."
+  ],
+  infra: [
+    "Área Total: 5.405 m² (3 glebas)",
+    "Gleba A: 1.064,46 m²",
+    "Gleba B: 4.086,84 m²",
+    "Gleba C: 254,44 m²",
+    "Localização: Vila de Tatajuba, Distrito de Guriú, Camocim - CE",
+    "Documentação: Levantamento Planialtimétrico Georreferenciado (ART CE20241475260)"
+  ],
+  facilities: ["5.405 m²", "3 Glebas", "Pé na Duna", "Perto do Mar", "Foz do Rio"],
+  gallery: {
+    main: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
+    sideTop: "/imoveis/terreno-tatajuba-camocim-5405m2-02.webp",
+    sideBottom: "/imoveis/terreno-tatajuba-camocim-5405m2-03.webp",
+    extra: ["/imoveis/terreno-tatajuba-camocim-5405m2-04.webp"]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-2.853978,-40.700511&hl=pt-BR&z=15&output=embed",
+  videoSources: [
+    "https://player.vimeo.com/video/1216507452",
+    "https://player.vimeo.com/video/1216507450",
+    "https://player.vimeo.com/video/1216507454",
+    "https://player.vimeo.com/video/1216507451"
+  ],
+  documents: [
+    {
+      label: "Planta Topográfica Georreferenciada",
+      url: "/documentos/terreno-tatajuba-5405m2-planta-topografica-georreferenciada.pdf",
+      legend: "Levantamento planialtimétrico georreferenciado com a divisão das 3 glebas (ART CE20241475260)."
+    }
+  ],
+  priceTag: "Valor",
+  price: "Consulte",
+  installments: "Consulte condições e forma de pagamento",
+  category: "venda"
+},
+{
+  id: "lotes-tatajuba-5-lotes",
+  slug: "lotes-tatajuba-camocim",
+  title: "VENDA",
+  searchTitle: "Lotes em Tatajuba – a partir de 400 m²",
+  image: "/imoveis/lotes-tatajuba-camocim-01.webp",
+  badge: "Lançamento",
+  propertyTitle: "LOTES EM TATAJUBA — CAMOCIM, CE",
+  location: "Vila de Tatajuba, Camocim - CE",
+  rating: 5,
+  exclusiveText: "5 Lotes de 400 a 604 m² | Ao Lado de La Ventana e Avra | A partir de R$ 330.000,00",
+  summaryDescription: "Conjunto de 5 lotes na Vila de Tatajuba, próximos às vilas La Ventana e Avra e à orla, com áreas entre 400,86 m² e 604,06 m². A partir de R$ 330.000,00 cada lote.",
+  about: [
+    "Conjunto exclusivo de 5 lotes à venda na Vila de Tatajuba (Camocim-CE), vizinhos às renomadas vilas La Ventana e Avra e a poucos passos da orla — uma das regiões de maior valorização do litoral cearense nos últimos anos.",
+    "São 5 lotes com áreas entre 400,86 m² e 604,06 m², ideais para projetos residenciais de alto padrão, pousadas boutique ou investimento com potencial de valorização acelerada, dada a proximidade com empreendimentos já consolidados na região.",
+    "A localização privilegiada garante fácil acesso à praia, à lagoa e à foz do rio, além de contar com a infraestrutura já instalada no entorno — casas de alto padrão, pousadas e uma vizinhança de padrão internacional.",
+    "Cada lote pode ser adquirido individualmente (a partir de R$ 330.000,00) ou em conjunto. A planta com a divisão detalhada das 5 áreas está disponível para download nesta página."
+  ],
+  infra: [
+    "Área Total: 2.511,85 m² (5 lotes)",
+    "Lote 01: 604,06 m²",
+    "Lote 02: 400,86 m²",
+    "Lote 03: 503,69 m²",
+    "Lote 04: 501,71 m²",
+    "Lote 05: 501,53 m²",
+    "Localização: Vila de Tatajuba, ao lado de La Ventana e Avra"
+  ],
+  facilities: ["5 Lotes", "400 a 604 m²", "Ao Lado de La Ventana e Avra", "Perto da Orla"],
+  gallery: {
+    main: "/imoveis/lotes-tatajuba-camocim-01.webp",
+    sideTop: "/imoveis/lotes-tatajuba-camocim-02.webp",
+    sideBottom: "/imoveis/lotes-tatajuba-camocim-03.webp",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-2.855043,-40.694569&hl=pt-BR&z=15&output=embed",
+  videoSources: [],
+  documents: [
+    {
+      label: "Planta com Divisão dos 5 Lotes",
+      url: "/documentos/lotes-tatajuba-planta-divisao-5-lotes.pdf",
+      legend: "Planta com a divisão dos 5 lotes e as áreas individuais de cada um."
+    }
+  ],
+  priceTag: "A partir de",
+  price: "R$ 330.000,00",
+  installments: "Lotes individuais: R$ 330.000,00 cada",
+  category: "venda",
+  lotes: [
+    { id: "all", label: "Todos os 5 Lotes (2.511,85 m²)", priceTag: "Valor total", price: "R$ 1.650.000,00" },
+    { id: "lote-01", label: "Lote 01 (604,06 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+    { id: "lote-02", label: "Lote 02 (400,86 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+    { id: "lote-03", label: "Lote 03 (503,69 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+    { id: "lote-04", label: "Lote 04 (501,71 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
+    { id: "lote-05", label: "Lote 05 (501,53 m²)", priceTag: "Valor", price: "R$ 330.000,00" }
+  ]
 }
 ];
