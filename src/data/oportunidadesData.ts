@@ -2248,7 +2248,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     }
   ],
   priceTag: "Valor",
-  price: "Consulte",
+  price: "R$ 1.700.000,00",
   installments: "Consulte condições e forma de pagamento",
   category: "venda",
   referralCode: "RICAMOT"

@@ -2583,8 +2583,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       }
     ],
     priceTag: "Price",
-    price: "Inquire",
-    installments: "Contact us for pricing and payment terms",
+    price: "R$ 1,700,000.00",
+    installments: "Contact us for payment terms",
     category: "venda"
   },
   {
@@ -3443,8 +3443,8 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       }
     ],
     priceTag: "Valor",
-    price: "Consultar",
-    installments: "Consulte condiciones y forma de pago",
+    price: "R$ 1.700.000,00",
+    installments: "Consulte condiciones de pago",
     category: "venda"
   },
   {
