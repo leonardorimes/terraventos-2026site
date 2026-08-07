@@ -13,6 +13,11 @@ export default function PropertySidebarCTA({ item, lotes, selectedLoteId, onSele
   const { t } = useTranslation();
   const hasLotes = !!lotes?.length;
 
+  const waMessage = item.referralCode
+    ? `Olá! Tenho interesse no imóvel: ${item.propertyTitle} (Ref: ${item.referralCode})`
+    : `Olá! Tenho interesse no imóvel: ${item.propertyTitle}`;
+  const waHref = `https://wa.me/5585985572807?text=${encodeURIComponent(waMessage)}`;
+
   return (
     <aside className="pi-content-side">
       <div className="pi-card">
@@ -57,7 +62,7 @@ export default function PropertySidebarCTA({ item, lotes, selectedLoteId, onSele
               {t('pagina.contact')}
             </p>
             <a
-              href="https://wa.me/5585985572807"
+              href={waHref}
               target="_blank"
               rel="noopener noreferrer"
               className="pi-cta"

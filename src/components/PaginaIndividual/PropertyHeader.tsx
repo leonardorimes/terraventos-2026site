@@ -50,6 +50,9 @@ export default function PropertyHeader({ item }: Props) {
         </button>
       </div>
       <p className="pi-exclusive">{item.exclusiveText}</p>
+      {item.referralCode && (
+        <p className="pi-ref-code">Ref: {item.referralCode}</p>
+      )}
     </>
   );
 }

@@ -35,6 +35,7 @@ export type OportunidadeDetalhe = {
   category: 'venda' | 'lancamento' | 'temporada' | 'investimento';
   unlisted?: boolean;
   lotes?: LoteOverride[];
+  referralCode?: string;
 };
 
 // Um terreno subdividido em lotes pode oferecer opções de preço/área diferentes
@@ -2249,7 +2250,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   priceTag: "Valor",
   price: "Consulte",
   installments: "Consulte condições e forma de pagamento",
-  category: "venda"
+  category: "venda",
+  referralCode: "RICAMOT"
 },
 {
   id: "lotes-tatajuba-5-lotes",
@@ -2306,6 +2308,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     { id: "lote-03", label: "Lote 03 (503,69 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
     { id: "lote-04", label: "Lote 04 (501,71 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
     { id: "lote-05", label: "Lote 05 (501,53 m²)", priceTag: "Valor", price: "R$ 330.000,00" }
-  ]
+  ],
+  referralCode: "RICAMOT"
 }
 ];
