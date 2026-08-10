@@ -12,6 +12,18 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "casa-beira-mar-tatajuba",
+    image: "/imoveis/casa-beira-mar-tatajuba-01.webp",
+    tag: "VENDA",
+    location: "Tatajuba, Camocim - CE",
+    title: "CASA BEIRA-MAR EM TATAJUBA",
+    area: "3.100 m²",
+    beds: 1,
+    baths: 2,
+    price: "R$ 3.000.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "terreno-tatajuba-5405m2",
     image: "/imoveis/terreno-tatajuba-camocim-5405m2-01.webp",
     tag: "VENDA",
