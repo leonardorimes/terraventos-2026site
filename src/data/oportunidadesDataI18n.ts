@@ -2634,7 +2634,28 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       { id: "lote-04", label: "Lot 04 (501.71 sqm)", priceTag: "Price", price: "R$ 330,000.00" },
       { id: "lote-05", label: "Lot 05 (501.53 sqm)", priceTag: "Price", price: "R$ 330,000.00" }
     ]
-  },],
+  },
+  {
+    id: "casa-beira-mar-tatajuba",
+    slug: "casa-beira-mar-tatajuba",
+    title: "FOR SALE",
+    searchTitle: "Beachfront House in Tatajuba",
+    image: "/imoveis/casa-beira-mar-tatajuba-01.webp",
+    badge: "Exclusive Opportunity",
+    propertyTitle: "BEACHFRONT HOUSE IN TATAJUBA",
+    location: "Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "Beachfront | Approx. 3,100 sqm lot | New tropical-style house",
+    summaryDescription: "Newly completed beachfront home in Tatajuba on an approximately 3,100 sqm lot. Tropical design with wood, generous glass openings, a loft suite, veranda and barbecue area.",
+    about: ["A newly completed beachfront residence in Tatajuba, designed to connect tropical architecture, landscape and natural ventilation.", "The approximately 3,100 sqm lot includes around 115 to 120 sqm of interior space, plus a veranda and an outdoor barbecue area.", "The current layout has 1 bedroom and 2 bathrooms, with the possibility of adding a second ground-floor bedroom."],
+    infra: ["Lot: approximately 3,100 sqm", "Interior area: approximately 115 to 120 sqm", "1 bedroom, with potential for a second", "2 bathrooms", "Veranda and barbecue area", "Upper-floor loft suite"],
+    facilities: ["Beachfront", "3,100 sqm", "New home", "Tropical design", "Barbecue area"],
+    priceTag: "Price",
+    price: "R$ 3,000,000.00",
+    installments: "Contact us for terms",
+    category: "venda",
+    referralCode: "ALBERTO"
+  }],
   es: [
     {
       id: "prado-farol",
@@ -3494,7 +3515,28 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
       { id: "lote-04", label: "Lote 04 (501,71 m²)", priceTag: "Valor", price: "R$ 330.000,00" },
       { id: "lote-05", label: "Lote 05 (501,53 m²)", priceTag: "Valor", price: "R$ 330.000,00" }
     ]
-  },],
+  },
+  {
+    id: "casa-beira-mar-tatajuba",
+    slug: "casa-beira-mar-tatajuba",
+    title: "VENTA",
+    searchTitle: "Casa Frente al Mar en Tatajuba",
+    image: "/imoveis/casa-beira-mar-tatajuba-01.webp",
+    badge: "Oportunidad Exclusiva",
+    propertyTitle: "CASA FRENTE AL MAR EN TATAJUBA",
+    location: "Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "Frente al mar | Terreno de aprox. 3.100 m² | Casa nueva de estilo tropical",
+    summaryDescription: "Casa recién terminada frente al mar en Tatajuba, en un terreno de aproximadamente 3.100 m². Diseño tropical con madera, amplias aberturas de vidrio, suite loft, terraza y zona de barbacoa.",
+    about: ["Residencia recién terminada frente al mar en Tatajuba, concebida para integrar arquitectura tropical, paisaje y ventilación natural.", "El terreno tiene aproximadamente 3.100 m² y la casa cuenta con unos 115 a 120 m² interiores, además de terraza y zona exterior con barbacoa.", "La distribución actual ofrece 1 dormitorio y 2 baños, con posibilidad de crear un segundo dormitorio en la planta baja."],
+    infra: ["Terreno: aproximadamente 3.100 m²", "Área interior: aproximadamente 115 a 120 m²", "1 dormitorio, con posibilidad de un segundo", "2 baños", "Terraza y zona de barbacoa", "Suite loft en la planta superior"],
+    facilities: ["Frente al mar", "3.100 m²", "Casa nueva", "Estilo tropical", "Barbacoa"],
+    priceTag: "Valor",
+    price: "R$ 3.000.000,00",
+    installments: "Consulte las condiciones",
+    category: "venda",
+    referralCode: "ALBERTO"
+  }],
 };
 
 

@@ -2310,5 +2310,58 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     { id: "lote-05", label: "Lote 05 (501,53 m²)", priceTag: "Valor", price: "R$ 330.000,00" }
   ],
   referralCode: "RICAMOT"
+},
+{
+  id: "casa-beira-mar-tatajuba",
+  slug: "casa-beira-mar-tatajuba",
+  title: "VENDA",
+  searchTitle: "Casa Beira-Mar em Tatajuba",
+  image: "/imoveis/casa-beira-mar-tatajuba-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "CASA BEIRA-MAR EM TATAJUBA",
+  location: "Tatajuba, Camocim - CE",
+  rating: 5,
+  exclusiveText: "Frente ao mar | Terreno de aproximadamente 3.100 m² | Casa nova em estilo tropical",
+  summaryDescription: "Casa recém-concluída de frente para o mar em Tatajuba, em terreno de aproximadamente 3.100 m². Projeto tropical com madeira, amplas aberturas de vidro, suíte loft, varanda e churrasqueira.",
+  about: [
+    "Uma residência recém-concluída, de frente para o mar em Tatajuba, criada para integrar arquitetura tropical, paisagem e ventilação natural. A casa combina madeira, amplas aberturas de vidro e vistas abertas para a praia.",
+    "O terreno possui aproximadamente 3.100 m² e a casa conta com cerca de 115 a 120 m² de área interna, além de varanda e área externa com churrasqueira. No piso superior, uma suíte loft amplia a conexão com o entorno.",
+    "A configuração atual oferece 1 quarto e 2 banheiros, com possibilidade de implantação de um segundo quarto no pavimento térreo. Uma oportunidade para quem procura uma casa nova, privativa e pé na areia em Tatajuba.",
+    "A situação documental é de posse, com cadeia documentada desde 2006. Desde 2019, os direitos possessórios estão em nome de sociedade brasileira destinada exclusivamente ao imóvel, já incluído no processo oficial de regularização fundiária do IDACE."
+  ],
+  infra: [
+    "Terreno: aproximadamente 3.100 m²",
+    "Área interna: aproximadamente 115 a 120 m²",
+    "1 quarto (com possibilidade de segundo quarto no térreo)",
+    "2 banheiros",
+    "Varanda e área externa com churrasqueira",
+    "Suíte loft no piso superior",
+    "Documentação: posse com cadeia documentada desde 2006; em regularização fundiária pelo IDACE"
+  ],
+  facilities: ["Frente ao mar", "3.100 m²", "Casa nova", "Estilo tropical", "Churrasqueira"],
+  gallery: {
+    main: "/imoveis/casa-beira-mar-tatajuba-01.webp",
+    sideTop: "/imoveis/casa-beira-mar-tatajuba-02.webp",
+    sideBottom: "/imoveis/casa-beira-mar-tatajuba-03.webp",
+    extra: [
+      "/imoveis/casa-beira-mar-tatajuba-04.webp",
+      "/imoveis/casa-beira-mar-tatajuba-05.webp",
+      "/imoveis/casa-beira-mar-tatajuba-06.webp",
+      "/imoveis/casa-beira-mar-tatajuba-07.webp",
+      "/imoveis/casa-beira-mar-tatajuba-08.webp",
+      "/imoveis/casa-beira-mar-tatajuba-09.webp",
+      "/imoveis/casa-beira-mar-tatajuba-10.webp",
+      "/imoveis/casa-beira-mar-tatajuba-11.webp",
+      "/imoveis/casa-beira-mar-tatajuba-12.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-2.854947,-40.704965&hl=pt-BR&z=16&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1217022357"],
+  priceTag: "Valor",
+  price: "R$ 3.000.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "ALBERTO"
 }
 ];
