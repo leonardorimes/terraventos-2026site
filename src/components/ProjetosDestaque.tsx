@@ -12,6 +12,78 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "casa-alto-padrao-taiba-vista-mar",
+    image: "/imoveis/casa-alto-padrao-taiba-vista-mar-23.webp",
+    tag: "VENDA",
+    location: "Taíba, Ceará",
+    title: "CASA ALTO PADRÃO EM GRANITO — TAÍBA",
+    area: null,
+    beds: 6,
+    baths: 6,
+    price: "R$ 3.500.000,00",
+    detailIndex: 0,
+  },
+  {
+    id: "terreno-nova-taiba-1920m2",
+    image: "/imoveis/terreno-nova-taiba-1920m2-06.webp",
+    tag: "VENDA",
+    location: "Loteamento Nova Taíba, Taíba - CE",
+    title: "TERRENO EM NOVA TAÍBA — 1.920 M² COM CASA",
+    area: "1.920 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 1.300.000,00",
+    detailIndex: 0,
+  },
+  {
+    id: "casa-duplex-pe-na-areia-taiba",
+    image: "/imoveis/casa-duplex-pe-na-areia-taiba-04.webp",
+    tag: "VENDA",
+    location: "Taíba, Ceará",
+    title: "CASA DUPLEX PÉ NA AREIA — TAÍBA",
+    area: "1.280 m²",
+    beds: 3,
+    baths: null,
+    price: "R$ 1.200.000,00",
+    detailIndex: 0,
+  },
+  {
+    id: "terreno-morro-do-chapeu-taiba-832m2",
+    image: "/imoveis/terreno-morro-do-chapeu-taiba-832m2-02.webp",
+    tag: "VENDA",
+    location: "Morro do Chapéu, Taíba - CE",
+    title: "TERRENO NO MORRO DO CHAPÉU — TAÍBA, 832 M²",
+    area: "832 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 700.000,00",
+    detailIndex: 0,
+  },
+  {
+    id: "terreno-taiba-2560m2",
+    image: "/imoveis/terreno-taiba-2560m2-02.webp",
+    tag: "VENDA",
+    location: "Taíba, Ceará",
+    title: "TERRENO EM TAÍBA — 2.560 M²",
+    area: "2.560 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 2.200.000,00",
+    detailIndex: 0,
+  },
+  {
+    id: "terreno-vila-sao-francisco-tatajuba",
+    image: "/imoveis/terreno-vila-sao-francisco-tatajuba-01.webp",
+    tag: "VENDA",
+    location: "Vila São Francisco, ao lado de Tatajuba - CE",
+    title: "TERRENO VILA SÃO FRANCISCO — TATAJUBA",
+    area: "2.000 m²",
+    beds: null,
+    baths: null,
+    price: "R$ 1.100.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "casa-beira-mar-tatajuba",
     image: "/imoveis/casa-beira-mar-tatajuba-01.webp",
     tag: "VENDA",
@@ -356,7 +428,7 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
         >
           <div className="pd-slider-track">
             {/* PRIMEIRAS PROPRIEDADES (terrenos novos em destaque) */}
-            {projetos.slice(0, 2).map((projeto) => {
+            {projetos.slice(0, 8).map((projeto) => {
               const itemFromData = localizedData.find((d) => d.id === projeto.id);
               if (!itemFromData) return null;
               return (
@@ -453,7 +525,7 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
             </a>
 
             {/* RESTANTE DOS PROJETOS */}
-            {projetos.slice(2).map((projeto) => {
+            {projetos.slice(8).map((projeto) => {
               const itemFromData = localizedData.find(
                 (d) => d.id === projeto.id,
               );

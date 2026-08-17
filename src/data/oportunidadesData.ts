@@ -2363,5 +2363,304 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   installments: "Consulte condições",
   category: "venda",
   referralCode: "ALBERTO"
+},
+{
+  id: "casa-alto-padrao-taiba-vista-mar",
+  slug: "casa-alto-padrao-taiba-vista-mar",
+  title: "VENDA",
+  searchTitle: "Casa Alto Padrão em Granito — Taíba",
+  image: "/imoveis/casa-alto-padrao-taiba-vista-mar-23.webp",
+  badge: "Alto Padrão",
+  propertyTitle: "CASA ALTO PADRÃO EM GRANITO — TAÍBA",
+  location: "Taíba, Ceará",
+  rating: 5,
+  exclusiveText: "6 Suítes | Academia | Piscina | Acesso Privativo ao Mar",
+  summaryDescription: "Imóvel de alto padrão em Taíba, todo em granito, com vista privilegiada e acesso privativo ao mar. 6 suítes, piscina, área gourmet, academia e garagem para mais de 10 veículos.",
+  about: [
+    "Imóvel de alto padrão em Taíba, todo revestido em granito, com vista privilegiada e acesso privativo ao mar. Ideal para quem busca conforto, espaço e exclusividade em uma localização valorizada.",
+    "Pavimento superior composto por 4 suítes amplas, todas climatizadas e com móveis planejados, proporcionando praticidade e conforto.",
+    "Pavimento térreo com 2 suítes, sala ampla e bem ventilada, área de jantar integrada, cozinha espaçosa, despensa e banheiro social, com excelente distribuição dos ambientes.",
+    "Área externa completa, com piscina, cadeiras de sol, espaço para fogueira, área gourmet com mesa para refeições e churrasqueira, além de academia privativa. Garagem com capacidade para mais de 10 veículos."
+  ],
+  infra: [
+    "6 suítes ao todo (4 no pavimento superior, 2 no térreo)",
+    "Todas as suítes superiores climatizadas e com móveis planejados",
+    "Piscina, área gourmet com churrasqueira e espaço para fogueira",
+    "Academia privativa",
+    "Garagem para mais de 10 veículos",
+    "Acesso privativo ao mar"
+  ],
+  facilities: ["6 Suítes", "Piscina", "Academia Privativa", "Área Gourmet", "Garagem 10+ Carros", "Acesso Privativo ao Mar"],
+  gallery: {
+    main: "/imoveis/casa-alto-padrao-taiba-vista-mar-23.webp",
+    sideTop: "/imoveis/casa-alto-padrao-taiba-vista-mar-01.webp",
+    sideBottom: "/imoveis/casa-alto-padrao-taiba-vista-mar-13.webp",
+    extra: [
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-02.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-03.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-04.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-05.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-06.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-07.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-08.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-09.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-10.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-11.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-12.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-14.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-15.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-16.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-17.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-18.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-19.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-20.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-21.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-22.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-24.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-25.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-26.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-27.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-28.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-29.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-30.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-31.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-32.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-33.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-34.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-35.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-36.webp",
+      "/imoveis/casa-alto-padrao-taiba-vista-mar-37.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-3.495008,-38.919417&hl=pt-BR&z=16&output=embed",
+  priceTag: "Valor",
+  price: "R$ 3.500.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "YAN"
+},
+{
+  id: "terreno-nova-taiba-1920m2",
+  slug: "terreno-nova-taiba-1920m2",
+  title: "VENDA",
+  searchTitle: "Terreno em Nova Taíba — 1.920 m² com Casa",
+  image: "/imoveis/terreno-nova-taiba-1920m2-06.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "TERRENO EM NOVA TAÍBA — 1.920 M² COM CASA",
+  location: "Loteamento Nova Taíba, Taíba - CE",
+  rating: 5,
+  exclusiveText: "1.920 m² em 3 Lotes de 16x40m | Entrada Privativa para o Mar | Avenida Principal",
+  summaryDescription: "Terreno com uma casa, dividido em 3 lotes de 16x40m cada (1.920 m² ao todo), na avenida principal do Loteamento Nova Taíba, com entrada privativa para o mar e próximo à lagoa do kitesurf.",
+  about: [
+    "Terreno com uma casa já construída, localizado na avenida principal do Loteamento Nova Taíba, próximo a grandes investimentos da região e à lagoa do kitesurf em Taíba.",
+    "A área total de 1.920 m² é dividida em 3 lotes de 16x40 metros cada, com entrada privativa para o mar — uma opção flexível para quem quer comprar o conjunto todo ou negociar por lote.",
+    "Localização estratégica na Nova Taíba, uma das regiões de maior valorização do litoral cearense nos últimos anos."
+  ],
+  infra: [
+    "Área Total: 1.920 m² (3 lotes de 16x40m)",
+    "Casa já construída no terreno",
+    "Entrada privativa para o mar",
+    "Localização: avenida principal do Loteamento Nova Taíba",
+    "Próximo à lagoa do kitesurf em Taíba"
+  ],
+  facilities: ["1.920 m²", "3 Lotes de 16x40m", "Entrada Privativa ao Mar", "Casa no Terreno"],
+  gallery: {
+    main: "/imoveis/terreno-nova-taiba-1920m2-06.webp",
+    sideTop: "/imoveis/terreno-nova-taiba-1920m2-10.webp",
+    sideBottom: "/imoveis/terreno-nova-taiba-1920m2-14.webp",
+    extra: [
+      "/imoveis/terreno-nova-taiba-1920m2-03.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-05.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-07.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-08.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-09.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-11.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-12.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-13.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-15.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-16.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-17.webp",
+      "/imoveis/terreno-nova-taiba-1920m2-19.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-3.494773,-38.918924&hl=pt-BR&z=16&output=embed",
+  priceTag: "Valor",
+  price: "R$ 1.300.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "YAN"
+},
+{
+  id: "casa-duplex-pe-na-areia-taiba",
+  slug: "casa-duplex-pe-na-areia-taiba",
+  title: "VENDA",
+  searchTitle: "Casa Duplex Pé na Areia — Taíba",
+  image: "/imoveis/casa-duplex-pe-na-areia-taiba-04.webp",
+  badge: "Grande Potencial",
+  propertyTitle: "CASA DUPLEX PÉ NA AREIA — TAÍBA",
+  location: "Taíba, Ceará",
+  rating: 4,
+  exclusiveText: "3 Suítes | Piscina 7x5m | Estacionamento p/ 15+ Carros | Pé na Areia",
+  summaryDescription: "Casa duplex pé na areia na praia de Taíba, próxima à lagoa do kitesurf, com 1.280 m² de área e grande potencial para reforma e valorização.",
+  about: [
+    "Casa duplex pé na areia, situada na praia de Taíba, próxima à lagoa do kitesurf. Uma oportunidade e tanto para reformar do seu jeito e agregar valor, com potencial para diversos tipos de projeto.",
+    "No pavimento superior: 3 suítes, sendo uma com varanda privativa para o mar e para a piscina, closet em uma das suítes e na sala de acesso aos quartos — todos voltados para o nascente (face leste, com incidência de vento).",
+    "No pavimento inferior: sala ampla com jardim de inverno, cozinha ampla com despensa, mais uma suíte nascente e varandas em L voltadas para o nascente.",
+    "Área externa com chalé suíte independente, edícula, estacionamento para 15 ou mais carros, piscina de 7x5m (35 m²) com vista para o mar e deck completo."
+  ],
+  infra: [
+    "Área do terreno: 1.280 m²",
+    "3 suítes no pavimento superior (1 com varanda para mar e piscina)",
+    "Sala ampla com jardim de inverno e 1 suíte no pavimento térreo",
+    "Chalé suíte e edícula independentes",
+    "Piscina 7x5m (35 m²) com vista mar e deck completo",
+    "Estacionamento para 15+ veículos",
+    "Grande potencial para reforma e personalização"
+  ],
+  facilities: ["3 Suítes", "Piscina 7x5m", "Pé na Areia", "Estacionamento 15+ Carros", "Chalé + Edícula"],
+  gallery: {
+    main: "/imoveis/casa-duplex-pe-na-areia-taiba-04.webp",
+    sideTop: "/imoveis/casa-duplex-pe-na-areia-taiba-01.webp",
+    sideBottom: "/imoveis/casa-duplex-pe-na-areia-taiba-03.webp",
+    extra: ["/imoveis/casa-duplex-pe-na-areia-taiba-02.webp"]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Morro+do+Chapéu,+Taíba,+CE&hl=pt-BR&z=14&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1218903860"],
+  priceTag: "Valor",
+  price: "R$ 1.200.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "DINIZ"
+},
+{
+  id: "terreno-morro-do-chapeu-taiba-832m2",
+  slug: "terreno-morro-do-chapeu-taiba-832m2",
+  title: "VENDA",
+  searchTitle: "Terreno Morro do Chapéu — Taíba, 832 m²",
+  image: "/imoveis/terreno-morro-do-chapeu-taiba-832m2-02.webp",
+  badge: "Pronto para Construir",
+  propertyTitle: "TERRENO NO MORRO DO CHAPÉU — TAÍBA, 832 M²",
+  location: "Morro do Chapéu, Taíba - CE",
+  rating: 5,
+  exclusiveText: "832 m² (16x52) | Vista Mar Completa | Matrícula, Registro e IPTU em Dia",
+  summaryDescription: "Terreno de 832 m² no Morro do Chapéu, em Taíba, com vista mar completa e quase pé na areia. Matrícula, registro e IPTU em dia, pronto para construir.",
+  about: [
+    "Terreno na praia de Taíba, no Morro do Chapéu, completamente vista mar. O imóvel se destaca por possuir matrícula e registro, além de um visual que engloba dunas, coqueirais e o vento que atrai eventos internacionais de kitesurf na região.",
+    "Terreno de 16x52m (832 m² de área total), com matrícula, registro e IPTU em dia — pronto para construir."
+  ],
+  infra: [
+    "Área: 16x52m (832 m² total)",
+    "Vista mar completa, quase pé na areia",
+    "Matrícula, registro e IPTU em dia",
+    "Pronto para construir",
+    "Localização: Morro do Chapéu, Taíba"
+  ],
+  facilities: ["832 m²", "Vista Mar Completa", "Matrícula e Registro", "Pronto para Construir"],
+  gallery: {
+    main: "/imoveis/terreno-morro-do-chapeu-taiba-832m2-02.webp",
+    sideTop: "/imoveis/terreno-morro-do-chapeu-taiba-832m2-01.webp",
+    sideBottom: "/imoveis/terreno-morro-do-chapeu-taiba-832m2-04.webp",
+    extra: [
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-03.webp",
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-05.webp",
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-06.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Morro+do+Chapéu,+Taíba,+CE&hl=pt-BR&z=14&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1218904183"],
+  priceTag: "Valor",
+  price: "R$ 700.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "DINIZ"
+},
+{
+  id: "terreno-taiba-2560m2",
+  slug: "terreno-taiba-2560m2",
+  title: "VENDA",
+  searchTitle: "Terreno em Taíba — 2.560 m²",
+  image: "/imoveis/terreno-taiba-2560m2-02.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "TERRENO EM TAÍBA — 2.560 M²",
+  location: "Taíba, Ceará",
+  rating: 5,
+  exclusiveText: "32x80m (2.560 m²) | Versátil para Diversos Projetos | Possibilidade de Metade (16x80)",
+  summaryDescription: "Terreno de 32x80m (2.560 m²) em Taíba, versátil para diversos tipos de projeto. Possibilidade de negociar apenas metade da área (16x80m).",
+  about: [
+    "Terreno de 32x80m (2.560 m² de área total) em Taíba, uma área versátil que serve para diversos tipos de projeto.",
+    "Também é possível negociar apenas metade da área (16x80m, 1.280 m²) — consulte condições."
+  ],
+  infra: [
+    "Área total: 32x80m (2.560 m²)",
+    "Possibilidade de compra de metade: 16x80m (1.280 m²)",
+    "Localização: Taíba, Ceará"
+  ],
+  facilities: ["2.560 m²", "32x80m", "Versátil", "Opção de Meia Área"],
+  gallery: {
+    main: "/imoveis/terreno-taiba-2560m2-02.webp",
+    sideTop: "/imoveis/terreno-taiba-2560m2-01.webp",
+    sideBottom: "/imoveis/terreno-taiba-2560m2-03.webp",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Taíba,+CE&hl=pt-BR&z=13&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1218904458"],
+  priceTag: "Valor",
+  price: "R$ 2.200.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "DINIZ",
+  lotes: [
+    { id: "all", label: "Área total (32x80 — 2.560 m²)", priceTag: "Valor total", price: "R$ 2.200.000,00" },
+    { id: "half", label: "Metade (16x80 — 1.280 m²)", priceTag: "Valor", price: "Consulte condições", installments: "Consulte condições" }
+  ]
+},
+{
+  id: "terreno-vila-sao-francisco-tatajuba",
+  slug: "terreno-vila-sao-francisco-tatajuba",
+  title: "VENDA",
+  searchTitle: "Terreno Vila São Francisco — Tatajuba",
+  image: "/imoveis/terreno-vila-sao-francisco-tatajuba-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "TERRENO VILA SÃO FRANCISCO — TATAJUBA",
+  location: "Vila São Francisco, ao lado de Tatajuba, Camocim - CE",
+  rating: 5,
+  exclusiveText: "2.000 m² por R$ 550,00/m² | Possibilidade de até 4.000 m² Total | Ao Lado de Tatajuba",
+  summaryDescription: "Terreno na Vila São Francisco, ao lado de Tatajuba. 2.000 m² disponíveis a R$ 550,00/m² (R$ 1.100.000,00), com possibilidade de ampliar para até 4.000 m² caso o sócio também venda sua parte.",
+  about: [
+    "Terreno localizado na Vila São Francisco, ao lado de Tatajuba, com 100 metros de frente por 80 metros de fundo.",
+    "O proprietário atual possui 50% da área e está vendendo metade da sua parte: 2.000 m² a R$ 550,00 o metro quadrado (R$ 1.100.000,00). O sócio também demonstrou interesse em vender sua metade, o que pode viabilizar uma área de até 4.000 m² no total.",
+    "O imóvel conta com documento de compra e venda registrado e protocolo de medição do IDACE. No terreno há uma casinha de manutenção e dois poços pequenos, e o local já conta com energia elétrica instalada."
+  ],
+  infra: [
+    "Dimensões do terreno: 100m de frente x 80m de fundo",
+    "Área disponível: 2.000 m² (com opção de até 4.000 m² total)",
+    "Documento de compra e venda registrado",
+    "Protocolo de medição do IDACE",
+    "Casinha de manutenção e 2 poços no terreno",
+    "Energia elétrica já instalada"
+  ],
+  facilities: ["2.000 m²", "R$ 550/m²", "Ao Lado de Tatajuba", "Energia Elétrica", "Poços Próprios"],
+  gallery: {
+    main: "/imoveis/terreno-vila-sao-francisco-tatajuba-01.webp",
+    sideTop: "/imoveis/terreno-vila-sao-francisco-tatajuba-02.webp",
+    sideBottom: "/imoveis/terreno-vila-sao-francisco-tatajuba-03.webp",
+    extra: []
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-2.8497674,-40.6838496&hl=pt-BR&z=16&output=embed",
+  priceTag: "Valor (2.000 m²)",
+  price: "R$ 1.100.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  referralCode: "ALBERTO",
+  lotes: [
+    { id: "confirmado", label: "2.000 m² (metade confirmada)", priceTag: "Valor", price: "R$ 1.100.000,00" },
+    { id: "total", label: "Até 4.000 m² (se o sócio também vender)", priceTag: "Valor estimado", price: "R$ 2.200.000,00", installments: "Sujeito à adesão do sócio — consulte condições" }
+  ]
 }
 ];
