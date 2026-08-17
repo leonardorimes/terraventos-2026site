@@ -297,6 +297,43 @@
     0 25px 50px -12px rgba(0, 0, 0, 0.12);
 }
 
+.pi-lote-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  align-self: stretch;
+  margin-bottom: 24px;
+}
+
+.pi-lote-tab {
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  background: #f9f9f9;
+  color: #555555;
+  font-size: 13px;
+  font-family: 'Avenir', sans-serif;
+  line-height: 1.35;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pi-lote-tab:hover {
+  border-color: #C4B096;
+  color: #111;
+}
+
+.pi-lote-tab--active,
+.pi-lote-tab--active:hover {
+  background: #111827;
+  border-color: #111827;
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .pi-card-tag {
   display: inline-block;
   color: #C4B096;

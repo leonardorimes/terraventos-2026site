@@ -2632,15 +2632,16 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   exclusiveText: "2.000 m² por R$ 550,00/m² | Possibilidade de até 4.000 m² Total | Ao Lado de Tatajuba",
   summaryDescription: "Terreno na Vila São Francisco, ao lado de Tatajuba. 2.000 m² disponíveis a R$ 550,00/m² (R$ 1.100.000,00), com possibilidade de ampliar para até 4.000 m² caso o sócio também venda sua parte.",
   about: [
-    "Terreno localizado na Vila São Francisco, ao lado de Tatajuba, com 100 metros de frente por 80 metros de fundo.",
+    "Terreno localizado na Vila São Francisco, ao lado de Tatajuba, com área total de 8.015,003 m² (100 metros de frente por 80 metros de fundo), com memorial descritivo e planta topográfica georreferenciada.",
     "O proprietário atual possui 50% da área e está vendendo metade da sua parte: 2.000 m² a R$ 550,00 o metro quadrado (R$ 1.100.000,00). O sócio também demonstrou interesse em vender sua metade, o que pode viabilizar uma área de até 4.000 m² no total.",
-    "O imóvel conta com documento de compra e venda registrado e protocolo de medição do IDACE. No terreno há uma casinha de manutenção e dois poços pequenos, e o local já conta com energia elétrica instalada."
+    "O imóvel conta com documento de compra e venda registrado, memorial descritivo, planta topográfica com poligonal completa e resultado de demarcação do IDACE. No terreno há uma casinha de manutenção e dois poços pequenos, e o local já conta com energia elétrica instalada."
   ],
   infra: [
-    "Dimensões do terreno: 100m de frente x 80m de fundo",
-    "Área disponível: 2.000 m² (com opção de até 4.000 m² total)",
+    "Área total do imóvel: 8.015,003 m² (100m de frente x 80m de fundo)",
+    "Área disponível para venda: 2.000 m² (com opção de até 4.000 m² total)",
     "Documento de compra e venda registrado",
-    "Protocolo de medição do IDACE",
+    "Memorial descritivo e planta topográfica com poligonal completa",
+    "Resultado de demarcação do IDACE",
     "Casinha de manutenção e 2 poços no terreno",
     "Energia elétrica já instalada"
   ],
@@ -2653,6 +2654,23 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   },
   mapImage: "/mapa.avif",
   mapUrl: "https://maps.google.com/maps?q=-2.8497674,-40.6838496&hl=pt-BR&z=16&output=embed",
+  documents: [
+    {
+      label: "Memorial Descritivo",
+      url: "/documentos/terreno-vila-sao-francisco-tatajuba-memorial-descritivo.pdf",
+      legend: "Memorial descritivo do terreno, com área total de 8.015,003 m² e perímetro de 381,302 m."
+    },
+    {
+      label: "Planta Topográfica — Poligonal Completa",
+      url: "/documentos/terreno-vila-sao-francisco-tatajuba-planta-topografica.pdf",
+      legend: "Planta topográfica com a poligonal completa da área."
+    },
+    {
+      label: "Resultado de Demarcação — IDACE",
+      url: "/documentos/terreno-vila-sao-francisco-tatajuba-resultado-demarcacao-idace.pdf",
+      legend: "Protocolo de medição e resultado de demarcação emitido pelo IDACE."
+    }
+  ],
   priceTag: "Valor (2.000 m²)",
   price: "R$ 1.100.000,00",
   installments: "Consulte condições",
