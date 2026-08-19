@@ -2655,6 +2655,41 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     installments: "Contact us for terms",
     category: "venda",
     referralCode: "ALBERTO"
+  },
+  {
+    id: "chale-divino-tatajuba",
+    slug: "chale-divino-tatajuba",
+    title: "FOR SALE",
+    searchTitle: "Chalé Divino in Tatajuba",
+    image: "/imoveis/chale-divino-tatajuba-01.webp",
+    badge: "Exclusive Opportunity",
+    propertyTitle: "CHALÉ DIVINO — TATAJUBA",
+    location: "Vila Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "Authentic wood-and-thatch chalet | 431.63 sqm lot | Steps from the sea",
+    summaryDescription: "Authentic wood chalet with a thatched roof in Vila Tatajuba, on Ceará's west coast. 431.63 sqm lot, two floors, a canopy bedroom and a veranda among coconut palms, steps from the sea.",
+    about: [
+      "Built in wood beneath a generous thatched roof, Chalé Divino is an authentic retreat in Vila Tatajuba — a traditional fishing community that has become one of the most sought-after destinations on the Ceará coast, amid dunes, lagoons and the winds that draw kitesurfers from around the world.",
+      "The house spans two floors. On the ground floor, a wooden staircase leads up past a rustic-style bathroom with a vessel sink framed by a natural-fiber mirror. Upstairs, beneath the high ceiling of the thatched roof, the living area flows into the kitchen and bedroom, where the queen bed is dressed with a light canopy — opening onto a veranda facing the coconut palms and the horizon.",
+      "The lot measures 431.63 sqm with approximately 70 sqm of built area, wood construction, public water supply and a septic tank. An invitation for anyone seeking a beach house with character — for personal use or as a short-term rental chalet, riding Tatajuba's growing tourist flow.",
+      "The documentation is possessory, with consolidated occupancy for 7 years and no disputes. The property is already registered (plot code TT316) in IDACE's Special Land Regularization Project for the Traditional Community of Tatajuba."
+    ],
+    infra: [
+      "Lot: 431.63 sqm",
+      "Built area: approximately 70 sqm",
+      "Wood structure with thatched roof",
+      "2 floors: ground floor and upper floor",
+      "1 bedroom with canopy",
+      "Rustic-style bathroom",
+      "Public water supply",
+      "Septic tank sanitation",
+      "Documentation: possessory, with 7 years of occupancy; registered (plot TT316) in IDACE's Special Land Regularization Project — Traditional Community of Tatajuba"
+    ],
+    facilities: ["Vila Tatajuba", "431.63 sqm", "Wood & Thatch", "2 Floors", "Near the Sea"],
+    priceTag: "Price",
+    price: "R$ 1,800,000.00",
+    installments: "Contact us for terms",
+    category: "venda"
   }],
   es: [
     {
@@ -3536,6 +3571,41 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     installments: "Consulte las condiciones",
     category: "venda",
     referralCode: "ALBERTO"
+  },
+  {
+    id: "chale-divino-tatajuba",
+    slug: "chale-divino-tatajuba",
+    title: "VENTA",
+    searchTitle: "Chalé Divino en Tatajuba",
+    image: "/imoveis/chale-divino-tatajuba-01.webp",
+    badge: "Oportunidad Exclusiva",
+    propertyTitle: "CHALÉ DIVINO — TATAJUBA",
+    location: "Vila Tatajuba, Camocim - CE",
+    rating: 5,
+    exclusiveText: "Chalé auténtico de madera y palma | Terreno de 431,63 m² | A pasos del mar",
+    summaryDescription: "Chalé auténtico en madera y cobertura de palma en Vila Tatajuba, costa oeste de Ceará. Terreno de 431,63 m², dos plantas, dormitorio con dosel y terraza entre cocoteros, a pasos del mar.",
+    about: [
+      "Construido en madera bajo una generosa cobertura de palma, el Chalé Divino es un refugio auténtico en Vila Tatajuba — comunidad tradicional de pescadores que se ha convertido en uno de los destinos más buscados del litoral cearense, entre dunas, lagunas y los vientos que atraen a kitesurfistas de todo el mundo.",
+      "La casa se distribuye en dos plantas. En la planta baja, la escalera de madera conduce al baño de estilo rústico, con lavabo de apoyo enmarcado por un espejo de fibra natural. En la planta superior, bajo la altura generosa de la cobertura de palma, la sala se integra con la cocina y el dormitorio, donde la cama de matrimonio luce un dosel de tela ligera — y se abre a la terraza orientada hacia los cocoteros y el horizonte.",
+      "Son 431,63 m² de terreno y aproximadamente 70 m² de área construida, con estructura en madera, suministro de agua por red pública y saneamiento por fosa séptica. Una invitación para quienes buscan una casa de playa con personalidad — para uso propio o como chalé de temporada, aprovechando el creciente flujo turístico de Tatajuba.",
+      "La situación documental es de posesión, con ocupación consolidada desde hace 7 años y sin litigios. El inmueble ya está registrado (código de lote TT316) en el Proyecto de Regularización Territorial Especial del IDACE para la Comunidad Tradicional de Tatajuba."
+    ],
+    infra: [
+      "Terreno: 431,63 m²",
+      "Área construida: aproximadamente 70 m²",
+      "Estructura en madera con cobertura de palma",
+      "2 plantas: baja y superior",
+      "1 dormitorio con dosel",
+      "Baño de estilo rústico",
+      "Suministro de agua por red pública",
+      "Saneamiento por fosa séptica",
+      "Documentación: posesión, con 7 años de ocupación; registrado (lote TT316) en el Proyecto de Regularización Territorial Especial del IDACE — Comunidad Tradicional de Tatajuba"
+    ],
+    facilities: ["Vila Tatajuba", "431,63 m²", "Madera y Palma", "2 Plantas", "Cerca del Mar"],
+    priceTag: "Valor",
+    price: "R$ 1.800.000,00",
+    installments: "Consulte las condiciones",
+    category: "venda"
   }],
 };
 

@@ -15,7 +15,7 @@ export default function PropriedadesPage() {
   return (
     <div id="propriedades">
       <ListagemPropriedades
-        items={getOportunidadesData(i18n.language).filter((item) => !item.unlisted)}
+        items={getOportunidadesData(i18n.language).filter((item) => !item.unlisted).reverse()}
         onSelect={handleSelectOpportunity}
       />
     </div>

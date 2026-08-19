@@ -12,6 +12,18 @@ type ProjetosDestaqueProps = {
 
 const projetos = [
   {
+    id: "chale-divino-tatajuba",
+    image: "/imoveis/chale-divino-tatajuba-01.webp",
+    tag: "VENDA",
+    location: "Vila Tatajuba, Camocim - CE",
+    title: "CHALÉ DIVINO — TATAJUBA",
+    area: "431,63 m²",
+    beds: 1,
+    baths: 1,
+    price: "R$ 1.800.000,00",
+    detailIndex: 0,
+  },
+  {
     id: "casa-alto-padrao-taiba-vista-mar",
     image: "/imoveis/casa-alto-padrao-taiba-vista-mar-23.webp",
     tag: "VENDA",

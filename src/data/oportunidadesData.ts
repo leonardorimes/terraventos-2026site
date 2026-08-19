@@ -2680,5 +2680,52 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     { id: "confirmado", label: "2.000 m² (metade confirmada)", priceTag: "Valor", price: "R$ 1.100.000,00" },
     { id: "total", label: "Até 4.000 m² (se o sócio também vender)", priceTag: "Valor estimado", price: "R$ 2.200.000,00", installments: "Sujeito à adesão do sócio — consulte condições" }
   ]
+},
+{
+  id: "chale-divino-tatajuba",
+  slug: "chale-divino-tatajuba",
+  title: "VENDA",
+  searchTitle: "Chalé Divino em Tatajuba",
+  image: "/imoveis/chale-divino-tatajuba-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "CHALÉ DIVINO — TATAJUBA",
+  location: "Vila Tatajuba, Camocim - CE",
+  rating: 5,
+  exclusiveText: "Chalé autêntico de madeira e palha | Terreno de 431,63 m² | A poucos passos do mar",
+  summaryDescription: "Chalé autêntico em madeira e cobertura de palha na Vila Tatajuba, litoral oeste do Ceará. Terreno de 431,63 m², dois pavimentos, quarto com dossel e varanda entre coqueiros, a poucos passos do mar.",
+  about: [
+    "Erguido em madeira sob uma generosa cobertura de palha, o Chalé Divino é um refúgio autêntico na Vila Tatajuba — comunidade tradicional de pescadores que se tornou um dos destinos mais desejados do litoral cearense entre dunas, lagoas e os ventos que atraem kitesurfistas do mundo inteiro.",
+    "A casa se distribui em dois pavimentos. No térreo, a escada de madeira conduz ao banheiro em estilo rústico, com cuba de apoio emoldurada por um espelho de fibra natural. No piso superior, sob o pé-direito alto da cobertura de sapé, a sala se integra à cozinha e ao dormitório, onde a cama de casal ganha um dossel de tecido leve — e se abre para a varanda voltada aos coqueiros e ao horizonte.",
+    "São 431,63 m² de terreno e aproximadamente 70 m² de área construída, com estrutura em madeira, abastecimento de água pela rede pública e esgotamento sanitário por fossa séptica. Um convite para quem busca uma casa de praia com personalidade — para uso próprio ou como chalé de temporada, aproveitando o fluxo turístico crescente de Tatajuba.",
+    "A situação documental é de posse, com ocupação consolidada há 7 anos e sem litígios. O imóvel já está cadastrado (código de campo/lote TT316) no Projeto de Regularização Fundiária Especial do IDACE para a Comunidade Tradicional de Tatajuba."
+  ],
+  infra: [
+    "Terreno: 431,63 m²",
+    "Área construída: aproximadamente 70 m²",
+    "Estrutura em madeira com cobertura de palha",
+    "2 pavimentos: térreo e piso superior",
+    "1 dormitório com dossel",
+    "Banheiro em estilo rústico",
+    "Abastecimento de água pela rede pública",
+    "Esgotamento sanitário por fossa séptica",
+    "Documentação: posse, com 7 anos de ocupação; cadastrado (lote TT316) no Projeto de Regularização Fundiária Especial do IDACE — Comunidade Tradicional de Tatajuba"
+  ],
+  facilities: ["Vila Tatajuba", "431,63 m²", "Madeira & Palha", "2 Pavimentos", "Perto do Mar"],
+  gallery: {
+    main: "/imoveis/chale-divino-tatajuba-01.webp",
+    sideTop: "/imoveis/chale-divino-tatajuba-02.webp",
+    sideBottom: "/imoveis/chale-divino-tatajuba-03.webp",
+    extra: [
+      "/imoveis/chale-divino-tatajuba-04.webp",
+      "/imoveis/chale-divino-tatajuba-05.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=Vila+Tatajuba,+Camocim+-+CE&hl=pt-BR&z=15&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1219550272"],
+  priceTag: "Valor",
+  price: "R$ 1.800.000,00",
+  installments: "Consulte condições",
+  category: "venda"
 }
 ];
