@@ -91,6 +91,7 @@ export default function PaginaIndividual({ item }: PaginaIndividualProps) {
 
             <VideoGallery
               videoSources={activeRecord.videoSources || []}
+              videoThumbnails={activeRecord.videoThumbnails}
               mainImage={activeRecord.gallery.main}
               title={activeRecord.propertyTitle}
               credits={activeRecord.videoGalleryCredits}

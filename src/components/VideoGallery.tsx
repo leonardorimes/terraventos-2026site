@@ -5,13 +5,14 @@ import Player from '@vimeo/player';
 
 type VideoGalleryProps = {
   videoSources: string[];
+  videoThumbnails?: string[];
   mainImage: string;
   title: string;
   credits?: string;
   onOpenVideo?: (src: string) => void;
 };
 
-export default function VideoGallery({ videoSources, mainImage, title, credits }: VideoGalleryProps) {
+export default function VideoGallery({ videoSources, videoThumbnails, mainImage, title, credits }: VideoGalleryProps) {
   const { t } = useTranslation();
   const [isVideoAlbumOpen, setIsVideoAlbumOpen] = useState(false);
   const [playingIndex, setPlayingIndex] = useState<number | null>(null);
@@ -122,7 +123,7 @@ export default function VideoGallery({ videoSources, mainImage, title, credits }
         <div className="pi-gallery-strip-previews" style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
           {videoSources.slice(0, 5).map((src, idx) => {
             const vimeoId = src.split('/video/')[1]?.split('?')[0];
-            const thumbUrl = vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage;
+            const thumbUrl = videoThumbnails?.[idx] || (vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage);
             return (
               <div key={idx} className="pi-gallery-strip-thumb" style={{ position: 'relative' }}>
                 <img src={thumbUrl} alt={`Preview vídeo ${idx + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -269,8 +270,8 @@ export default function VideoGallery({ videoSources, mainImage, title, credits }
             <div className="pi-album-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px', padding: '16px' }}>
               {videoSources.map((src, idx) => {
                 const vimeoId = src.split('/video/')[1]?.split('?')[0];
-                const thumbUrl = vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage;
-                
+                const thumbUrl = videoThumbnails?.[idx] || (vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage);
+
                 return (
                   <div key={idx} className="pi-album-item" onClick={() => handleVideoClick(idx)} style={{ position: 'relative', cursor: 'pointer', aspectRatio: '16/9', borderRadius: '8px', overflow: 'hidden' }}>
                     <img src={thumbUrl} alt={`Vídeo ${idx + 1}`} loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />

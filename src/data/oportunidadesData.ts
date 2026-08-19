@@ -22,6 +22,7 @@ export type OportunidadeDetalhe = {
   mapImage: string;
   mapUrl?: string;
   videoSources?: string[];
+  videoThumbnails?: string[];
   videoGalleryCredits?: string;
   documents?: {
     label: string;
@@ -2721,8 +2722,9 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     ]
   },
   mapImage: "/mapa.avif",
-  mapUrl: "https://maps.google.com/maps?q=Vila+Tatajuba,+Camocim+-+CE&hl=pt-BR&z=15&output=embed",
+  mapUrl: "https://maps.google.com/maps?q=Divino+tatajuba+-+Praia+de,+Camocim+-+CE,+62400-000&ftid=0x7ebd57108826f67:0x2c869f7dd5a2a173&hl=pt-BR&z=17&output=embed",
   videoSources: ["https://player.vimeo.com/video/1219550272"],
+  videoThumbnails: ["/imoveis/chale-divino-tatajuba-video-capa.webp"],
   priceTag: "Valor",
   price: "R$ 1.800.000,00",
   installments: "Consulte condições",

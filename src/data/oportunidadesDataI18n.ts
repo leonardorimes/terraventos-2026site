@@ -3627,6 +3627,7 @@ export function getOportunidadesData(lang: string): OportunidadeDetalhe[] {
         // Garante que galeria e videoSources sempre venham do master (fonte única de imagens)
         gallery: master.gallery,
         videoSources: master.videoSources,
+        videoThumbnails: master.videoThumbnails,
         documents: translated.documents || master.documents,
         mapImage: master.mapImage,
         mapUrl: master.mapUrl,
