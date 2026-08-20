@@ -2567,12 +2567,15 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     extra: [
       "/imoveis/terreno-morro-do-chapeu-taiba-832m2-03.webp",
       "/imoveis/terreno-morro-do-chapeu-taiba-832m2-05.webp",
-      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-06.webp"
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-06.webp",
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-vista-aerea-google-maps.webp",
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-planta-lotes-matricula-4621.webp",
+      "/imoveis/terreno-morro-do-chapeu-taiba-832m2-planta-topografica-georreferenciada.webp"
     ]
   },
   mapImage: "/mapa.avif",
-  mapUrl: "https://maps.google.com/maps?q=Morro+do+Chapéu,+Taíba,+CE&hl=pt-BR&z=14&output=embed",
-  videoSources: ["https://player.vimeo.com/video/1218904183"],
+  mapUrl: "https://maps.google.com/maps?q=-3.516538,-38.881427&hl=pt-BR&z=15&output=embed",
+  videoSources: ["https://player.vimeo.com/video/1218904183", "https://player.vimeo.com/video/1219881715"],
   priceTag: "Valor",
   price: "R$ 700.000,00",
   installments: "Consulte condições",
