@@ -61,6 +61,9 @@ i18n
             title2: "IMÓVEL NO LITORAL DO CEARÁ",
             title: "VENDA, INVESTIMENTOS E LUGARES DE EVENTOS NO CEARA",
             viewAllPhotos: "Ver todas as fotos",
+            viewAllVideos: "Ver todos os vídeos",
+            videosCount_one: "{{count}} vídeo",
+            videosCount_other: "{{count}} vídeos",
             noResults: "Nenhuma propriedade encontrada."
           },
           categorias: {
@@ -247,6 +250,9 @@ i18n
             title2: "PROPERTY ON CEARÁ'S COAST",
             title: "FOR SALE, INVESTMENTS AND EVENT VENUES IN CEARÁ",
             viewAllPhotos: "View all photos",
+            viewAllVideos: "View all videos",
+            videosCount_one: "{{count}} video",
+            videosCount_other: "{{count}} videos",
             noResults: "No properties found."
           },
           categorias: {
@@ -441,6 +447,9 @@ i18n
             title2: "PROPIEDAD EN LA COSTA DE CEARÁ",
             title: "VENTA, INVERSIONES Y LUGARES DE EVENTOS IN EL LITORAL DE CEARA",
             viewAllPhotos: "Ver todas las fotos",
+            viewAllVideos: "Ver todos los vídeos",
+            videosCount_one: "{{count}} vídeo",
+            videosCount_other: "{{count}} vídeos",
             noResults: "No se encontraron propiedades."
           },
           categorias: {

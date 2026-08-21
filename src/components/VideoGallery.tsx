@@ -166,7 +166,7 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg>
           <span className="pi-gallery-strip-label">{t('oportunidades.viewAllVideos', 'Ver todos os vídeos')}</span>
-          <span className="pi-gallery-strip-count">{videoSources.length} vídeos</span>
+          <span className="pi-gallery-strip-count">{t('oportunidades.videosCount', { count: videoSources.length, defaultValue: `${videoSources.length} vídeos` })}</span>
         </div>
       </button>
 
@@ -282,7 +282,7 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
             </button>
             <div className="pi-album-info">
               <h3>{title} - Vídeos</h3>
-              <span>{videoSources.length} vídeos</span>
+              <span>{t('oportunidades.videosCount', { count: videoSources.length, defaultValue: `${videoSources.length} vídeos` })}</span>
             </div>
           </div>
           

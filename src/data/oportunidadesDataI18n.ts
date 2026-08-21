@@ -2690,6 +2690,91 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     price: "R$ 1,800,000.00",
     installments: "Contact us for terms",
     category: "venda"
+  },
+  {
+    id: "sitio-espinho-camocim",
+    slug: "sitio-espinho-camocim",
+    title: "FOR SALE",
+    searchTitle: "Sítio Espinho — 549 ha — Camocim",
+    badge: "Exclusive Opportunity",
+    propertyTitle: "SÍTIO ESPINHO — 549 HA — CAMOCIM",
+    location: "Barrinha, Camocim - CE",
+    exclusiveText: "549 hectares | 2,746 m of Beachfront | Dunes, Lagoon and Preserved Coastline",
+    summaryDescription: "Sítio Espinho: 549.04 certified hectares (SIGEF) in Barrinha, Camocim, with 2,746.67 m of frontage on the Atlantic Ocean, an extensive field of moving dunes and lagoons, and a southern boundary along Lago das Cangalhas.",
+    about: [
+      "Sítio Espinho is a rare 549.04-hectare asset on the western coast of Camocim, SIGEF-certified with a perimeter of 11,248.10 m. The property has direct frontage on the Atlantic Ocean — 2,746.67 meters of coastline — and borders Lago das Cangalhas to the south.",
+      "The landscape is dominated by an extensive field of white moving dunes and seasonal interdunal lagoons, interspersed with patches of native vegetation and coconut groves. A locally recognized kitesurfing spot, the 'Cangalhas Secret Point', was identified within the property itself.",
+      "Located approximately 15 km west of downtown Camocim and 6 km from the village of Maceió, the property sits at the heart of the Rota das Emoções, one of the main tourism corridors in Brazil's Northeast. Camocim has a modernized regional airport and is served by the CE-085 structural highway.",
+      "A rare opportunity of scale on the Ceará coast — suited for those seeking a large-scale asset with a preserved dune and lagoon landscape and long-term potential in the wind-sports and tourism corridor."
+    ],
+    infra: [
+      "Total certified area (SIGEF): 549.0392 ha — perimeter of 11,248.10 m",
+      "2,746.67 m of frontage on the Atlantic Ocean",
+      "Southern boundary along Lago das Cangalhas",
+      "Extensive field of moving dunes and interdunal lagoons",
+      "Kitesurfing spot identified within the property (Cangalhas Secret Point)",
+      "~15 km west of Camocim and 6 km from the village of Maceió",
+      "Camocim: modernized regional airport and CE-085 structural highway"
+    ],
+    facilities: ["549 Hectares", "2.7 km Beachfront", "Kitesurfing", "Dunes & Lagoon"],
+    documents: [
+      {
+        label: "Descriptive Survey Report",
+        url: "/documentos/sitio-espinho-memorial-descritivo.pdf",
+        legend: "Georeferenced descriptive survey report for Sítio Espinho, registration No. 783, with an area of 549.0392 ha and a perimeter of 11,248.10 m."
+      },
+      {
+        label: "SIGEF Plan — INCRA",
+        url: "/documentos/sitio-espinho-planta-sigef.pdf",
+        legend: "SIGEF/INCRA certification plan of the property's boundary."
+      },
+      {
+        label: "Georeferenced Survey Plan",
+        url: "/documentos/sitio-espinho-planta-georreferenciada.pdf",
+        legend: "Full topographic survey plan with coordinate table, azimuths and distances."
+      }
+    ],
+    priceTag: "Price",
+    price: "R$ 15,000,000.00",
+    installments: "Consult conditions",
+    category: "venda"
+  },
+  {
+    id: "terreno-icarai-amontada",
+    slug: "terreno-icarai-amontada",
+    title: "FOR SALE",
+    searchTitle: "Icaraí Development — Amontada",
+    badge: "Exclusive Opportunity",
+    propertyTitle: "ICARAÍ LAND — 36 HA — AMONTADA",
+    location: "Icaraí de Amontada, Amontada - CE",
+    exclusiveText: "36.17 hectares | Beachfront | Potential for Inn, Hotel or Resort",
+    summaryDescription: "36.1745-hectare tract in Icaraí de Amontada, with beachfront, a completed environmental zoning study, and a favorable framework for licensing an inn, hotel or resort.",
+    about: [
+      "A 36.1745-hectare tract located in the eastern portion of the municipality of Amontada, on the western coast of Ceará, in Icaraí de Amontada, with direct beachfront.",
+      "The land is characterized by a predominance of floodable areas, fixed dunes and flat-topped aeolian deposits. According to the Environmental Zoning Study prepared for the tract, approximately 82.98% of the area (excluding the portions classified as Permanent Preservation Area) has development potential, respecting the natural environment's carrying capacity.",
+      "The environmental framework identified enables municipal licensing of a hotel (up to 240 accommodation units) or an inn (up to 80 accommodation units) as a low pollution/degradation potential development, in accordance with COEMA resolutions.",
+      "Icaraí de Amontada is a region of consolidated tourism growth on the Ceará coast, with easy access and real estate development already present along the shoreline — a favorable scenario for a medium- to large-scale hotel or inn development."
+    ],
+    infra: [
+      "Total area: 36.1745 ha, with beachfront",
+      "~82.98% of the area (outside APP) with development potential",
+      "17.02% fixed dunes classified as Permanent Preservation Area (APP)",
+      "Framework for municipal licensing of a hotel (up to 240 units) or inn (up to 80 units)",
+      "Environmental Zoning Study prepared by Carcará Ambiental",
+      "Region of consolidated tourism growth, with easy access"
+    ],
+    facilities: ["36 Hectares", "Beachfront", "Hotel Potential", "Environmental Zoning"],
+    documents: [
+      {
+        label: "Environmental Zoning — Gleba Amontada",
+        url: "/documentos/terreno-icarai-amontada-zoneamento-ambiental.pdf",
+        legend: "Environmental zoning study of the tract, with legal framework and licensing potential for an inn, hotel or resort — prepared by Carcará Ambiental."
+      }
+    ],
+    priceTag: "Price",
+    price: "Consult conditions",
+    installments: "Consult conditions",
+    category: "venda"
   }],
   es: [
     {
@@ -3604,6 +3689,91 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     facilities: ["Vila Tatajuba", "431,63 m²", "Madera y Palma", "2 Plantas", "Cerca del Mar"],
     priceTag: "Valor",
     price: "R$ 1.800.000,00",
+    installments: "Consulte las condiciones",
+    category: "venda"
+  },
+  {
+    id: "sitio-espinho-camocim",
+    slug: "sitio-espinho-camocim",
+    title: "VENTA",
+    searchTitle: "Sítio Espinho — 549 ha — Camocim",
+    badge: "Oportunidad Exclusiva",
+    propertyTitle: "SÍTIO ESPINHO — 549 HA — CAMOCIM",
+    location: "Barrinha, Camocim - CE",
+    exclusiveText: "549 hectáreas | 2.746 m de Frente al Mar | Dunas, Laguna y Litoral Preservado",
+    summaryDescription: "Sítio Espinho: 549,04 hectáreas certificadas (SIGEF) en Barrinha, Camocim, con 2.746,67 m de frente al Océano Atlántico, un extenso campo de dunas móviles y lagunas, y confrontación sur con el Lago das Cangalhas.",
+    about: [
+      "Sítio Espinho es un raro activo de 549,04 hectáreas en el litoral oeste de Camocim, con área certificada por el SIGEF y perímetro de 11.248,10 m. La propiedad tiene frente directo al Océano Atlántico — 2.746,67 metros de costa — y confronta al sur con el Lago das Cangalhas.",
+      "El paisaje está dominado por un extenso campo de dunas móviles blancas y lagunas interdunares estacionales, entremezcladas con tramos de vegetación nativa y cocoteros. Dentro de la propia área se identificó un punto de kitesurf reconocido localmente, el 'Cangalhas Secret Point'.",
+      "Ubicado a aproximadamente 15 km al oeste de la sede de Camocim y a 6 km de la Vila de Maceió, el inmueble está en el corazón de la Rota das Emoções, uno de los principales corredores turísticos del Nordeste brasileño. Camocim cuenta con aeropuerto regional modernizado y es servido por la carretera estructural CE-085.",
+      "Una oportunidad de escala rara en el litoral cearense — indicada para quien busca un activo de gran extensión, con paisaje de dunas y laguna preservada y potencial de largo plazo en el corredor turístico-deportivo del viento."
+    ],
+    infra: [
+      "Área total certificada (SIGEF): 549,0392 ha — perímetro de 11.248,10 m",
+      "2.746,67 m de frente al Océano Atlántico",
+      "Confrontación sur con el Lago das Cangalhas",
+      "Extenso campo de dunas móviles y lagunas interdunares",
+      "Punto de kitesurf identificado dentro del área (Cangalhas Secret Point)",
+      "A ~15 km al oeste de Camocim y 6 km de la Vila de Maceió",
+      "Camocim: aeropuerto regional modernizado y carretera estructural CE-085"
+    ],
+    facilities: ["549 Hectáreas", "2,7 km Frente al Mar", "Kitesurf", "Dunas y Laguna"],
+    documents: [
+      {
+        label: "Memoria Descriptiva",
+        url: "/documentos/sitio-espinho-memorial-descritivo.pdf",
+        legend: "Memoria descriptiva georreferenciada del Sítio Espinho, matrícula 783, con área de 549,0392 ha y perímetro de 11.248,10 m."
+      },
+      {
+        label: "Plano SIGEF — INCRA",
+        url: "/documentos/sitio-espinho-planta-sigef.pdf",
+        legend: "Plano de certificación SIGEF/INCRA de la poligonal del inmueble."
+      },
+      {
+        label: "Plano Georreferenciado — Levantamiento Planialtimétrico",
+        url: "/documentos/sitio-espinho-planta-georreferenciada.pdf",
+        legend: "Plano con el levantamiento planialtimétrico completo, tabla de coordenadas, acimutes y distancias."
+      }
+    ],
+    priceTag: "Valor",
+    price: "R$ 15.000.000,00",
+    installments: "Consulte las condiciones",
+    category: "venda"
+  },
+  {
+    id: "terreno-icarai-amontada",
+    slug: "terreno-icarai-amontada",
+    title: "VENTA",
+    searchTitle: "Emprendimiento Icaraí — Amontada",
+    badge: "Oportunidad Exclusiva",
+    propertyTitle: "TERRENO ICARAÍ — 36 HA — AMONTADA",
+    location: "Icaraí de Amontada, Amontada - CE",
+    exclusiveText: "36,17 hectáreas | Frente al Mar | Potencial para Posada, Hotel o Resort",
+    summaryDescription: "Terreno de 36,1745 hectáreas en Icaraí de Amontada, con frente al mar, estudio de zonificación ambiental ya elaborado y encuadre favorable para la licencia de posada, hotel o resort.",
+    about: [
+      "Terreno de 36,1745 hectáreas situado en la porción este del municipio de Amontada, en el litoral oeste de Ceará, en Icaraí de Amontada, con frente directo al mar.",
+      "El terreno se caracteriza por el predominio de áreas inundables, dunas fijas y depósitos eólicos de tope plano. Según el Estudio de Zonificación Ambiental elaborado para el terreno, aproximadamente el 82,98% del área (descontadas las porciones clasificadas como Área de Preservación Permanente) presenta potencial de uso, respetando la capacidad de soporte del ambiente natural.",
+      "El encuadre ambiental identificado viabiliza la licencia municipal de hotel (hasta 240 unidades habitacionales) o posada (hasta 80 unidades habitacionales) como emprendimiento de bajo potencial contaminante-degradador, conforme a las resoluciones del COEMA.",
+      "Icaraí de Amontada es una región de crecimiento turístico consolidado en el litoral cearense, con fácil acceso y desarrollo inmobiliario ya presente en la costa — un escenario favorable para un emprendimiento hotelero o de posadas de mediano a gran porte."
+    ],
+    infra: [
+      "Área total: 36,1745 ha, con frente al mar",
+      "~82,98% del área (fuera de APP) con potencial de uso",
+      "17,02% de dunas fijas clasificadas como Área de Preservación Permanente (APP)",
+      "Encuadre para licencia municipal de hotel (hasta 240 UH) o posada (hasta 80 UH)",
+      "Estudio de Zonificación Ambiental elaborado por Carcará Ambiental",
+      "Región de crecimiento turístico consolidado, con fácil acceso"
+    ],
+    facilities: ["36 Hectáreas", "Frente al Mar", "Potencial Hotelero", "Zonificación Ambiental"],
+    documents: [
+      {
+        label: "Zonificación Ambiental — Gleba Amontada",
+        url: "/documentos/terreno-icarai-amontada-zoneamento-ambiental.pdf",
+        legend: "Estudio de zonificación ambiental del terreno, con encuadre legal y potencial de licencia para posada, hotel o resort — elaborado por Carcará Ambiental."
+      }
+    ],
+    priceTag: "Valor",
+    price: "Consulte las condiciones",
     installments: "Consulte las condiciones",
     category: "venda"
   }],
