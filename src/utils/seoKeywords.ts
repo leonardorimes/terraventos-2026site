@@ -23,6 +23,7 @@ const DESTINATION_MATCHERS: Array<{ pattern: RegExp; keywords: Record<SeoLang, s
 
 const TYPE_MATCHERS: Array<{ pattern: RegExp; keywords: Record<SeoLang, string> }> = [
   { pattern: /terreno|\bland\b|\blote\b|\blot\b/i, keywords: { pt: 'terreno', en: 'land', es: 'terreno' } },
+  { pattern: /s[íi]tio|fazenda/i, keywords: { pt: 'sítio', en: 'countryside estate', es: 'finca rural' } },
   { pattern: /mans[ãa]o|mansion/i, keywords: { pt: 'mansão', en: 'mansion', es: 'mansión' } },
   { pattern: /\bcasa\b|\bhouse\b/i, keywords: { pt: 'casa', en: 'house', es: 'casa' } },
   { pattern: /vil(l)?a\b/i, keywords: { pt: 'villa', en: 'villa', es: 'villa' } },

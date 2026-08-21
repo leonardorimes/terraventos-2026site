@@ -2732,5 +2732,149 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   price: "R$ 1.800.000,00",
   installments: "Consulte condições",
   category: "venda"
+},
+{
+  id: "sitio-espinho-camocim",
+  slug: "sitio-espinho-camocim",
+  title: "VENDA",
+  searchTitle: "Sítio Espinho — 549 ha — Camocim",
+  image: "/imoveis/sitio-espinho-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "SÍTIO ESPINHO — 549 HA — CAMOCIM",
+  location: "Barrinha, Camocim - CE",
+  rating: 5,
+  exclusiveText: "549 hectares | 2.746 m de Frente Mar | Dunas, Lagoa e Litoral Preservado",
+  summaryDescription: "Sítio Espinho: 549,04 hectares certificados (SIGEF) na Barrinha, Camocim, com 2.746,67 m de frente para o Oceano Atlântico, extenso campo de dunas móveis e lagoas, e confrontação sul com o Lago das Cangalhas.",
+  about: [
+    "O Sítio Espinho é um raro ativo de 549,04 hectares no litoral oeste de Camocim, com área certificada pelo SIGEF e perímetro de 11.248,10 m. A propriedade tem frente direta para o Oceano Atlântico — 2.746,67 metros de orla — e confronta ao sul com o Lago das Cangalhas.",
+    "A paisagem é dominada por um extenso campo de dunas móveis brancas e lagoas interdunares sazonais, entremeadas por trechos de vegetação nativa e coqueirais. Dentro da própria área foi identificado um ponto de kitesurf reconhecido localmente, o 'Cangalhas Secret Point'.",
+    "Localizado a aproximadamente 15 km a oeste da sede de Camocim e a 6 km da Vila de Maceió, o imóvel está no coração da Rota das Emoções, um dos principais corredores turísticos do Nordeste. Camocim conta com aeroporto regional modernizado e é servida pela rodovia estruturante CE-085.",
+    "Uma oportunidade de escala rara no litoral cearense — indicada para quem busca um ativo de grande extensão, com paisagem de dunas e lagoa preservada e potencial de longo prazo no corredor turístico-esportivo do vento."
+  ],
+  infra: [
+    "Área total certificada (SIGEF): 549,0392 ha — perímetro de 11.248,10 m",
+    "2.746,67 m de frente para o Oceano Atlântico",
+    "Confrontação sul com o Lago das Cangalhas",
+    "Extenso campo de dunas móveis e lagoas interdunares",
+    "Ponto de kitesurf identificado dentro da área (Cangalhas Secret Point)",
+    "A ~15 km a oeste de Camocim e 6 km da Vila de Maceió",
+    "Camocim: aeroporto regional modernizado e rodovia estruturante CE-085"
+  ],
+  facilities: ["549 Hectares", "2,7 km Frente Mar", "Kitesurf", "Dunas e Lagoa"],
+  gallery: {
+    main: "/imoveis/sitio-espinho-01.webp",
+    sideTop: "/imoveis/sitio-espinho-02.webp",
+    sideBottom: "/imoveis/sitio-espinho-03.webp",
+    extra: [
+      "/imoveis/sitio-espinho-04.webp",
+      "/imoveis/sitio-espinho-05.webp",
+      "/imoveis/sitio-espinho-06.webp",
+      "/imoveis/sitio-espinho-07.webp",
+      "/imoveis/sitio-espinho-08.webp",
+      "/imoveis/sitio-espinho-09.webp",
+      "/imoveis/sitio-espinho-10.webp",
+      "/imoveis/sitio-espinho-11.webp",
+      "/imoveis/sitio-espinho-12.webp",
+      "/imoveis/sitio-espinho-13.webp",
+      "/imoveis/sitio-espinho-14.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-2.896414,-40.996641&hl=pt-BR&z=13&output=embed",
+  videoSources: [
+    "https://drive.google.com/file/d/1f2KRbA9b1Fz05uNjo05LtR6Jd1FiSgjC/preview",
+    "https://drive.google.com/file/d/1O_oOnecjFqCfITuXOHwpXnYQSbPPe0vl/preview",
+    "https://drive.google.com/file/d/1NcfVyzy36gEj7kAHR_g8ttzASRYIzcUH/preview",
+    "https://drive.google.com/file/d/1O7ztnuIJFeH0kR_V4meJX9D6BLvhiz1q/preview"
+  ],
+  videoThumbnails: [
+    "/imoveis/sitio-espinho-05.webp",
+    "/imoveis/sitio-espinho-08.webp",
+    "/imoveis/sitio-espinho-11.webp",
+    "/imoveis/sitio-espinho-14.webp"
+  ],
+  documents: [
+    {
+      label: "Memorial Descritivo",
+      url: "/documentos/sitio-espinho-memorial-descritivo.pdf",
+      legend: "Memorial descritivo georreferenciado do Sítio Espinho, matrícula 783, com área de 549,0392 ha e perímetro de 11.248,10 m."
+    },
+    {
+      label: "Planta SIGEF — INCRA",
+      url: "/documentos/sitio-espinho-planta-sigef.pdf",
+      legend: "Planta de certificação SIGEF/INCRA da poligonal do imóvel."
+    },
+    {
+      label: "Planta Georreferenciada — Levantamento Planialtimétrico",
+      url: "/documentos/sitio-espinho-planta-georreferenciada.pdf",
+      legend: "Planta com o levantamento planialtimétrico completo, tabela de coordenadas, azimutes e distâncias."
+    }
+  ],
+  priceTag: "Valor",
+  price: "R$ 15.000.000,00",
+  installments: "Consulte condições",
+  category: "venda",
+  unlisted: true
+},
+{
+  id: "terreno-icarai-amontada",
+  slug: "terreno-icarai-amontada",
+  title: "VENDA",
+  searchTitle: "Empreendimento Icaraí — Amontada",
+  image: "/imoveis/terreno-icarai-amontada-01.webp",
+  badge: "Oportunidade Exclusiva",
+  propertyTitle: "TERRENO ICARAÍ — 36 HA — AMONTADA",
+  location: "Icaraí de Amontada, Amontada - CE",
+  rating: 5,
+  exclusiveText: "36,17 hectares | Frente Mar | Potencial para Pousada, Hotel ou Resort",
+  summaryDescription: "Gleba de 36,1745 hectares em Icaraí de Amontada, com frente para o mar, zoneamento ambiental já elaborado e enquadramento favorável para licenciamento de pousada, hotel ou resort.",
+  about: [
+    "Gleba de 36,1745 hectares situada na porção leste do município de Amontada, no litoral oeste do Ceará, em Icaraí de Amontada, com frente direta para o mar.",
+    "O terreno é caracterizado pelo predomínio de áreas alagáveis, dunas fixas e depósitos eólicos de topo plano. Segundo o Estudo de Zoneamento Ambiental elaborado para a gleba, aproximadamente 82,98% da área (descontadas as porções classificadas como Área de Preservação Permanente) apresenta potencial de uso, respeitada a capacidade de suporte do ambiente natural.",
+    "O enquadramento ambiental identificado viabiliza o licenciamento municipal de hotel (até 240 unidades habitacionais) ou pousada (até 80 unidades habitacionais) como empreendimento de baixo potencial poluidor-degradador, conforme resoluções do COEMA.",
+    "Icaraí de Amontada é uma região de crescimento turístico consolidado no litoral cearense, com fácil acesso e desenvolvimento imobiliário já presente na orla — um cenário favorável para um empreendimento hoteleiro ou de pousadas de médio a grande porte."
+  ],
+  infra: [
+    "Área total: 36,1745 ha, com frente para o mar",
+    "~82,98% da área (fora de APP) com potencial de uso",
+    "17,02% de dunas fixas classificadas como Área de Preservação Permanente (APP)",
+    "Enquadramento para licenciamento municipal de hotel (até 240 UH) ou pousada (até 80 UH)",
+    "Estudo de Zoneamento Ambiental elaborado pela Carcará Ambiental",
+    "Região de crescimento turístico consolidado, com fácil acesso"
+  ],
+  facilities: ["36 Hectares", "Frente Mar", "Potencial Hoteleiro", "Zoneamento Ambiental"],
+  gallery: {
+    main: "/imoveis/terreno-icarai-amontada-01.webp",
+    sideTop: "/imoveis/terreno-icarai-amontada-02.webp",
+    sideBottom: "/imoveis/terreno-icarai-amontada-03.webp",
+    extra: [
+      "/imoveis/terreno-icarai-amontada-04.webp",
+      "/imoveis/terreno-icarai-amontada-05.webp",
+      "/imoveis/terreno-icarai-amontada-06.webp",
+      "/imoveis/terreno-icarai-amontada-07.webp",
+      "/imoveis/terreno-icarai-amontada-08.webp",
+      "/imoveis/terreno-icarai-amontada-09.webp"
+    ]
+  },
+  mapImage: "/mapa.avif",
+  mapUrl: "https://maps.google.com/maps?q=-3.045154,-39.620133&hl=pt-BR&z=15&output=embed",
+  videoSources: [
+    "https://drive.google.com/file/d/16vxDt9hbgMou-OqnL4x14NrQPiECKy1x/preview"
+  ],
+  videoThumbnails: [
+    "/imoveis/terreno-icarai-amontada-01.webp"
+  ],
+  documents: [
+    {
+      label: "Zoneamento Ambiental — Gleba Amontada",
+      url: "/documentos/terreno-icarai-amontada-zoneamento-ambiental.pdf",
+      legend: "Estudo de zoneamento ambiental da gleba, com enquadramento legal e potencial de licenciamento para pousada, hotel ou resort — elaborado pela Carcará Ambiental."
+    }
+  ],
+  priceTag: "Valor",
+  price: "Consulte condições",
+  installments: "Consulte condições",
+  category: "venda",
+  unlisted: true
 }
 ];

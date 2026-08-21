@@ -12,6 +12,27 @@ type VideoGalleryProps = {
   onOpenVideo?: (src: string) => void;
 };
 
+// A galeria toca tanto vídeos do Vimeo quanto do Google Drive. O Drive não expõe uma
+// API de player embutível (sem evento "ended"), então o avanço automático por
+// contagem regressiva só existe para fontes Vimeo.
+function isDriveSource(src: string): boolean {
+  return src.includes('drive.google.com');
+}
+
+function getEmbedSrc(src: string): string {
+  if (isDriveSource(src)) return src;
+  return `${src}${src.includes('?') ? '&' : '?'}title=0&byline=0&portrait=0&badge=0&autoplay=1&dnt=1`;
+}
+
+function getThumbSrc(src: string, videoThumbnails: string[] | undefined, idx: number, mainImage: string): string {
+  if (videoThumbnails?.[idx]) return videoThumbnails[idx];
+  if (!isDriveSource(src)) {
+    const vimeoId = src.split('/video/')[1]?.split('?')[0];
+    if (vimeoId) return `https://vumbnail.com/${vimeoId}.jpg`;
+  }
+  return mainImage;
+}
+
 export default function VideoGallery({ videoSources, videoThumbnails, mainImage, title, credits }: VideoGalleryProps) {
   const { t } = useTranslation();
   const [isVideoAlbumOpen, setIsVideoAlbumOpen] = useState(false);
@@ -19,11 +40,11 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
   const [countdown, setCountdown] = useState<number | null>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
-  // Initialize Vimeo player and listen for "ended"
+  // Initialize Vimeo player and listen for "ended" (Drive não tem essa API — sem auto-avanço)
   useEffect(() => {
-    if (playingIndex !== null && iframeRef.current) {
+    if (playingIndex !== null && iframeRef.current && !isDriveSource(videoSources[playingIndex])) {
       const player = new Player(iframeRef.current);
-      
+
       player.on('ended', () => {
         // Start 3-second countdown
         setCountdown(3);
@@ -122,8 +143,7 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
       <button className="pi-gallery-strip" onClick={openVideoAlbum} aria-label="Abrir galeria de vídeos" style={{ display: 'flex', width: '100%', alignItems: 'center' }}>
         <div className="pi-gallery-strip-previews" style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
           {videoSources.slice(0, 5).map((src, idx) => {
-            const vimeoId = src.split('/video/')[1]?.split('?')[0];
-            const thumbUrl = videoThumbnails?.[idx] || (vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage);
+            const thumbUrl = getThumbSrc(src, videoThumbnails, idx, mainImage);
             return (
               <div key={idx} className="pi-gallery-strip-thumb" style={{ position: 'relative' }}>
                 <img src={thumbUrl} alt={`Preview vídeo ${idx + 1}`} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
@@ -181,9 +201,9 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
             }}
           >
             <iframe
-              key={`vimeo-${playingIndex}`}
+              key={`video-${playingIndex}`}
               ref={iframeRef}
-              src={`${videoSources[playingIndex]}${videoSources[playingIndex].includes('?') ? '&' : '?'}title=0&byline=0&portrait=0&badge=0&autoplay=1&dnt=1`}
+              src={getEmbedSrc(videoSources[playingIndex])}
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
               allowFullScreen
@@ -269,8 +289,7 @@ export default function VideoGallery({ videoSources, videoThumbnails, mainImage,
           <div className="pi-album-content">
             <div className="pi-album-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '16px', padding: '16px' }}>
               {videoSources.map((src, idx) => {
-                const vimeoId = src.split('/video/')[1]?.split('?')[0];
-                const thumbUrl = videoThumbnails?.[idx] || (vimeoId ? `https://vumbnail.com/${vimeoId}.jpg` : mainImage);
+                const thumbUrl = getThumbSrc(src, videoThumbnails, idx, mainImage);
 
                 return (
                   <div key={idx} className="pi-album-item" onClick={() => handleVideoClick(idx)} style={{ position: 'relative', cursor: 'pointer', aspectRatio: '16/9', borderRadius: '8px', overflow: 'hidden' }}>
