@@ -4,6 +4,7 @@ import { useAppShellContext } from './appShellContext';
 import HomePage from '../pages/HomePage';
 import PropriedadesPage from '../pages/PropriedadesPage';
 import PaginaTaiba from '../components/PaginaTaiba';
+import RegiaoPage from '../pages/RegiaoPage';
 import InstitucionalPage from '../pages/InstitucionalPage';
 import PropriedadeIndividualPage from '../pages/PropriedadeIndividualPage';
 import VentoAfavorPage from '../pages/VentoAfavorPage';
@@ -36,6 +37,9 @@ function chromedRoutes() {
           </div>
         }
       />
+      <Route path="tatajuba" element={<RegiaoPage regionKey="tatajuba" />} />
+      <Route path="prea" element={<RegiaoPage regionKey="prea" />} />
+      <Route path="bitupita" element={<RegiaoPage regionKey="bitupita" />} />
       <Route path="quem-somos" element={<InstitucionalPage pageType="quem-somos" />} />
       <Route path="termos-e-condicoes" element={<InstitucionalPage pageType="termos-e-condicoes" />} />
       <Route path="politica-de-privacidade" element={<InstitucionalPage pageType="politica-de-privacidade" />} />

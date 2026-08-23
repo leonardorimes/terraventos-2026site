@@ -152,6 +152,9 @@ export default function AppShell() {
       '/contato',
       '/ventoafavor',
       '/taiba',
+      '/tatajuba',
+      '/prea',
+      '/bitupita',
     ].includes(cleanPath);
     if (managesOwnSeo) return;
 

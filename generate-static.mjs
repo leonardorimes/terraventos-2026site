@@ -287,6 +287,51 @@ const staticPages = [
     }
   },
   {
+    slug: 'tatajuba',
+    priority: 0.8,
+    image: '/imoveis/casa-beira-mar-tatajuba-02.webp',
+    titles: {
+      pt: 'Imóveis em Tatajuba | Terra Ventos',
+      en: 'Properties in Tatajuba | Terra Ventos',
+      es: 'Inmuebles en Tatajuba | Terra Ventos'
+    },
+    descriptions: {
+      pt: 'Terrenos e imóveis à venda em Tatajuba, no litoral oeste do Ceará — natureza preservada, dunas intocadas e um dos destinos com valorização mais acelerada da região.',
+      en: 'Land and properties for sale in Tatajuba, on Ceará\'s west coast — preserved nature, untouched dunes and one of the fastest-appreciating destinations in the region.',
+      es: 'Terrenos e inmuebles en venta en Tatajuba, en el litoral oeste de Ceará — naturaleza preservada, dunas intactas y uno de los destinos con mayor valorización de la región.'
+    }
+  },
+  {
+    slug: 'prea',
+    priority: 0.8,
+    image: '/imoveis/mansao-praia-do-prea-01.webp',
+    titles: {
+      pt: 'Imóveis no Preá | Terra Ventos',
+      en: 'Properties in Preá | Terra Ventos',
+      es: 'Inmuebles en Preá | Terra Ventos'
+    },
+    descriptions: {
+      pt: 'Terrenos, casas e mansões à venda na Praia do Preá — o maior spot de kitesurf e wingfoil do Ceará, com infraestrutura em crescimento e alto padrão de investimento.',
+      en: 'Land, houses and mansions for sale in Preá Beach — the biggest kitesurf and wingfoil spot in Ceará, with growing infrastructure and high-end investment appeal.',
+      es: 'Terrenos, casas y mansiones en venta en la Playa de Preá — el mayor spot de kitesurf y wingfoil de Ceará, con infraestructura en crecimiento y alto potencial de inversión.'
+    }
+  },
+  {
+    slug: 'bitupita',
+    priority: 0.8,
+    image: '/imoveis/terrenos-bitupita-01.webp',
+    titles: {
+      pt: 'Imóveis em Bitupitá | Terra Ventos',
+      en: 'Properties in Bitupitá | Terra Ventos',
+      es: 'Inmuebles en Bitupitá | Terra Ventos'
+    },
+    descriptions: {
+      pt: 'Terrenos e imóveis pé na areia em Bitupitá — a nova fronteira do investimento no litoral cearense, com praias intocadas e potencial de valorização único.',
+      en: 'Beachfront land and properties in Bitupitá — the new frontier of investment on the Ceará coast, with untouched beaches and unique appreciation potential.',
+      es: 'Terrenos e inmuebles frente al mar en Bitupitá — la nueva frontera de inversión en el litoral cearense, con playas intactas y un potencial de valorización único.'
+    }
+  },
+  {
     slug: 'ventoafavor',
     priority: 0.6,
     titles: {
@@ -393,8 +438,8 @@ Object.entries(locales).forEach(([langId, data]) => {
 });
 
 // Páginas HTML standalone fora do app React (sem versão /en, /es — sem hreflang alternates)
+// "/bitupita" saiu daqui: agora é gerada com hreflang completo no laço de staticPages acima.
 const standalonePages = [
-  { loc: '/bitupita', priority: 0.5 },
   { loc: '/advogados', priority: 0.5 },
   { loc: '/parceiros', priority: 0.5 },
   { loc: '/founders', priority: 0.5 },

@@ -12,7 +12,9 @@ i18n
           common: {
             share: "Compartilhar",
             linkCopied: "Link copiado!",
-            shareText: "Confira esta propriedade na Terra Ventos: "
+            shareText: "Confira esta propriedade na Terra Ventos: ",
+            shareSearch: "Compartilhar busca",
+            shareSearchText: "Confira os imóveis que encontrei na Terra Ventos: "
           },
           seo: {
             intro: "A Terra Ventos é uma curadoria exclusiva de imóveis de alto padrão no litoral do Ceará. Atuamos nas regiões de Preá, Tatajuba e Bitupitá, oferecendo oportunidades únicas de investimento em terrenos, casas de praia e projetos de ecoturismo de luxo. Com vento constante, infraestrutura em crescimento e valorização comprovada, o Ceará é hoje um dos destinos mais promissores para investidores do Brasil e do exterior."
@@ -65,6 +67,21 @@ i18n
             videosCount_one: "{{count}} vídeo",
             videosCount_other: "{{count}} vídeos",
             noResults: "Nenhuma propriedade encontrada."
+          },
+          regiao: {
+            subtitle: "Todos os imóveis disponíveis nesta região, atualizados automaticamente",
+            tipoLabel: "Tipo de imóvel:",
+            ordenarLabel: "Ordenar por preço:",
+            ordenarAsc: "Menor preço primeiro",
+            ordenarDesc: "Maior preço primeiro",
+            shareText: "Confira os imóveis disponíveis em ",
+            heroTag: "Curadoria exclusiva",
+            ctaVerImoveis: "Ver imóveis disponíveis",
+            ctaWhatsapp: "Falar no WhatsApp",
+            countLabel_one: "{{count}} imóvel disponível",
+            countLabel_other: "{{count}} imóveis disponíveis",
+            ctaBandQuestion: "Interessado em imóveis em",
+            ctaBandSubtitle: "Nossa equipe apresenta as opções disponíveis e tira todas as suas dúvidas, sem compromisso."
           },
           categorias: {
             all: "Todas",
@@ -230,7 +247,9 @@ i18n
           common: {
             share: "Share",
             linkCopied: "Link copied!",
-            shareText: "Check out this property on Terra Ventos: "
+            shareText: "Check out this property on Terra Ventos: ",
+            shareSearch: "Share search",
+            shareSearchText: "Check out the properties I found on Terra Ventos: "
           },
           seo: {
             intro: "Terra Ventos is an exclusive curation of high-end properties on the coast of Ceará. We operate in the regions of Preá, Tatajuba, and Bitupitá, offering unique investment opportunities in land, beach houses, and luxury ecotourism projects. With constant wind, growing infrastructure, and proven appreciation, Ceará is today one of the most promising destinations for investors from Brazil and abroad."
@@ -254,6 +273,21 @@ i18n
             videosCount_one: "{{count}} video",
             videosCount_other: "{{count}} videos",
             noResults: "No properties found."
+          },
+          regiao: {
+            subtitle: "All available properties in this region, updated automatically",
+            tipoLabel: "Property type:",
+            ordenarLabel: "Sort by price:",
+            ordenarAsc: "Lowest price first",
+            ordenarDesc: "Highest price first",
+            shareText: "Check out the available properties in ",
+            heroTag: "Exclusive curation",
+            ctaVerImoveis: "View available properties",
+            ctaWhatsapp: "Chat on WhatsApp",
+            countLabel_one: "{{count}} property available",
+            countLabel_other: "{{count}} properties available",
+            ctaBandQuestion: "Interested in properties in",
+            ctaBandSubtitle: "Our team walks you through the available options and answers every question, with no commitment."
           },
           categorias: {
             all: "All",
@@ -417,7 +451,9 @@ i18n
           common: {
             share: "Compartir",
             linkCopied: "¡Enlace copiado!",
-            shareText: "Mira esta propiedad en Terra Ventos: "
+            shareText: "Mira esta propiedad en Terra Ventos: ",
+            shareSearch: "Compartir búsqueda",
+            shareSearchText: "Mira los inmuebles que encontré en Terra Ventos: "
           },
           seo: {
             intro: "Terra Ventos es una curaduría exclusiva de propiedades de alto nivel en la costa de Ceará. Operamos en las regiones de Preá, Tatajuba y Bitupitá, ofreciendo oportunidades únicas de inversión en terrenos, casas de playa y proyectos de ecoturismo de lujo. Con viento constante, infraestructura en crecimiento y valorización comprobada, Ceará es hoy uno de los destinos más prometedores para inversores de Brasil y del exterior."
@@ -451,6 +487,21 @@ i18n
             videosCount_one: "{{count}} vídeo",
             videosCount_other: "{{count}} vídeos",
             noResults: "No se encontraron propiedades."
+          },
+          regiao: {
+            subtitle: "Todos los inmuebles disponibles en esta región, actualizados automáticamente",
+            tipoLabel: "Tipo de inmueble:",
+            ordenarLabel: "Ordenar por precio:",
+            ordenarAsc: "Menor precio primero",
+            ordenarDesc: "Mayor precio primero",
+            shareText: "Mira los inmuebles disponibles en ",
+            heroTag: "Curaduría exclusiva",
+            ctaVerImoveis: "Ver inmuebles disponibles",
+            ctaWhatsapp: "Hablar por WhatsApp",
+            countLabel_one: "{{count}} inmueble disponible",
+            countLabel_other: "{{count}} inmuebles disponibles",
+            ctaBandQuestion: "¿Interesado en inmuebles en",
+            ctaBandSubtitle: "Nuestro equipo presenta las opciones disponibles y responde todas tus preguntas, sin compromiso."
           },
           categorias: {
             all: "Todas",

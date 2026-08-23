@@ -18,11 +18,13 @@ const sources = new Set();
 for (const item of getOportunidadesData('pt')) {
   sources.add(item.image);
 }
-// Fixos: hero do Taíba, banner da home, fallback institucional, logo do founders
+// Fixos: hero do Taíba, banner da home, fallback institucional, logo do founders,
+// hero da landing page de Tatajuba (Preá e Bitupitá já entram via item.image, acima)
 sources.add('/imoveis/lote-barramar-lagoa-taiba-03.webp');
 sources.add('/banners/banners-01.webp');
 sources.add('/og-propriedades.png');
 sources.add('/founders/founders.png');
+sources.add('/imoveis/casa-beira-mar-tatajuba-02.webp');
 
 console.log(`Gerando og:image (1200x630) para ${sources.size} fontes únicas...`);
 

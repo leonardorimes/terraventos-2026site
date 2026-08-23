@@ -1,4 +1,5 @@
 import type { OportunidadeDetalhe } from '../data/oportunidadesData';
+import { normalizeString } from './normalizeString';
 
 export type SeoLang = 'pt' | 'en' | 'es';
 
@@ -10,26 +11,44 @@ const BRAND_TERMS: Record<SeoLang, string[]> = {
   es: ['inmueble de lujo Ceará', 'inversión litoral cearense', 'Terra Ventos'],
 };
 
-const DESTINATION_MATCHERS: Array<{ pattern: RegExp; keywords: Record<SeoLang, string> }> = [
-  { pattern: /pre[áa]/i, keywords: { pt: 'Praia do Preá', en: 'Preá Beach', es: 'Playa de Preá' } },
-  { pattern: /tatajuba/i, keywords: { pt: 'Tatajuba', en: 'Tatajuba', es: 'Tatajuba' } },
-  { pattern: /bitupit[áa]/i, keywords: { pt: 'Bitupitá', en: 'Bitupitá', es: 'Bitupitá' } },
-  { pattern: /ta[íi]ba/i, keywords: { pt: 'Taíba', en: 'Taíba', es: 'Taíba' } },
-  { pattern: /jericoacoara|jeri\b/i, keywords: { pt: 'Jericoacoara', en: 'Jericoacoara', es: 'Jericoacoara' } },
-  { pattern: /acara[uú]/i, keywords: { pt: 'Acaraú', en: 'Acaraú', es: 'Acaraú' } },
-  { pattern: /paracuru/i, keywords: { pt: 'Paracuru', en: 'Paracuru', es: 'Paracuru' } },
-  { pattern: /barrinha/i, keywords: { pt: 'Praia da Barrinha', en: 'Barrinha Beach', es: 'Playa de Barrinha' } },
+export const DESTINATION_MATCHERS: Array<{ key: string; pattern: RegExp; keywords: Record<SeoLang, string> }> = [
+  { key: 'prea', pattern: /pre[áa]/i, keywords: { pt: 'Praia do Preá', en: 'Preá Beach', es: 'Playa de Preá' } },
+  { key: 'tatajuba', pattern: /tatajuba/i, keywords: { pt: 'Tatajuba', en: 'Tatajuba', es: 'Tatajuba' } },
+  { key: 'bitupita', pattern: /bitupit[áa]/i, keywords: { pt: 'Bitupitá', en: 'Bitupitá', es: 'Bitupitá' } },
+  { key: 'taiba', pattern: /ta[íi]ba/i, keywords: { pt: 'Taíba', en: 'Taíba', es: 'Taíba' } },
+  { key: 'jericoacoara', pattern: /jericoacoara|jeri\b/i, keywords: { pt: 'Jericoacoara', en: 'Jericoacoara', es: 'Jericoacoara' } },
+  { key: 'acarau', pattern: /acara[uú]/i, keywords: { pt: 'Acaraú', en: 'Acaraú', es: 'Acaraú' } },
+  { key: 'paracuru', pattern: /paracuru/i, keywords: { pt: 'Paracuru', en: 'Paracuru', es: 'Paracuru' } },
+  { key: 'barrinha', pattern: /barrinha/i, keywords: { pt: 'Praia da Barrinha', en: 'Barrinha Beach', es: 'Playa de Barrinha' } },
 ];
 
-const TYPE_MATCHERS: Array<{ pattern: RegExp; keywords: Record<SeoLang, string> }> = [
-  { pattern: /terreno|\bland\b|\blote\b|\blot\b/i, keywords: { pt: 'terreno', en: 'land', es: 'terreno' } },
-  { pattern: /s[íi]tio|fazenda/i, keywords: { pt: 'sítio', en: 'countryside estate', es: 'finca rural' } },
-  { pattern: /mans[ãa]o|mansion/i, keywords: { pt: 'mansão', en: 'mansion', es: 'mansión' } },
-  { pattern: /\bcasa\b|\bhouse\b/i, keywords: { pt: 'casa', en: 'house', es: 'casa' } },
-  { pattern: /vil(l)?a\b/i, keywords: { pt: 'villa', en: 'villa', es: 'villa' } },
-  { pattern: /duplex/i, keywords: { pt: 'duplex', en: 'duplex', es: 'dúplex' } },
-  { pattern: /[áa]rea/i, keywords: { pt: 'área exclusiva', en: 'exclusive area', es: 'área exclusiva' } },
+export const TYPE_MATCHERS: Array<{ key: string; pattern: RegExp; keywords: Record<SeoLang, string> }> = [
+  { key: 'terreno', pattern: /terreno|\bland\b|\blote\b|\blot\b/i, keywords: { pt: 'terreno', en: 'land', es: 'terreno' } },
+  { key: 'sitio', pattern: /s[íi]tio|fazenda/i, keywords: { pt: 'sítio', en: 'countryside estate', es: 'finca rural' } },
+  { key: 'mansao', pattern: /mans[ãa]o|mansion/i, keywords: { pt: 'mansão', en: 'mansion', es: 'mansión' } },
+  { key: 'casa', pattern: /\bcasa\b|\bhouse\b/i, keywords: { pt: 'casa', en: 'house', es: 'casa' } },
+  { key: 'villa', pattern: /vil(l)?a\b/i, keywords: { pt: 'villa', en: 'villa', es: 'villa' } },
+  { key: 'duplex', pattern: /duplex/i, keywords: { pt: 'duplex', en: 'duplex', es: 'dúplex' } },
+  { key: 'area', pattern: /[áa]rea/i, keywords: { pt: 'área exclusiva', en: 'exclusive area', es: 'área exclusiva' } },
 ];
+
+/** Infere o tipo de imóvel (terreno/casa/etc.) a partir do título + localização — não existe
+ * campo estruturado nos dados, então reaproveita os mesmos regex usados para SEO. O haystack
+ * é normalizado (sem acentos) porque alguns registros têm acentuação corrompida na fonte
+ * (ex.: "PreÃ¡" em vez de "Preá") e os regex têm alternativas acentuadas e não-acentuadas. */
+export function inferPropertyTypeKey(item: PropertyForKeywords): string | null {
+  const haystack = normalizeString(`${item.propertyTitle} ${item.location}`);
+  return TYPE_MATCHERS.find((m) => m.pattern.test(haystack))?.key ?? null;
+}
+
+/** Verifica se um imóvel pertence a uma região (Tatajuba, Preá, Bitupitá...), pela mesma
+ * lista de regex usada para derivar as keywords de SEO (ver nota de normalização acima). */
+export function matchesDestination(item: PropertyForKeywords, destinationKey: string): boolean {
+  const matcher = DESTINATION_MATCHERS.find((m) => m.key === destinationKey);
+  if (!matcher) return false;
+  const haystack = normalizeString(`${item.propertyTitle} ${item.location}`);
+  return matcher.pattern.test(haystack);
+}
 
 function cleanFacility(raw: string): string {
   return raw.replace(/^!/, '').trim();
@@ -77,6 +96,9 @@ export type StaticPageKey =
   | 'politica-de-privacidade'
   | 'contato'
   | 'taiba'
+  | 'tatajuba'
+  | 'prea'
+  | 'bitupita'
   | 'ventoafavor';
 
 export const PAGE_KEYWORDS: Record<StaticPageKey, Record<SeoLang, string>> = {
@@ -114,6 +136,21 @@ export const PAGE_KEYWORDS: Record<StaticPageKey, Record<SeoLang, string>> = {
     pt: 'terrenos Taíba, lotes pé na areia Taíba, investimento Taíba Ceará, vista mar Taíba, Terra Ventos',
     en: 'Taíba land for sale, beachfront lots Taíba, Taíba Ceará investment, sea view Taíba, Terra Ventos',
     es: 'terrenos en Taíba, lotes frente al mar Taíba, inversión Taíba Ceará, vista al mar Taíba, Terra Ventos',
+  },
+  tatajuba: {
+    pt: 'imóveis em Tatajuba, terrenos Tatajuba, casas Tatajuba Ceará, investimento Tatajuba, Terra Ventos',
+    en: 'properties in Tatajuba, Tatajuba land for sale, Tatajuba Ceará houses, Tatajuba investment, Terra Ventos',
+    es: 'inmuebles en Tatajuba, terrenos Tatajuba, casas Tatajuba Ceará, inversión Tatajuba, Terra Ventos',
+  },
+  prea: {
+    pt: 'imóveis no Preá, terrenos Praia do Preá, casas Preá Ceará, investimento Preá kitesurf, Terra Ventos',
+    en: 'properties in Preá, Preá Beach land for sale, Preá Ceará houses, Preá kitesurf investment, Terra Ventos',
+    es: 'inmuebles en Preá, terrenos Playa de Preá, casas Preá Ceará, inversión Preá kitesurf, Terra Ventos',
+  },
+  bitupita: {
+    pt: 'imóveis em Bitupitá, terrenos Bitupitá, casas Bitupitá Ceará, investimento Bitupitá pé na areia, Terra Ventos',
+    en: 'properties in Bitupitá, Bitupitá land for sale, Bitupitá Ceará houses, Bitupitá beachfront investment, Terra Ventos',
+    es: 'inmuebles en Bitupitá, terrenos Bitupitá, casas Bitupitá Ceará, inversión Bitupitá frente al mar, Terra Ventos',
   },
   ventoafavor: {
     pt: 'Vento a Favor, comunidade Terra Ventos, kitesurf Ceará, clube de investidores litoral',

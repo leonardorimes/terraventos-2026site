@@ -1,0 +1,145 @@
+/* ── Região — hero ── */
+.regiao-hero-back {
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.regiao-hero-back:hover {
+  background: #fff;
+  color: #111827;
+  border-color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .regiao-hero-back {
+    top: 16px;
+    left: 16px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* ── Região — cabeçalho de seção (pill + título + contagem) ── */
+.regiao-section-header {
+  text-align: center;
+  padding: 0 24px;
+  margin-bottom: 8px;
+}
+
+.regiao-section-pill {
+  display: inline-block;
+  background-color: #c4b096;
+  color: #111827;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-family: "Diodrum", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.regiao-section-pill:hover {
+  background-color: #111827;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.18);
+}
+
+.regiao-section-count {
+  font-family: "Diodrum", sans-serif;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .regiao-section-header {
+    padding: 0 20px;
+  }
+}
+
+/* ── Região — faixa de CTA final (antes do footer) ── */
+.regiao-cta-band {
+  background-color: #111827;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+.regiao-cta-pill {
+  display: inline-block;
+  background-color: #c4b096;
+  color: #111827;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-family: "Diodrum", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.regiao-cta-title {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  color: #fff;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.regiao-cta-subtitle {
+  font-family: "Diodrum", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  margin: 0 auto 32px;
+  line-height: 1.5;
+}
+
+.regiao-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 52px;
+  padding: 0 32px;
+  border: none;
+  border-radius: 40px;
+  background-color: #c4b096;
+  color: #111827;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.regiao-cta-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 28px rgba(196, 176, 150, 0.35);
+}
+
+@media (max-width: 768px) {
+  .regiao-cta-band {
+    padding: 56px 20px;
+  }
+}
