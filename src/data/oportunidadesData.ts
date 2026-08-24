@@ -56,6 +56,98 @@ export function resolveLoteView(item: OportunidadeDetalhe, loteId: string): Opor
 
 export const oportunidadesData: OportunidadeDetalhe[] = [
   {
+    id: 'casa-prea-5-suites-vlad',
+    slug: 'casa-praia-do-prea-5-suites-vlad',
+    title: 'VENDA',
+    searchTitle: 'Casa 5 Suítes Praia do Preá',
+    image: '/imoveis/casa-praia-do-prea-5-suites-vlad-01.webp',
+    badge: 'Alto Padrão',
+    propertyTitle: 'CASA 5 SUÍTES NA PRAIA DO PREÁ',
+    location: 'Praia do Preá, Ceará',
+    rating: 5,
+    exclusiveText: '5 Suítes | Dois Andares Independentes | 1.734 m² de Terreno',
+    summaryDescription: 'Casa de alto padrão na Praia do Preá, a poucos minutos do centro, com 5 suítes distribuídas em dois andares que podem ser usados de forma independente.',
+    about: [
+      'Casa de alto padrão à venda na Praia do Preá, a poucos minutos do centro, combinando localização tranquila com vista privilegiada.',
+      'São 5 suítes bem distribuídas em dois andares, que podem ser utilizados de forma independente — ideal para famílias grandes ou para quem busca flexibilidade de uso, unindo espaço e aconchego.',
+      'A infraestrutura interna, somada à proximidade com bons restaurantes e beach clubs, torna o dia a dia mais simples, sem a necessidade de grandes deslocamentos.'
+    ],
+    infra: [
+      '5 Suítes distribuídas em 2 andares independentes',
+      'Área construída: 739,56 m²',
+      'Área total do terreno: 1.734,10 m²',
+      'A poucos minutos do centro do Preá',
+      'Próximo a restaurantes e beach clubs'
+    ],
+    facilities: ['5 Suítes', '739m² Construídos', '1.734m² de Terreno', 'Praia do Preá'],
+    gallery: {
+      main: '/imoveis/casa-praia-do-prea-5-suites-vlad-01.webp',
+      sideTop: '/imoveis/casa-praia-do-prea-5-suites-vlad-02.webp',
+      sideBottom: '/imoveis/casa-praia-do-prea-5-suites-vlad-03.webp',
+      extra: [
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-04.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-05.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-06.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-07.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-08.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-09.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-10.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-11.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-12.webp'
+      ]
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Preá,+Cruz,+Ceará&hl=pt-BR&z=14&output=embed',
+    videoSources: [],
+    priceTag: 'Valor',
+    price: 'R$ 7.500.000,00',
+    installments: 'Consulte condições',
+    category: 'venda'
+  },
+  {
+    id: 'vila-prea-gusso',
+    slug: 'vila-exclusiva-prea-gusso',
+    title: 'VENDA',
+    searchTitle: 'Vila Exclusiva no Preá',
+    image: '/imoveis.avif',
+    badge: 'Oportunidade Exclusiva',
+    propertyTitle: 'VILA EXCLUSIVA NO PREÁ',
+    location: 'Preá, Cruz - CE',
+    rating: 5,
+    exclusiveText: '4 Suítes | Piscina | Cozinha Gourmet | 782m² de Terreno',
+    summaryDescription: 'Vila exclusiva no Preá, a 7 minutos a pé da praia, com 4 suítes distribuídas em 3 apartamentos independentes, piscina em estilo resort e cozinha gourmet externa.',
+    about: [
+      'Vila exclusiva no Preá, projetada para receber com privacidade e conforto: 4 suítes distribuídas em 3 apartamentos independentes, acomodando confortavelmente mais de 10 pessoas.',
+      'No térreo, dois estúdios independentes com cama de casal e camas extras, banheiro privativo e cozinha compacta cada. No piso superior, um apartamento amplo com dois quartos, sala de estar, dois banheiros completos e kitchenette.',
+      'A área externa é o grande diferencial: piscina em estilo resort e cozinha gourmet ao ar livre totalmente equipada, ideal para receber família e amigos.',
+      'Localizada a apenas 7 minutos a pé da praia do Preá, uma das regiões mais valorizadas do litoral cearense, e a cerca de 15 minutos do Aeroporto Regional de Jericoacoara (JJD).'
+    ],
+    infra: [
+      '4 Suítes em 3 apartamentos independentes',
+      '5 Banheiros completos',
+      'Área construída de 220 m² em terreno de 782,49 m² (lote 14 x 55,9 m)',
+      '5 Vagas de estacionamento, 2 pisos',
+      'Piscina em estilo resort e cozinha gourmet externa equipada',
+      'A 7 minutos a pé da praia do Preá',
+      'A aprox. 15 minutos do Aeroporto Regional de Jericoacoara (JJD)'
+    ],
+    facilities: ['4 Suítes', 'Piscina', 'Cozinha Gourmet', '782m² de Terreno', '7 min da Praia'],
+    gallery: {
+      main: '/imoveis.avif',
+      sideTop: '/imoveis.avif',
+      sideBottom: '/imoveis.avif',
+      extra: []
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Av+Vila+Formosa,+Preá,+Cruz,+Ceará&hl=pt-BR&z=15&output=embed',
+    videoSources: [],
+    priceTag: 'Valor',
+    price: 'R$ 4.490.000,00',
+    installments: 'Consulte condições',
+    category: 'venda',
+    unlisted: true
+  },
+  {
     id: 'imovel-centro-praia',
     slug: 'imovel-centro-praia',
     title: 'VENDA',

@@ -338,10 +338,19 @@ const projetos = [
   },
 ];
 
+// IDs já com card "curado" manualmente (imagem/beds/baths/area customizados) no array `projetos` acima.
+const projetosCuradosIds = new Set(projetos.map((p) => p.id));
+
 export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
   const { t, i18n } = useTranslation();
   const transitionNavigate = useTransitionNavigate();
   const localizedData = getOportunidadesData(i18n.language).filter(item => !item.unlisted);
+  // Qualquer propriedade nova cadastrada em oportunidadesData.ts que ainda não tenha
+  // um card curado aqui aparece automaticamente, em primeiro lugar. Como novas
+  // propriedades são inseridas no topo de `oportunidadesData` (fonte mestre), a ordem
+  // de `localizedData` já reflete "mais recente primeiro" — não precisa mexer neste
+  // arquivo a cada novo imóvel.
+  const autoNewItems = localizedData.filter((item) => !projetosCuradosIds.has(item.id));
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -439,6 +448,45 @@ export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
           onScroll={checkScroll}
         >
           <div className="pd-slider-track">
+            {/* NOVAS PROPRIEDADES (auto-detectadas, sem card curado ainda) — sempre primeiro */}
+            {autoNewItems.map((itemFromData) => (
+              <a
+                key={itemFromData.id}
+                href={`/propriedade/${itemFromData.slug}`}
+                className="pd-card"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onSelect(itemFromData);
+                }}
+              >
+                <div className="pd-image-wrapper">
+                  <LazyImage
+                    src={itemFromData.gallery.main}
+                    alt={itemFromData.propertyTitle}
+                    className="pd-image"
+                  />
+                  <div className="pd-tag">{itemFromData.badge}</div>
+                </div>
+                <div className="pd-content">
+                  <div className="pd-location">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                    </svg>
+                    <span>{itemFromData.location}</span>
+                  </div>
+                  <h3 className="pd-card-title">{itemFromData.propertyTitle}</h3>
+                  <div className="pd-amenities">
+                    {itemFromData.facilities?.slice(0, 3).map((f) => (
+                      <div className="pd-amenity" key={f}>{f}</div>
+                    ))}
+                  </div>
+                  <div className="pd-price">
+                    {itemFromData.priceTag ? `${itemFromData.priceTag} ${itemFromData.price}` : itemFromData.price}
+                  </div>
+                </div>
+              </a>
+            ))}
+
             {/* PRIMEIRAS PROPRIEDADES (terrenos novos em destaque) */}
             {projetos.slice(0, 8).map((projeto) => {
               const itemFromData = localizedData.find((d) => d.id === projeto.id);
