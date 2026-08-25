@@ -109,56 +109,6 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     category: 'venda'
   },
   {
-    id: 'casa-prea-5-suites-vlad-2',
-    slug: 'casa-praia-do-prea-5-suites-vlad-2',
-    title: 'VENDA',
-    searchTitle: 'Casa 5 Suítes Praia do Preá',
-    image: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
-    badge: 'Alto Padrão',
-    propertyTitle: 'CASA 5 SUÍTES NA PRAIA DO PREÁ',
-    location: 'Praia do Preá, Ceará',
-    rating: 5,
-    exclusiveText: '5 Suítes | Dois Andares Independentes | 1.734 m² de Terreno',
-    summaryDescription: 'Casa de alto padrão na Praia do Preá, a poucos minutos do centro, com 5 suítes distribuídas em dois andares que podem ser usados de forma independente.',
-    about: [
-      'Casa de alto padrão à venda na Praia do Preá, em localização tranquila e a poucos minutos do centro, com vista privilegiada para o mar.',
-      'São 5 suítes distribuídas em dois andares que podem ser usados de forma independente, garantindo flexibilidade de espaço aliada a uma sensação de aconchego — ideal para famílias grandes ou para quem recebe convidados com frequência.',
-      'A infraestrutura interna, somada à proximidade com bons restaurantes e beach clubs do Preá, torna o dia a dia mais prático, sem a necessidade de grandes deslocamentos.'
-    ],
-    infra: [
-      '5 suítes distribuídas em 2 andares independentes',
-      'Área construída de 739,56 m²',
-      'Terreno total de 1.734,10 m²',
-      'A poucos minutos do centro do Preá',
-      'Próximo a restaurantes e beach clubs'
-    ],
-    facilities: ['5 Suítes', '739m² Construídos', '1.734m² de Terreno', 'Praia do Preá'],
-    gallery: {
-      main: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
-      sideTop: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-02.webp',
-      sideBottom: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-03.webp',
-      extra: [
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-04.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-05.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-06.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-07.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-08.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-09.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-10.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-11.webp',
-        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-12.webp'
-      ]
-    },
-    mapImage: '/mapa.avif',
-    mapUrl: 'https://maps.google.com/maps?q=Preá,+Cruz,+Ceará&hl=pt-BR&z=14&output=embed',
-    videoSources: [],
-    priceTag: 'Valor',
-    price: 'R$ 7.500.000,00',
-    installments: 'Consulte condições',
-    category: 'venda',
-    hideFromDestaque: true
-  },
-  {
     id: 'vila-prea-gusso',
     slug: 'vila-exclusiva-prea-gusso',
     title: 'VENDA',
@@ -1269,6 +1219,56 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     price: '',
     installments: 'A partir de 120 parcelas',
     category: 'lancamento',
+  },
+  {
+    id: 'casa-prea-5-suites-vlad-2',
+    slug: 'casa-praia-do-prea-5-suites-vlad-2',
+    title: 'VENDA',
+    searchTitle: 'Casa 5 Suítes Praia do Preá',
+    image: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
+    badge: 'Alto Padrão',
+    propertyTitle: 'CASA 5 SUÍTES NA PRAIA DO PREÁ',
+    location: 'Praia do Preá, Ceará',
+    rating: 5,
+    exclusiveText: '5 Suítes | Dois Andares Independentes | 1.734 m² de Terreno',
+    summaryDescription: 'Casa de alto padrão na Praia do Preá, a poucos minutos do centro, com 5 suítes distribuídas em dois andares que podem ser usados de forma independente.',
+    about: [
+      'Casa de alto padrão à venda na Praia do Preá, em localização tranquila e a poucos minutos do centro, com vista privilegiada para o mar.',
+      'São 5 suítes distribuídas em dois andares que podem ser usados de forma independente, garantindo flexibilidade de espaço aliada a uma sensação de aconchego — ideal para famílias grandes ou para quem recebe convidados com frequência.',
+      'A infraestrutura interna, somada à proximidade com bons restaurantes e beach clubs do Preá, torna o dia a dia mais prático, sem a necessidade de grandes deslocamentos.'
+    ],
+    infra: [
+      '5 suítes distribuídas em 2 andares independentes',
+      'Área construída de 739,56 m²',
+      'Terreno total de 1.734,10 m²',
+      'A poucos minutos do centro do Preá',
+      'Próximo a restaurantes e beach clubs'
+    ],
+    facilities: ['5 Suítes', '739m² Construídos', '1.734m² de Terreno', 'Praia do Preá'],
+    gallery: {
+      main: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
+      sideTop: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-02.webp',
+      sideBottom: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-03.webp',
+      extra: [
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-04.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-05.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-06.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-07.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-08.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-09.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-10.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-11.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-12.webp'
+      ]
+    },
+    mapImage: '/mapa.avif',
+    mapUrl: 'https://maps.google.com/maps?q=Preá,+Cruz,+Ceará&hl=pt-BR&z=14&output=embed',
+    videoSources: [],
+    priceTag: 'Valor',
+    price: 'R$ 7.500.000,00',
+    installments: 'Consulte condições',
+    category: 'venda',
+    hideFromDestaque: true
   },
   {
     id: '01',
