@@ -25,16 +25,22 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
     const parsed = raw ? Number(raw) : NaN;
     return isNaN(parsed) ? null : parsed;
   });
+  const [userMinPrice, setUserMinPrice] = useState<number | null>(() => {
+    const raw = initialParams.current.get('precoMin');
+    const parsed = raw ? Number(raw) : NaN;
+    return isNaN(parsed) ? null : parsed;
+  });
 
   const priceRangeData = useMemo(() => {
     const prices = items.map(i => parsePrice(i.price)).filter(p => p !== null) as number[];
-    return { 
-      min: prices.length ? Math.min(...prices) : 0, 
-      max: prices.length ? Math.max(...prices) : 20000000 
+    return {
+      min: prices.length ? Math.min(...prices) : 0,
+      max: prices.length ? Math.max(...prices) : 20000000
     };
   }, [items]);
 
   const currentMaxPrice = userMaxPrice !== null ? userMaxPrice : priceRangeData.max;
+  const currentMinPrice = userMinPrice !== null ? userMinPrice : priceRangeData.min;
 
   useEffect(() => {
     const debounce = window.setTimeout(() => {
@@ -42,10 +48,11 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
         q: searchTerm || null,
         filtro: selectedFilter !== 'all' ? selectedFilter : null,
         precoMax: userMaxPrice !== null ? String(userMaxPrice) : null,
+        precoMin: userMinPrice !== null ? String(userMinPrice) : null,
       });
     }, 300);
     return () => window.clearTimeout(debounce);
-  }, [searchTerm, selectedFilter, userMaxPrice]);
+  }, [searchTerm, selectedFilter, userMaxPrice, userMinPrice]);
 
   const filteredItems = useMemo(() => {
     const searchNormalized = normalizeString(searchTerm);
@@ -68,11 +75,11 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
       let itemPrice = priceRangeData.max;
       const parsed = parsePrice(item.price);
       if (parsed !== null) itemPrice = parsed;
-      const matchesPrice = itemPrice <= currentMaxPrice;
+      const matchesPrice = itemPrice >= currentMinPrice && itemPrice <= currentMaxPrice;
 
       return matchesSearch && matchesFilter && matchesPrice;
     });
-  }, [items, searchTerm, selectedFilter, currentMaxPrice, priceRangeData]);
+  }, [items, searchTerm, selectedFilter, currentMinPrice, currentMaxPrice, priceRangeData]);
 
   const showTaiba = false; /* Terreno de Taíba (< 750k) comentado a pedido do usuário */
 
@@ -157,19 +164,43 @@ const ListagemPropriedades: React.FC<ListagemPropriedadesProps> = ({ items, onSe
 
         <div className="price-slider-container">
           <div className="price-slider-header">
+            <span>Preço Mínimo:</span>
+            <span className="price-slider-value">
+              {currentMinPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+            </span>
+          </div>
+          <input
+            type="range"
+            className="price-slider"
+            min={priceRangeData.min}
+            max={priceRangeData.max}
+            step="10000"
+            value={currentMinPrice}
+            onChange={(e) => {
+              const value = Math.min(Number(e.target.value), currentMaxPrice);
+              setUserMinPrice(value);
+            }}
+          />
+        </div>
+
+        <div className="price-slider-container">
+          <div className="price-slider-header">
             <span>Preço Máximo:</span>
             <span className="price-slider-value">
               {currentMaxPrice.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
             </span>
           </div>
-          <input 
-            type="range" 
+          <input
+            type="range"
             className="price-slider"
-            min={priceRangeData.min} 
-            max={priceRangeData.max} 
+            min={priceRangeData.min}
+            max={priceRangeData.max}
             step="10000"
-            value={currentMaxPrice} 
-            onChange={(e) => setUserMaxPrice(Number(e.target.value))} 
+            value={currentMaxPrice}
+            onChange={(e) => {
+              const value = Math.max(Number(e.target.value), currentMinPrice);
+              setUserMaxPrice(value);
+            }}
           />
         </div>
       </div>
