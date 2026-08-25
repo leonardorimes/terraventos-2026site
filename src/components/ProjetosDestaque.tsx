@@ -344,12 +344,13 @@ const projetosCuradosIds = new Set(projetos.map((p) => p.id));
 export default function ProjetosDestaque({ onSelect }: ProjetosDestaqueProps) {
   const { t, i18n } = useTranslation();
   const transitionNavigate = useTransitionNavigate();
-  const localizedData = getOportunidadesData(i18n.language).filter(item => !item.unlisted);
+  const localizedData = getOportunidadesData(i18n.language).filter(item => !item.unlisted && !item.hideFromDestaque);
   // Qualquer propriedade nova cadastrada em oportunidadesData.ts que ainda não tenha
   // um card curado aqui aparece automaticamente, em primeiro lugar. Como novas
   // propriedades são inseridas no topo de `oportunidadesData` (fonte mestre), a ordem
   // de `localizedData` já reflete "mais recente primeiro" — não precisa mexer neste
-  // arquivo a cada novo imóvel.
+  // arquivo a cada novo imóvel. Marcar `hideFromDestaque: true` no imóvel tira ele
+  // desse carrossel sem tirá-lo do resto do site.
   const autoNewItems = localizedData.filter((item) => !projetosCuradosIds.has(item.id));
   const scrollRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);

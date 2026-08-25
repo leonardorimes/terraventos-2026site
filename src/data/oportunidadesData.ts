@@ -35,6 +35,10 @@ export type OportunidadeDetalhe = {
   reservationUrl?: string;
   category: 'venda' | 'lancamento' | 'temporada' | 'investimento';
   unlisted?: boolean;
+  /** Continua visível no site (listagem, busca etc), mas não aparece no carrossel
+   * "Explore Nossos Projetos Exclusivos" da home — nem via curadoria manual nem
+   * via auto-detecção de imóvel novo (ver ProjetosDestaque.tsx). */
+  hideFromDestaque?: boolean;
   lotes?: LoteOverride[];
   referralCode?: string;
 };
@@ -151,7 +155,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     priceTag: 'Valor',
     price: 'R$ 7.500.000,00',
     installments: 'Consulte condições',
-    category: 'venda'
+    category: 'venda',
+    hideFromDestaque: true
   },
   {
     id: 'vila-prea-gusso',
