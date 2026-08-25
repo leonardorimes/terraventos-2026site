@@ -33,7 +33,7 @@ export default function PaginaIndividual({ item }: PaginaIndividualProps) {
     activeRecord.gallery.sideTop,
     activeRecord.gallery.sideBottom,
     ...(activeRecord.gallery.extra || [])
-  ].filter(Boolean)));
+  ].filter((src): src is string => Boolean(src))));
 
   // SEO Update
   useEffect(() => {

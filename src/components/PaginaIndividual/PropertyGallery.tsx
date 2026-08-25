@@ -10,10 +10,11 @@ type Props = {
 
 export default function PropertyGallery({ item, allPhotos, onOpenLightbox, onOpenAlbum }: Props) {
   const { t } = useTranslation();
+  const { sideTop, sideBottom } = item.gallery;
 
   return (
     <>
-      <div className={`pi-gallery ${(!item.gallery.sideTop || !item.gallery.sideBottom) ? 'pi-gallery--single' : ''}`}>
+      <div className={`pi-gallery ${(!sideTop || !sideBottom) ? 'pi-gallery--single' : ''}`}>
         <span className="pi-pill">{item.badge}</span>
         <img
           src={item.gallery.main}
@@ -21,20 +22,20 @@ export default function PropertyGallery({ item, allPhotos, onOpenLightbox, onOpe
           className="pi-image-main pi-zoomable"
           onClick={() => onOpenLightbox(item.gallery.main)}
         />
-        {item.gallery.sideTop && (
+        {sideTop && (
           <img
-            src={item.gallery.sideTop}
+            src={sideTop}
             alt={`Imagem complementar de ${item.propertyTitle}`}
             className="pi-image-side-top pi-zoomable"
-            onClick={() => onOpenLightbox(item.gallery.sideTop)}
+            onClick={() => onOpenLightbox(sideTop)}
           />
         )}
-        {item.gallery.sideBottom && (
+        {sideBottom && (
           <img
-            src={item.gallery.sideBottom}
+            src={sideBottom}
             alt={`Mapa e dados de ${item.propertyTitle}`}
             className="pi-image-side-bottom pi-zoomable"
-            onClick={() => onOpenLightbox(item.gallery.sideBottom)}
+            onClick={() => onOpenLightbox(sideBottom)}
           />
         )}
       </div>

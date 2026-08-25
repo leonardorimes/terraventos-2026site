@@ -15,8 +15,8 @@ export type OportunidadeDetalhe = {
   facilities: string[];
   gallery: {
     main: string;
-    sideTop: string;
-    sideBottom: string;
+    sideTop: string | null;
+    sideBottom: string | null;
     extra?: string[];
   };
   mapImage: string;
@@ -264,10 +264,9 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     facilities: ['9 Bangalôs', '9 Suítes', 'Piscina', '1.151m² de Terreno', '250m da Praia'],
     gallery: {
       main: '/imoveis/casa-vila-9-bangalos-prea-gusso-01.webp',
-      sideTop: '/imoveis/casa-vila-9-bangalos-prea-gusso-02.webp',
+      sideTop: '/imoveis/casa-vila-9-bangalos-prea-gusso-04.webp',
       sideBottom: '/imoveis/casa-vila-9-bangalos-prea-gusso-03.webp',
       extra: [
-        '/imoveis/casa-vila-9-bangalos-prea-gusso-04.webp',
         '/imoveis/casa-vila-9-bangalos-prea-gusso-05.webp',
         '/imoveis/casa-vila-9-bangalos-prea-gusso-06.webp',
         '/imoveis/casa-vila-9-bangalos-prea-gusso-07.webp',
@@ -651,8 +650,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     facilities: ["1.840 m²", "Matrícula Registrada", "Financiamento Pré-Aprovado", "450m do Centro"],
     gallery: {
       main: '/imoveis/terreno-barrinha-1840m2-matricula-01.webp',
-      sideTop: '/imoveis/terreno-barrinha-1840m2-matricula-01.webp',
-      sideBottom: '/imoveis/terreno-barrinha-1840m2-matricula-01.webp',
+      sideTop: null,
+      sideBottom: null,
       extra: []
     },
     mapImage: '/mapa.avif',
@@ -752,7 +751,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     gallery: {
         main: '/imoveis/lotes-exclusivos-taiba-02.webp',
         sideTop: '/imoveis/lotes-exclusivos-taiba-01.webp',
-        sideBottom: '/imoveis/lotes-exclusivos-taiba-02.webp',
+        sideBottom: null,
         extra: []
     },
     mapImage: '/mapa.avif',
@@ -792,8 +791,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     facilities: ["200 m²", "7m de frente", "Localização Premium"],
     gallery: {
         main: '/imoveis/terreno-serrote-jericoacoara-01.webp',
-        sideTop: '/imoveis/terreno-serrote-jericoacoara-01.webp',
-        sideBottom: '/imoveis/terreno-serrote-jericoacoara-01.webp',
+        sideTop: null,
+        sideBottom: null,
         extra: []
     },
     mapImage: '/mapa.avif',
@@ -1729,7 +1728,6 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     sideBottom: '/imoveis/terreno-acarau-castelhano-simi-03.webp',
     extra: [
       '/imoveis/terreno-acarau-castelhano-simi-04.webp',
-      '/imoveis/terreno-acarau-castelhano-simi-05.webp',
       '/imoveis/terreno-acarau-castelhano-simi-06.webp',
       '/imoveis/terreno-acarau-castelhano-simi-07.webp',
       '/imoveis/terreno-acarau-castelhano-simi-08.webp'
@@ -1857,9 +1855,7 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
       '/imoveis/terreno-barrinha-2760m-simi-04.webp',
       '/imoveis/terreno-barrinha-2760m-simi-05.webp',
       '/imoveis/terreno-barrinha-2760m-simi-06.webp',
-      '/imoveis/terreno-barrinha-2760m-simi-07.webp',
-      '/imoveis/terreno-barrinha-2760m-simi-08.webp',
-      '/imoveis/terreno-barrinha-2760m-simi-09.webp'
+      '/imoveis/terreno-barrinha-2760m-simi-08.webp'
     ]
   },
   mapImage: '/mapa.avif',
