@@ -105,11 +105,11 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     category: 'venda'
   },
   {
-    id: 'vlad',
-    slug: 'vlad',
+    id: 'casa-prea-5-suites-vlad-2',
+    slug: 'casa-praia-do-prea-5-suites-vlad-2',
     title: 'VENDA',
     searchTitle: 'Casa 5 Suítes Praia do Preá',
-    image: '/imoveis/vlad-01.webp',
+    image: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
     badge: 'Alto Padrão',
     propertyTitle: 'CASA 5 SUÍTES NA PRAIA DO PREÁ',
     location: 'Praia do Preá, Ceará',
@@ -130,19 +130,19 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
     ],
     facilities: ['5 Suítes', '739m² Construídos', '1.734m² de Terreno', 'Praia do Preá'],
     gallery: {
-      main: '/imoveis/vlad-01.webp',
-      sideTop: '/imoveis/vlad-02.webp',
-      sideBottom: '/imoveis/vlad-03.webp',
+      main: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-01.webp',
+      sideTop: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-02.webp',
+      sideBottom: '/imoveis/casa-praia-do-prea-5-suites-vlad-2-03.webp',
       extra: [
-        '/imoveis/vlad-04.webp',
-        '/imoveis/vlad-05.webp',
-        '/imoveis/vlad-06.webp',
-        '/imoveis/vlad-07.webp',
-        '/imoveis/vlad-08.webp',
-        '/imoveis/vlad-09.webp',
-        '/imoveis/vlad-10.webp',
-        '/imoveis/vlad-11.webp',
-        '/imoveis/vlad-12.webp'
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-04.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-05.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-06.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-07.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-08.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-09.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-10.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-11.webp',
+        '/imoveis/casa-praia-do-prea-5-suites-vlad-2-12.webp'
       ]
     },
     mapImage: '/mapa.avif',
