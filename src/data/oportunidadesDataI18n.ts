@@ -3,6 +3,61 @@ import { oportunidadesData, type OportunidadeDetalhe } from './oportunidadesData
 export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe>[]> = {
   pt: [
     {
+      id: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara",
+      title: "VENDA",
+      searchTitle: "Casa + 2 Chalés no Serrote — Jericoacoara",
+      image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",
+      badge: "Oportunidade Exclusiva",
+      propertyTitle: "CASA + 2 CHALÉS NO SERROTE — JERICOACOARA",
+      location: "Beco do Serrote, Jericoacoara - CE",
+      rating: 5,
+      exclusiveText: "4 Unidades | Casa + 2 Chalés | 311 m² no coração do Serrote | 300 m da Praia da Malhada",
+      summaryDescription: "Conjunto à venda no Beco do Serrote, a área mais nobre de Jericoacoara: casa principal e dois chalés que somam 4 unidades de hospedagem, totalmente mobiliados, em um jardim exuberante a 300 metros da Praia da Malhada e a passos da Rua do Forró.",
+      about: [
+        "É raro um endereço assim ficar disponível em Jericoacoara. Este conjunto está no Beco do Serrote — a região mais valorizada da vila —, a apenas 300 metros da Praia da Malhada e a poucos passos da Rua do Forró: toda a energia de Jeri ao redor e, ao mesmo tempo, o silêncio de um quintal cercado por vegetação.",
+        "São 4 unidades de hospedagem independentes, distribuídas em uma casa principal e dois chalés, unidas por um jardim maduro e sombreado, com redário, varandas e estares ao ar livre. Os dois chalés têm cozinha própria e mezanino de madeira; a casa principal reúne uma suíte no pavimento superior e um apartamento térreo com cozinha independente.",
+        "Tudo é entregue mobiliado e pronto para uso, no estilo rústico-sofisticado de Jeri — madeira de demolição, telha cerâmica, iluminação artesanal e acabamentos que envelhecem bem. Uma configuração ideal para morar em uma unidade e rentabilizar as demais, ou para operar como pousada boutique de alto padrão.",
+        "O terreno tem 311,81 m², com cerca de 12,3 metros de frente para o Beco do Serrote e aproximadamente 25 metros de profundidade, e 191 m² de área construída. A propriedade conta ainda com lavanderia, rouparia, área de churrasco, cisterna de 5.000 litros e duas caixas d’água de 2.000 litros.",
+        "A documentação está em ordem, com levantamento topográfico registrado — segurança jurídica para uma compra tranquila. Jericoacoara é um dos destinos de maior valorização do litoral brasileiro, com voos diretos das principais capitais para o Aeroporto de Jericoacoara (JJD) e demanda de locação forte o ano inteiro. Um ativo escasso, em localização insubstituível."
+      ],
+      infra: [
+        "Terreno de 311,81 m² (frente de ~12,3 m para o Beco do Serrote)",
+        "Área construída de 191 m²",
+        "4 unidades de hospedagem: casa principal + 2 chalés",
+        "2 chalés com cozinha e mezanino de madeira",
+        "Suíte no pavimento superior da casa principal",
+        "Apartamento térreo com cozinha independente",
+        "Lavanderia e rouparia",
+        "Área de churrasco",
+        "Cisterna de 5.000 litros + 2 caixas d’água de 2.000 litros",
+        "Totalmente mobiliado (porteira fechada)",
+        "Documentação em ordem, com levantamento topográfico registrado",
+        "A 300 m da Praia da Malhada e a passos da Rua do Forró"
+      ],
+      facilities: ["311 m² de Terreno", "Casa + 2 Chalés", "4 Unidades", "Mobiliado", "300 m da Praia", "Serrote"],
+      gallery: {
+        main: '/imoveis/casa-2-chales-serrote-jericoacoara-01.webp',
+        sideTop: '/imoveis/casa-2-chales-serrote-jericoacoara-02.webp',
+        sideBottom: '/imoveis/casa-2-chales-serrote-jericoacoara-03.webp',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=-2.79371,-40.51372&hl=pt-BR&z=18&output=embed',
+      videoSources: ['https://player.vimeo.com/video/1221853632', 'https://player.vimeo.com/video/1221856310'],
+      documents: [
+        {
+          label: "Levantamento Topográfico",
+          url: "/documentos/casa-2-chales-serrote-jericoacoara-levantamento-topografico.pdf",
+          legend: "Levantamento planimétrico do terreno no Beco do Serrote, Jijoca de Jericoacoara — 311,81 m² e perímetro de 75,37 m."
+        }
+      ],
+      priceTag: "Valor",
+      price: "R$ 2.500.000,00",
+      installments: "Consulte condições",
+      category: "venda"
+    },
+    {
       id: "casa-prea-5-suites-vlad",
       slug: "casa-praia-do-prea-5-suites-vlad",
       title: "VENDA",
@@ -2089,6 +2144,61 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
   ],
   en: [
     {
+      id: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara",
+      title: "FOR SALE",
+      searchTitle: "House + 2 Chalets in Serrote — Jericoacoara",
+      image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",
+      badge: "Exclusive Opportunity",
+      propertyTitle: "HOUSE + 2 CHALETS IN SERROTE — JERICOACOARA",
+      location: "Beco do Serrote, Jericoacoara - CE",
+      rating: 5,
+      exclusiveText: "4 Units | House + 2 Chalets | 311 m² in the heart of Serrote | 300 m from Malhada Beach",
+      summaryDescription: "Compound for sale on Beco do Serrote, the most prime area of Jericoacoara: a main house plus two chalets making up 4 accommodation units, fully furnished, set in a lush garden 300 meters from Malhada Beach and steps from Rua do Forró.",
+      about: [
+        "An address like this rarely comes up in Jericoacoara. This compound sits on Beco do Serrote — the village's most sought-after area —, just 300 meters from Malhada Beach and a few steps from Rua do Forró: all the energy of Jeri around you and, at the same time, the quiet of a garden wrapped in greenery.",
+        "There are 4 independent accommodation units, spread across a main house and two chalets, joined by a mature, shaded garden with hammock corners, verandas and open-air lounging areas. Both chalets have their own kitchen and a wooden mezzanine; the main house has an upstairs suite and a ground-floor apartment with a separate kitchen.",
+        "Everything is delivered furnished and ready to use, in Jeri's rustic-refined style — reclaimed wood, ceramic-tile roofs, handcrafted lighting and finishes that age well. An ideal setup to live in one unit and earn income from the others, or to run as a high-end boutique guesthouse.",
+        "The lot is 311.81 m², with about 12.3 meters of frontage onto Beco do Serrote and roughly 25 meters of depth, and 191 m² of built area. The property also includes a laundry room, a linen closet, a barbecue area, a 5,000-liter cistern and two 2,000-liter water tanks.",
+        "Paperwork is in order, with a registered topographic survey — legal security for a smooth purchase. Jericoacoara is one of the fastest-appreciating destinations on Brazil's coast, with direct flights from major cities to Jericoacoara Airport (JJD) and strong rental demand year-round. A scarce asset in an irreplaceable location."
+      ],
+      infra: [
+        "311.81 m² lot (~12.3 m of frontage onto Beco do Serrote)",
+        "191 m² of built area",
+        "4 accommodation units: main house + 2 chalets",
+        "2 chalets with kitchen and wooden mezzanine",
+        "Upstairs suite in the main house",
+        "Ground-floor apartment with a separate kitchen",
+        "Laundry room and linen closet",
+        "Barbecue area",
+        "5,000-liter cistern + 2 water tanks of 2,000 liters",
+        "Fully furnished (turnkey)",
+        "Paperwork in order, with a registered topographic survey",
+        "300 m from Malhada Beach and steps from Rua do Forró"
+      ],
+      facilities: ["311 m² Lot", "House + 2 Chalets", "4 Units", "Furnished", "300 m from Beach", "Serrote"],
+      gallery: {
+        main: '/imoveis/casa-2-chales-serrote-jericoacoara-01.webp',
+        sideTop: '/imoveis/casa-2-chales-serrote-jericoacoara-02.webp',
+        sideBottom: '/imoveis/casa-2-chales-serrote-jericoacoara-03.webp',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=-2.79371,-40.51372&hl=en&z=18&output=embed',
+      videoSources: ['https://player.vimeo.com/video/1221853632', 'https://player.vimeo.com/video/1221856310'],
+      documents: [
+        {
+          label: "Topographic Survey",
+          url: "/documentos/casa-2-chales-serrote-jericoacoara-levantamento-topografico.pdf",
+          legend: "Planimetric survey of the lot on Beco do Serrote, Jijoca de Jericoacoara — 311.81 m² and a 75.37 m perimeter."
+        }
+      ],
+      priceTag: "Price",
+      price: "R$ 2,500,000.00",
+      installments: "Consult conditions",
+      category: "venda"
+    },
+    {
       id: "casa-prea-5-suites-vlad",
       slug: "casa-praia-do-prea-5-suites-vlad",
       title: "FOR SALE",
@@ -3493,6 +3603,61 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     category: "venda"
   }],
   es: [
+    {
+      id: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara",
+      title: "VENTA",
+      searchTitle: "Casa + 2 Chalés en el Serrote — Jericoacoara",
+      image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",
+      badge: "Oportunidad Exclusiva",
+      propertyTitle: "CASA + 2 CHALÉS EN EL SERROTE — JERICOACOARA",
+      location: "Beco do Serrote, Jericoacoara - CE",
+      rating: 5,
+      exclusiveText: "4 Unidades | Casa + 2 Chalés | 311 m² en el corazón del Serrote | 300 m de la Playa de Malhada",
+      summaryDescription: "Conjunto en venta en el Beco do Serrote, la zona más noble de Jericoacoara: una casa principal y dos chalés que suman 4 unidades de alojamiento, totalmente amueblados, en un jardín exuberante a 300 metros de la Playa de Malhada y a pasos de la Rua do Forró.",
+      about: [
+        "Es raro que una dirección así quede disponible en Jericoacoara. Este conjunto está en el Beco do Serrote — la zona más valorada del pueblo —, a solo 300 metros de la Playa de Malhada y a pocos pasos de la Rua do Forró: toda la energía de Jeri alrededor y, al mismo tiempo, el silencio de un patio rodeado de vegetación.",
+        "Son 4 unidades de alojamiento independientes, distribuidas en una casa principal y dos chalés, unidas por un jardín maduro y sombreado, con rincones de hamacas, galerías y estares al aire libre. Los dos chalés tienen cocina propia y altillo de madera; la casa principal reúne una suite en la planta superior y un apartamento en planta baja con cocina independiente.",
+        "Todo se entrega amueblado y listo para usar, en el estilo rústico-sofisticado de Jeri — madera de demolición, teja cerámica, iluminación artesanal y acabados que envejecen bien. Una configuración ideal para vivir en una unidad y rentabilizar las demás, o para operar como posada boutique de alto nivel.",
+        "El terreno tiene 311,81 m², con cerca de 12,3 metros de frente hacia el Beco do Serrote y aproximadamente 25 metros de fondo, y 191 m² de área construida. La propiedad cuenta además con lavandería, ropería, área de parrilla, cisterna de 5.000 litros y dos tanques de agua de 2.000 litros.",
+        "La documentación está en regla, con levantamiento topográfico registrado — seguridad jurídica para una compra tranquila. Jericoacoara es uno de los destinos de mayor valorización del litoral brasileño, con vuelos directos desde las principales capitales al Aeropuerto de Jericoacoara (JJD) y fuerte demanda de alquiler todo el año. Un activo escaso, en una ubicación insustituible."
+      ],
+      infra: [
+        "Terreno de 311,81 m² (frente de ~12,3 m hacia el Beco do Serrote)",
+        "Área construida de 191 m²",
+        "4 unidades de alojamiento: casa principal + 2 chalés",
+        "2 chalés con cocina y altillo de madera",
+        "Suite en la planta superior de la casa principal",
+        "Apartamento en planta baja con cocina independiente",
+        "Lavandería y ropería",
+        "Área de parrilla",
+        "Cisterna de 5.000 litros + 2 tanques de agua de 2.000 litros",
+        "Totalmente amueblado (llave en mano)",
+        "Documentación en regla, con levantamiento topográfico registrado",
+        "A 300 m de la Playa de Malhada y a pasos de la Rua do Forró"
+      ],
+      facilities: ["311 m² de Terreno", "Casa + 2 Chalés", "4 Unidades", "Amueblado", "300 m de la Playa", "Serrote"],
+      gallery: {
+        main: '/imoveis/casa-2-chales-serrote-jericoacoara-01.webp',
+        sideTop: '/imoveis/casa-2-chales-serrote-jericoacoara-02.webp',
+        sideBottom: '/imoveis/casa-2-chales-serrote-jericoacoara-03.webp',
+        extra: []
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=-2.79371,-40.51372&hl=es&z=18&output=embed',
+      videoSources: ['https://player.vimeo.com/video/1221853632', 'https://player.vimeo.com/video/1221856310'],
+      documents: [
+        {
+          label: "Levantamiento Topográfico",
+          url: "/documentos/casa-2-chales-serrote-jericoacoara-levantamento-topografico.pdf",
+          legend: "Levantamiento planimétrico del terreno en el Beco do Serrote, Jijoca de Jericoacoara — 311,81 m² y perímetro de 75,37 m."
+        }
+      ],
+      priceTag: "Valor",
+      price: "R$ 2.500.000,00",
+      installments: "Consulte condiciones",
+      category: "venda"
+    },
     {
       id: "casa-prea-5-suites-vlad",
       slug: "casa-praia-do-prea-5-suites-vlad",
