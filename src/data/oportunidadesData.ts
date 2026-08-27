@@ -61,7 +61,7 @@ export function resolveLoteView(item: OportunidadeDetalhe, loteId: string): Opor
 export const oportunidadesData: OportunidadeDetalhe[] = [
   {
     id: 'casa-2-chales-serrote-jericoacoara',
-    slug: 'casa-2-chales-serrote-jericoacoara',
+    slug: 'casa-2-chales-serrote-jericoacoara-dolores',
     title: 'VENDA',
     searchTitle: 'Casa + 2 Chalés no Serrote — Jericoacoara',
     image: '/imoveis/casa-2-chales-serrote-jericoacoara-01.webp',

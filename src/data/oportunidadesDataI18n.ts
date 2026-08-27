@@ -4,7 +4,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
   pt: [
     {
       id: "casa-2-chales-serrote-jericoacoara",
-      slug: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara-dolores",
       title: "VENDA",
       searchTitle: "Casa + 2 Chalés no Serrote — Jericoacoara",
       image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",
@@ -2145,7 +2145,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
   en: [
     {
       id: "casa-2-chales-serrote-jericoacoara",
-      slug: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara-dolores",
       title: "FOR SALE",
       searchTitle: "House + 2 Chalets in Serrote — Jericoacoara",
       image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",
@@ -3605,7 +3605,7 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
   es: [
     {
       id: "casa-2-chales-serrote-jericoacoara",
-      slug: "casa-2-chales-serrote-jericoacoara",
+      slug: "casa-2-chales-serrote-jericoacoara-dolores",
       title: "VENTA",
       searchTitle: "Casa + 2 Chalés en el Serrote — Jericoacoara",
       image: "/imoveis/casa-2-chales-serrote-jericoacoara-01.webp",

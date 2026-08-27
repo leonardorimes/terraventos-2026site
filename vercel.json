@@ -3,6 +3,16 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/propriedade/casa-2-chales-serrote-jericoacoara",
+      "destination": "/propriedade/casa-2-chales-serrote-jericoacoara-dolores",
+      "permanent": true
+    },
+    {
+      "source": "/:lang(en|es)/propriedade/casa-2-chales-serrote-jericoacoara",
+      "destination": "/:lang/propriedade/casa-2-chales-serrote-jericoacoara-dolores",
+      "permanent": true
+    },
+    {
       "source": "/propriedade/terreno-terreno-acarau-castelhano-simi",
       "destination": "/propriedade/terreno-acarau-castelhano-simi",
       "permanent": true
