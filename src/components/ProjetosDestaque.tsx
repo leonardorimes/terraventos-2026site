@@ -206,7 +206,7 @@ const projetos = [
   },
   {
     id: "13",
-    image: "/imoveis/mansao-praia-do-prea-01.webp",
+    image: "/imoveis/mansao-praia-do-prea-93.webp",
     tag: "VENDA",
     location: "Praia do Preá, Ceará, Brasil",
     title: "CASA ALTO PADRÃO NA PRAIA DO PREÁ",
