@@ -2851,7 +2851,8 @@ export const oportunidadesData: OportunidadeDetalhe[] = [
   price: "R$ 3.000.000,00",
   installments: "Consulte condições",
   category: "venda",
-  referralCode: "ALBERTO"
+  referralCode: "ALBERTO",
+  unlisted: true
 },
 {
   id: "casa-alto-padrao-taiba-vista-mar",

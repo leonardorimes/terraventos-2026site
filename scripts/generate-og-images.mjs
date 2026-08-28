@@ -24,7 +24,7 @@ sources.add('/imoveis/lote-barramar-lagoa-taiba-03.webp');
 sources.add('/banners/banners-01.webp');
 sources.add('/og-propriedades.png');
 sources.add('/founders/founders.png');
-sources.add('/imoveis/casa-beira-mar-tatajuba-02.webp');
+sources.add('/imoveis/area-exclusiva-tatajuba-guriu-100000m-01.webp');
 
 console.log(`Gerando og:image (1200x630) para ${sources.size} fontes únicas...`);
 

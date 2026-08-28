@@ -11,7 +11,7 @@ interface RegiaoConfig {
 export const REGIOES: Record<RegiaoKey, RegiaoConfig> = {
   tatajuba: {
     destinationKey: 'tatajuba',
-    heroImage: '/imoveis/casa-beira-mar-tatajuba-02.webp',
+    heroImage: '/imoveis/area-exclusiva-tatajuba-guriu-100000m-01.webp',
     nomes: { pt: 'Tatajuba', en: 'Tatajuba', es: 'Tatajuba' },
     intro: {
       pt: 'Terrenos e imóveis à venda em Tatajuba, no litoral oeste do Ceará — natureza preservada, dunas intocadas e um dos destinos com valorização mais acelerada da região.',

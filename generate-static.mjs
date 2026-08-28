@@ -289,7 +289,7 @@ const staticPages = [
   {
     slug: 'tatajuba',
     priority: 0.8,
-    image: '/imoveis/casa-beira-mar-tatajuba-02.webp',
+    image: '/imoveis/area-exclusiva-tatajuba-guriu-100000m-01.webp',
     titles: {
       pt: 'Imóveis em Tatajuba | Terra Ventos',
       en: 'Properties in Tatajuba | Terra Ventos',
