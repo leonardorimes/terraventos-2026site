@@ -12,6 +12,10 @@ export default function PropertyGallery({ item, allPhotos, onOpenLightbox, onOpe
   const { t } = useTranslation();
   const { sideTop, sideBottom } = item.gallery;
 
+  // Evita repetir no mosaico as fotos já exibidas como main/sideTop/sideBottom
+  const shownInCollage = new Set([item.gallery.main, sideTop, sideBottom].filter(Boolean));
+  const extraPhotos = (item.gallery.extra || []).filter((img) => !shownInCollage.has(img));
+
   return (
     <>
       <div className={`pi-gallery ${(!sideTop || !sideBottom) ? 'pi-gallery--single' : ''}`}>
@@ -40,9 +44,9 @@ export default function PropertyGallery({ item, allPhotos, onOpenLightbox, onOpe
         )}
       </div>
 
-      {item.gallery.extra && item.gallery.extra.length > 0 && (
+      {extraPhotos.length > 0 && (
         <div className="pi-gallery-secondary">
-          {item.gallery.extra.slice(0, 3).map((img, idx) => (
+          {extraPhotos.slice(0, 3).map((img, idx) => (
             <img
               key={idx}
               src={img}
