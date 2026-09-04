@@ -2144,6 +2144,164 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
   ],
   en: [
     {
+      id: "vila-cangalha-camocim",
+      slug: "vila-cangalha-camocim-leo",
+      title: "NEW RELEASE",
+      searchTitle: "Vila Cangalha — Boutique Condominium in Camocim",
+      image: "/imoveis/vila-cangalha-camocim-01.webp",
+      badge: "Exclusive New Release",
+      propertyTitle: "VILA CANGALHA — BOUTIQUE CONDOMINIUM IN CAMOCIM",
+      location: "Praia de Caraúbas, Camocim - CE",
+      rating: 5,
+      exclusiveText: "1, 2 and 3-Bedroom Houses with Private Pool | Full Hotel Management | Restaurant, Spa, Gym and Kite School | 400 m² Lots",
+      summaryDescription: "Boutique beach house condominium on Praia de Caraúbas, on Camocim's west coast, with full hotel management — restaurant, spa, gym, beauty space, home office and kite school. 1, 2 and 3-bedroom houses, with or without a private pool, starting at R$ 1,059,422.77.",
+      about: [
+        "It's rare to find a beach house that combines private ownership, hotel-grade infrastructure and rental income under one roof. Vila Cangalha was built around that idea, on Praia de Caraúbas — one of the last unspoiled beaches on Ceará's west coast, in Camocim, with over 60 km of sand, calm seas and some of the strongest winds in the state, a rare condition for kitesurfing and other water sports.",
+        "Each lot measures 400 m² (20x20 m), and owners choose between three house models — Lagoa (1 bedroom), Duna (2 bedrooms) and Palmeira (3 bedrooms) —, each available with or without a private pool and fire deck. Every house has a gourmet veranda and bedrooms equipped with a Smart TV, air conditioning, a king-size bed, a mini-fridge and an open-air shower.",
+        "The shared amenities were designed so residents never have to leave the condominium: 24-hour reception, a restaurant serving breakfast, lunch and dinner, a spa with a massage room and a meditation space, a full gym, a shared home office with a meeting room, a beauty salon, a chapel for ceremonies, a kids' playroom, an adult and children's pool, beach tennis and volleyball courts, and a Kite Point with a certified kitesurfing school and equipment storage.",
+        "Vila Cangalha's key differentiator is its hotel management model, in partnership with a boutique luxury hospitality operator with over 5 years of experience in the Lençóis Maranhenses: owners share in the revenue from renting out all the houses, plus the restaurant, the spa, the kite school and the sports courts — with no need to worry about cleaning, maintenance or a traditional condo fee. Market feasibility studies (benchmarked against Jericoacoara, Preá and Barra Grande) project a current annual occupancy rate of 44%, ranging from 26% (pessimistic scenario) to 71% (optimistic scenario).",
+        "Sales terms are flexible: each lot can be sold separately from the house, and the price list allows for up to 6 configurations per lot (with and without a pool, across the three house models). The final price covers the lot, the house and a complete furniture package, delivered move-in ready. The development already has its building permit and environmental license (AMA-LI) issued, a registered title deed available, and an open price list with a 30% down payment, financing of the development in up to 36 installments, and 20% due at key handover."
+      ],
+      infra: [
+        "Total condominium area: 30,104 m², with 37 lots of 400 m² (20x20 m) each",
+        "24-hour reception, administration and parking",
+        "Restaurant serving breakfast, lunch and dinner",
+        "Spa, massage room and meditation space",
+        "Full gym and a shared home office with a meeting room",
+        "Beauty salon",
+        "Chapel for ceremonies",
+        "Kids' playroom",
+        "Adult and children's pool, games area and barbecue",
+        "Beach tennis and beach volleyball courts",
+        "Kite Point: certified kitesurfing school with equipment storage",
+        "Full hotel management: cleaning, maintenance, check-in/check-out and a reservations desk"
+      ],
+      facilities: ["400 m² Lots", "1 to 3-Bedroom Houses", "Private Pool", "Hotel Management", "Restaurant & Spa", "Kite School"],
+      gallery: {
+        main: '/imoveis/vila-cangalha-camocim-01.webp',
+        sideTop: '/imoveis/vila-cangalha-camocim-02.webp',
+        sideBottom: '/imoveis/vila-cangalha-camocim-03.webp',
+        extra: [
+          '/imoveis/vila-cangalha-camocim-04.webp',
+          '/imoveis/vila-cangalha-camocim-05.webp',
+          '/imoveis/vila-cangalha-camocim-06.webp',
+          '/imoveis/vila-cangalha-camocim-07.webp',
+          '/imoveis/vila-cangalha-camocim-08.webp',
+          '/imoveis/vila-cangalha-camocim-09.webp',
+          '/imoveis/vila-cangalha-camocim-10.webp',
+          '/imoveis/vila-cangalha-camocim-11.webp',
+          '/imoveis/vila-cangalha-camocim-12.webp',
+          '/imoveis/vila-cangalha-camocim-13.webp',
+          '/imoveis/vila-cangalha-camocim-14.webp'
+        ]
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=-2.8726917,-40.9128774&hl=en&z=16&output=embed',
+      videoSources: [],
+      documents: [
+        {
+          label: "Presentation Book",
+          url: "/documentos/vila-cangalha-camocim-book-apresentacao.pdf",
+          legend: "Full Vila Cangalha presentation: concept, amenities, house models and hotel management proposal."
+        },
+        {
+          label: "Complete Price List",
+          url: "/documentos/vila-cangalha-camocim-tabela-de-precos.pdf",
+          legend: "Table with every lot and house model combination (with and without pool), down payment, financing and installments."
+        }
+      ],
+      priceTag: "Starting at",
+      price: "R$ 1,059,422.77",
+      installments: "30% down payment + development financing in up to 36 installments + 20% at key handover",
+      category: "lancamento",
+      lotes: [
+        {
+          id: 'visao-geral',
+          label: 'Condominium Overview'
+        },
+        {
+          id: 'casa-lagoa-1q',
+          label: 'Casa Lagoa — 1 Bedroom',
+          priceTag: 'Starting at',
+          price: 'R$ 1,059,422.77',
+          installments: 'Up to R$ 1,595,389.32 for the pool version — see the full price list',
+          about: [
+            'A compact 1-bedroom model (94.55 m² without a pool, or 155.43 m² with a private pool and fire deck), designed for couples or anyone looking for the smallest entry-level unit at Vila Cangalha.',
+            'The house has a gourmet veranda, an open-plan living room and a bedroom equipped with a Smart TV, air conditioning, a king-size bed, a mini-fridge and an open-air shower.',
+            'Priced from R$ 1,059,422.77 (without pool) up to R$ 1,595,389.32 (with pool), depending on the lot\'s location within the condominium — see the full price list for every combination.'
+          ],
+          infra: [
+            'Built area: 94.55 m² (without pool) or 155.43 m² (with pool)',
+            '1 bedroom with a Smart TV, air conditioning, a king-size bed and a mini-fridge',
+            'Open-air shower',
+            'Gourmet veranda',
+            'Private pool and fire deck (pool version)',
+            '400 m² (20x20 m) lot'
+          ],
+          facilities: ['1 Bedroom', '94 to 155 m²', 'Optional Pool', 'Gourmet Veranda'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-lagoa-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-lagoa-02.webp',
+            sideBottom: null,
+            extra: []
+          }
+        },
+        {
+          id: 'casa-duna-2q',
+          label: 'Casa Duna — 2 Bedrooms',
+          priceTag: 'Starting at',
+          price: 'R$ 1,436,074.79',
+          installments: 'Up to R$ 2,051,477.57 for the pool version — see the full price list',
+          about: [
+            'A duplex 2-bedroom model (130.80 m² without a pool, or 191.68 m² with a private pool and fire deck), with a double-height living room and a wooden staircase connecting both floors.',
+            'The ground floor has a gourmet veranda, an open-plan living room and a winter garden under the staircase; upstairs, the bedrooms open onto a veranda facing the coconut grove. Both bedrooms come with a Smart TV, air conditioning, a king-size bed, a mini-fridge and an open-air shower.',
+            'Priced from R$ 1,436,074.79 (without pool) up to R$ 2,051,477.57 (with pool), depending on the lot\'s location — see the full price list for every combination.'
+          ],
+          infra: [
+            'Built area: 130.80 m² (without pool) or 191.68 m² (with pool)',
+            '2 bedrooms, both with a Smart TV, air conditioning, a king-size bed and a mini-fridge',
+            'Double-height living room with a wooden staircase',
+            'Gourmet veranda and winter garden',
+            'Private pool and fire deck (pool version)',
+            '400 m² (20x20 m) lot'
+          ],
+          facilities: ['2 Bedrooms', '131 to 192 m²', 'Duplex', 'Optional Pool'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-duna-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-duna-02.webp',
+            sideBottom: '/imoveis/vila-cangalha-camocim-duna-03.webp',
+            extra: ['/imoveis/vila-cangalha-camocim-duna-04.webp']
+          }
+        },
+        {
+          id: 'casa-palmeira-3q',
+          label: 'Casa Palmeira — 3 Bedrooms',
+          priceTag: 'Starting at',
+          price: 'R$ 1,581,326.07',
+          installments: 'Up to R$ 2,206,983.01 for the pool version — see the full price list',
+          about: [
+            'The largest model at Vila Cangalha, with 3 bedrooms (152.40 m² without a pool, or 213.28 m² with a private pool and fire deck), suited to large families or owners planning to operate more than one rental unit at a time.',
+            'Like the other models, the Palmeira house has a gourmet veranda, an open-plan living room and bedrooms equipped with a Smart TV, air conditioning, a king-size bed, a mini-fridge and an open-air shower, spread across two floors.',
+            'Priced from R$ 1,581,326.07 (without pool) up to R$ 2,206,983.01 (with pool), depending on the lot\'s location — see the full price list for every combination.'
+          ],
+          infra: [
+            'Built area: 152.40 m² (without pool) or 213.28 m² (with pool)',
+            '3 bedrooms, all with a Smart TV, air conditioning, a king-size bed and a mini-fridge',
+            '2 floors, with a gourmet veranda on the ground floor',
+            'Private pool and fire deck (pool version)',
+            '400 m² (20x20 m) lot'
+          ],
+          facilities: ['3 Bedrooms', '152 to 213 m²', '2 Floors', 'Optional Pool'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-palmeira-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-palmeira-02.webp',
+            sideBottom: '/imoveis/vila-cangalha-camocim-palmeira-03.webp',
+            extra: ['/imoveis/vila-cangalha-camocim-palmeira-04.webp']
+          }
+        }
+      ]
+    },
+    {
       id: "casa-2-chales-serrote-jericoacoara",
       slug: "casa-2-chales-serrote-jericoacoara-dolores",
       title: "FOR SALE",
@@ -3603,6 +3761,164 @@ export const oportunidadesDataByLang: Record<string, Partial<OportunidadeDetalhe
     category: "venda"
   }],
   es: [
+    {
+      id: "vila-cangalha-camocim",
+      slug: "vila-cangalha-camocim-leo",
+      title: "LANZAMIENTO",
+      searchTitle: "Vila Cangalha — Condominio Boutique en Camocim",
+      image: "/imoveis/vila-cangalha-camocim-01.webp",
+      badge: "Lanzamiento Exclusivo",
+      propertyTitle: "VILA CANGALHA — CONDOMINIO BOUTIQUE EN CAMOCIM",
+      location: "Praia de Caraúbas, Camocim - CE",
+      rating: 5,
+      exclusiveText: "Casas de 1, 2 y 3 Habitaciones con Piscina Privada | Gestión Hotelera Completa | Restaurante, Spa, Gimnasio y Escuela de Kite | Terrenos de 400 m²",
+      summaryDescription: "Condominio boutique de casas de playa en Praia de Caraúbas, litoral oeste de Camocim, con gestión hotelera completa: restaurante, spa, gimnasio, espacio de belleza, home office y escuela de kite. Casas de 1, 2 y 3 habitaciones, con o sin piscina privada, desde R$ 1.059.422,77.",
+      about: [
+        "Es poco común encontrar una casa de playa que combine propiedad propia, infraestructura de hotel y generación de renta en una sola dirección. Vila Cangalha nace de ese concepto, en la Praia de Caraúbas — una de las últimas playas preservadas del litoral oeste cearense, en Camocim, con más de 60 km de arena, mar tranquilo y uno de los vientos más fuertes del estado, condición poco común para la práctica de kitesurf y otros deportes náuticos.",
+        "Cada terreno tiene 400 m² (20x20) y el propietario elige entre tres modelos de casa — Lagoa (1 habitación), Duna (2 habitaciones) y Palmeira (3 habitaciones) —, cada uno disponible con o sin piscina privada y fire deck. Todas las casas tienen galería gourmet y habitaciones equipadas con Smart TV, aire acondicionado, cama king size, frigobar y ducha al aire libre.",
+        "El área común fue proyectada para que el residente nunca necesite salir del condominio: recepción 24h, restaurante con desayuno, almuerzo y cena, spa con sala de masajes y espacio de meditación, gimnasio completo, home office compartido con sala de reuniones, salón de belleza, capilla para ceremonias, ludoteca, piscina de adultos e infantil, canchas de beach tennis y vóley, y un Kite Point con escuela de kitesurf certificada y almacenamiento de equipo.",
+        "El diferencial de Vila Cangalha es su modelo de gestión hotelera, en asociación con una posada boutique de hotelería de lujo con más de 5 años de experiencia en los Lençóis Maranhenses: el propietario recibe una participación en los resultados del alquiler de todas las casas, además del restaurante, el spa, la escuela de kite y las canchas — sin preocuparse por limpieza, mantenimiento o cuota de condominio tradicional. Los estudios de viabilidad de mercado (comparando Jericoacoara, Preá y Barra Grande) proyectan una tasa de ocupación actual del 44% anual, que puede variar entre el 26% (escenario pesimista) y el 71% (escenario optimista).",
+        "La comercialización es flexible: cada terreno puede venderse por separado de la casa, y la tabla de precios prevé hasta 6 configuraciones por lote (con y sin piscina, en cada uno de los tres modelos). El valor final incluye terreno, casa y ajuar completo, entregado listo para usar. El emprendimiento ya cuenta con permiso de construcción y licencia ambiental (AMA-LI) emitidos, matrícula en el registro disponible, y tabla de precios abierta, con entrada del 30%, financiamiento de la incorporación en hasta 36 cuotas y 20% en la entrega de llaves."
+      ],
+      infra: [
+        "Área total del condominio: 30.104 m², con 37 terrenos de 400 m² (20x20) cada uno",
+        "Recepción 24h, administración y estacionamiento",
+        "Restaurante con desayuno, almuerzo y cena",
+        "Spa, sala de masajes y espacio de meditación",
+        "Gimnasio completo y home office compartido con sala de reuniones",
+        "Salón de belleza",
+        "Capilla para ceremonias",
+        "Ludoteca",
+        "Piscina de adultos e infantil, juegos y parrilla",
+        "Canchas de beach tennis y vóley playa",
+        "Kite Point: escuela de kitesurf certificada, con almacenamiento de equipo",
+        "Gestión hotelera completa: limpieza, mantenimiento, check-in/check-out y central de reservas"
+      ],
+      facilities: ["Terrenos de 400 m²", "Casas de 1 a 3 Habitaciones", "Piscina Privada", "Gestión Hotelera", "Restaurante y Spa", "Escuela de Kite"],
+      gallery: {
+        main: '/imoveis/vila-cangalha-camocim-01.webp',
+        sideTop: '/imoveis/vila-cangalha-camocim-02.webp',
+        sideBottom: '/imoveis/vila-cangalha-camocim-03.webp',
+        extra: [
+          '/imoveis/vila-cangalha-camocim-04.webp',
+          '/imoveis/vila-cangalha-camocim-05.webp',
+          '/imoveis/vila-cangalha-camocim-06.webp',
+          '/imoveis/vila-cangalha-camocim-07.webp',
+          '/imoveis/vila-cangalha-camocim-08.webp',
+          '/imoveis/vila-cangalha-camocim-09.webp',
+          '/imoveis/vila-cangalha-camocim-10.webp',
+          '/imoveis/vila-cangalha-camocim-11.webp',
+          '/imoveis/vila-cangalha-camocim-12.webp',
+          '/imoveis/vila-cangalha-camocim-13.webp',
+          '/imoveis/vila-cangalha-camocim-14.webp'
+        ]
+      },
+      mapImage: '/mapa.avif',
+      mapUrl: 'https://maps.google.com/maps?q=-2.8726917,-40.9128774&hl=es&z=16&output=embed',
+      videoSources: [],
+      documents: [
+        {
+          label: "Libro de Presentación",
+          url: "/documentos/vila-cangalha-camocim-book-apresentacao.pdf",
+          legend: "Presentación completa de Vila Cangalha: concepto, infraestructura, modelos de casa y propuesta de gestión hotelera."
+        },
+        {
+          label: "Tabla de Precios Completa",
+          url: "/documentos/vila-cangalha-camocim-tabela-de-precos.pdf",
+          legend: "Tabla con todas las combinaciones de terreno y modelo de casa (con y sin piscina), entrada, financiamiento y cuotas."
+        }
+      ],
+      priceTag: "Desde",
+      price: "R$ 1.059.422,77",
+      installments: "Entrada 30% + financiamiento de la incorporación en hasta 36 cuotas + 20% en la entrega de llaves",
+      category: "lancamento",
+      lotes: [
+        {
+          id: 'visao-geral',
+          label: 'Descripción General del Condominio'
+        },
+        {
+          id: 'casa-lagoa-1q',
+          label: 'Casa Lagoa — 1 Habitación',
+          priceTag: 'Desde',
+          price: 'R$ 1.059.422,77',
+          installments: 'Hasta R$ 1.595.389,32 en la versión con piscina — consulte la tabla completa',
+          about: [
+            'Modelo compacto de 1 habitación (94,55 m² sin piscina, o 155,43 m² en la versión con piscina privada y fire deck), pensado para parejas o para quien busca la unidad de entrada más pequeña en Vila Cangalha.',
+            'La casa reúne galería gourmet, sala de estar integrada y una habitación equipada con Smart TV, aire acondicionado, cama king size, frigobar y ducha al aire libre.',
+            'Precio desde R$ 1.059.422,77 (sin piscina) hasta R$ 1.595.389,32 (con piscina), según la ubicación del terreno dentro del condominio — consulte la tabla de precios completa para todas las combinaciones.'
+          ],
+          infra: [
+            'Área construida: 94,55 m² (sin piscina) o 155,43 m² (con piscina)',
+            '1 habitación con Smart TV, aire acondicionado, cama king size y frigobar',
+            'Ducha al aire libre',
+            'Galería gourmet',
+            'Piscina privada y fire deck (versión con piscina)',
+            'Terreno de 400 m² (20x20)'
+          ],
+          facilities: ['1 Habitación', '94 a 155 m²', 'Piscina Opcional', 'Galería Gourmet'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-lagoa-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-lagoa-02.webp',
+            sideBottom: null,
+            extra: []
+          }
+        },
+        {
+          id: 'casa-duna-2q',
+          label: 'Casa Duna — 2 Habitaciones',
+          priceTag: 'Desde',
+          price: 'R$ 1.436.074,79',
+          installments: 'Hasta R$ 2.051.477,57 en la versión con piscina — consulte la tabla completa',
+          about: [
+            'Modelo dúplex de 2 habitaciones (130,80 m² sin piscina, o 191,68 m² con piscina privada y fire deck), con sala de estar de doble altura y escalera de madera que conecta ambos pisos.',
+            'La planta baja reúne galería gourmet, sala de estar integrada y jardín de invierno bajo la escalera; en la planta alta, las habitaciones tienen acceso a una galería orientada hacia el cocotal. Ambas habitaciones cuentan con Smart TV, aire acondicionado, cama king size, frigobar y ducha al aire libre.',
+            'Precio desde R$ 1.436.074,79 (sin piscina) hasta R$ 2.051.477,57 (con piscina), según la ubicación del terreno — consulte la tabla de precios completa para todas las combinaciones.'
+          ],
+          infra: [
+            'Área construida: 130,80 m² (sin piscina) o 191,68 m² (con piscina)',
+            '2 habitaciones, ambas con Smart TV, aire acondicionado, cama king size y frigobar',
+            'Sala de estar de doble altura con escalera de madera',
+            'Galería gourmet y jardín de invierno',
+            'Piscina privada y fire deck (versión con piscina)',
+            'Terreno de 400 m² (20x20)'
+          ],
+          facilities: ['2 Habitaciones', '131 a 192 m²', 'Dúplex', 'Piscina Opcional'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-duna-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-duna-02.webp',
+            sideBottom: '/imoveis/vila-cangalha-camocim-duna-03.webp',
+            extra: ['/imoveis/vila-cangalha-camocim-duna-04.webp']
+          }
+        },
+        {
+          id: 'casa-palmeira-3q',
+          label: 'Casa Palmeira — 3 Habitaciones',
+          priceTag: 'Desde',
+          price: 'R$ 1.581.326,07',
+          installments: 'Hasta R$ 2.206.983,01 en la versión con piscina — consulte la tabla completa',
+          about: [
+            'El modelo más grande de Vila Cangalha, con 3 habitaciones (152,40 m² sin piscina, o 213,28 m² con piscina privada y fire deck), indicado para familias grandes o para quien planea operar más de una unidad de hospedaje al mismo tiempo.',
+            'Al igual que los demás modelos, la casa Palmeira tiene galería gourmet, sala de estar integrada y habitaciones equipadas con Smart TV, aire acondicionado, cama king size, frigobar y ducha al aire libre, distribuidas en dos pisos.',
+            'Precio desde R$ 1.581.326,07 (sin piscina) hasta R$ 2.206.983,01 (con piscina), según la ubicación del terreno — consulte la tabla de precios completa para todas las combinaciones.'
+          ],
+          infra: [
+            'Área construida: 152,40 m² (sin piscina) o 213,28 m² (con piscina)',
+            '3 habitaciones, todas con Smart TV, aire acondicionado, cama king size y frigobar',
+            '2 pisos, con galería gourmet en la planta baja',
+            'Piscina privada y fire deck (versión con piscina)',
+            'Terreno de 400 m² (20x20)'
+          ],
+          facilities: ['3 Habitaciones', '152 a 213 m²', '2 Pisos', 'Piscina Opcional'],
+          gallery: {
+            main: '/imoveis/vila-cangalha-camocim-palmeira-01.webp',
+            sideTop: '/imoveis/vila-cangalha-camocim-palmeira-02.webp',
+            sideBottom: '/imoveis/vila-cangalha-camocim-palmeira-03.webp',
+            extra: ['/imoveis/vila-cangalha-camocim-palmeira-04.webp']
+          }
+        }
+      ]
+    },
     {
       id: "casa-2-chales-serrote-jericoacoara",
       slug: "casa-2-chales-serrote-jericoacoara-dolores",
